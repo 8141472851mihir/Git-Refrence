@@ -1,0 +1,78 @@
+Git commands 
+
+
+1. Git Configuration Commands(*)
+	git config --global user.name "Your Name"				->	Set your Git username.
+	git config --global user.email "your.email@example.com"	->	Set your Git email.
+	git config --global init.defaultBranch main				->	Set the default branch to main.
+	git config --list										->	View all configured settings.
+	git config --global core.editor "vim"					->	Set default text editor for Git.
+
+2. Git Repository Setup(*)
+	git init												->	Initialize a new Git repository.
+	git clone <repository-url>								->	Clone an existing repository.
+
+3. Git File Management(*)
+	git add <file>											->	Stage a specific file.
+	git add .												->	Stage all changes.
+	git rm <file>											->	Remove a file from tracking.
+	git mv <old-name> <new-name>							->	Rename or move a file.
+	echo "filename" >> .gitignore							->	Add a file to .gitignore to prevent tracking.
+
+4. Git Commit Commands(*)
+	git commit -m "commit message"							->	Commit changes with a message.
+	git commit -am "message"								->	Add & commit changes in one step.
+	git commit --amend -m "new message"						->	Modify the last commit message.
+
+5. Git Branching Commands(*)
+	git branch												->	List all branches.
+	git branch <branch-name>								->	Create a new branch.
+	git checkout <branch-name>								->	Switch to another branch.
+	git checkout -b <branch-name>							->	Create and switch to a new branch.
+	git merge <branch-name>									->	Merge a branch into the current branch.
+	git branch -d <branch-name>								->	Delete a branch.
+
+6. Git Remote Commands
+	git remote -v											->	List remote repositories.
+	git remote add origin <url>								->	Add a remote repository.
+	git remote remove origin								->	Remove a remote repository.
+	git fetch origin										->	Fetch changes from the remote repo(*).
+	git push origin <branch-name>							->	Push a branch to the remote repo(*).
+	git pull origin <branch-name>							->	Pull changes from the remote repo(*).
+
+7. Git Log and Status Commands
+	git status												->	Show the status of files(*).
+	git log													->	View commit history(*).
+	git log --oneline										->	View commit history in a compact format.
+	git log --graph --oneline --all							->	View all branches as a graph.
+	git diff												->	Show changes not staged for commit.
+	git diff --staged										->	Show staged changes.
+
+8. Git Stash Commands(*)
+	git stash												->	Stash (save) uncommitted changes.
+	git stash list											->	View all stashes.
+	git stash apply											->	Apply the latest stash.
+	git stash pop											->	Apply and remove the latest stash.
+	git stash drop											->	Delete a stash.
+
+9. Git Undo & Reset Commands
+	git reset HEAD <file>									->	Unstage a file.
+	git reset --hard HEAD									->	Reset to last commit (loses changes).
+	git revert <commit-hash>								->	Revert a specific commit.
+	git checkout -- <file>									->	Discard uncommitted changes(*).
+
+10. Git Tagging Commands
+	git tag <tag-name>										->	Create a new tag.
+	git tag													->	List all tags.
+	git tag -d <tag-name>									->	Delete a tag.
+	git push origin <tag-name>								->	Push a tag to the remote repo.
+
+11. Git Alias Commands
+	git config --global alias.st status						->	Set git st as git status.
+	git config --global alias.cm "commit -m"				->	Set git cm as git commit -m.
+
+12. Git Submodule Commands 
+	git submodule add <repo-url>							->	Add a submodule.
+	git submodule update --init								->	Initialize and update submodules.	
+
+This covers all major Git commands you’ll need!
