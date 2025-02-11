@@ -1,0 +1,52 @@
+WHY : Allows you to securely connect to GitHub without needing to enter your username and password each time
+
+Windows: (powershell)
+Step 1: Check for Existing SSH Keys
+	ls ~/.ssh/id_rsa*  (powershell)
+	(If the files id_rsa and id_rsa.pub exist, you already have an SSH key pair.)
+
+Step 2: Generate a New SSH Key
+	ssh-keygen -t ed25519 -C "your.email@example.com" 	(powershell)
+
+	- If you see an error about ed25519 not being supported, use:
+		ssh-keygen -t rsa -b 4096 -C "your.email@example.com"	(powershell)
+	- When prompted for a file to save the key, press Enter to use the default location 
+		(C:\Users\YourUsername\.ssh\id_ed25519)
+	- Enter a passphrase (optional)
+
+Step 3: Start the SSH Agent (PowerShell as Administrator)
+	Start-Service ssh-agent 	(powershell)
+	Set-Service -Name ssh-agent -StartupType Automatic		(powershell)
+
+Step 4: Add the SSH Key to the Agent
+	ssh-add ~/.ssh/id_rsa	(powershell)
+		- replace id_rsa with yours [ex: ssh-add ~/.ssh/id_ed25519]
+
+Step 5: Add the SSH Key to GitHub
+	Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard 	(powershell)
+		-(Use id_rsa.pub if you generated an RSA key.)
+
+		-Go to GitHub:
+			- Navigate to GitHub SSH Settings.
+			- Click "New SSH key".
+			- Paste the key into the box and name it something like "Windows Laptop".
+			- Click "Add SSH key".
+
+Step 6: Test the SSH Connection
+	ssh -T git@github.com	(powershell)
+		If successful, you’ll see:  You've successfully authenticated...
+
+Step 7: Configure Git to Use SSH (Optional)
+	- If you previously used HTTPS, change Git to use SSH:
+		git remote set-url origin git@github.com:YourUsername/YourRepo.git 	(powershell)
+
+Other Steps(Optional Codes):
+
+1)If SSH authentication fails:
+	ssh -vT git@github.com	(powershell)
+
+2)If ssh-agent doesn’t start:
+	Get-Service ssh-agent	(powershell)
+
+3)If it’s not running, manually start it:
+	Start-Service ssh-agent	(powershell)
