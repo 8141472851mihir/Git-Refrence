@@ -41,7 +41,7 @@ Git commands
 	git pull origin <branch-name>						->	Pull changes from the remote repo(*).
 
 7. Git Log and Status Commands
-	git status									->	Show the status of files(*).
+	git status								->	Show the status of files(*).
 	git log									->	View commit history(*).
 	git log --oneline							->	View commit history in a compact format.
 	git log --graph --oneline --all						->	View all branches as a graph.
