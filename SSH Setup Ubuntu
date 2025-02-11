@@ -1,6 +1,6 @@
 WHY : Allows you to securely connect to GitHub without needing to enter your username and password each time
 
-Ubantu: (bash)
+Ubuntu: (bash)
 Step 1: Check for Existing SSH Keys
 	ls ~/.ssh/id_rsa*  (bash)
 	(If the files id_rsa and id_rsa.pub exist, you already have an SSH key pair.)
