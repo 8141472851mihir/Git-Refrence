@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        .first {
+            border: 2px solid red;
+            height: 600px;
+            width: 700px;
+            margin: 10px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: auto;
+            padding-right: auto;
+
+        }
+
+        .second {
+            border: 2px solid darkblue;
+            height: 500px;
+            width: 500px;
+        }
+
+        .first h1 {
+            background-color: black;
+            color: white;
+        }
+
+        .first h1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h1::first-letter {
+            color: red;
+            background-color: yellowgreen;
+
+        }
+
+        nav {
+            background-color: yellow;
+            height: 25px;
+            width: 100%;
+            border: 2px solid black;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a:hover {
+            color: red;
+
+        }
+
+        img {
+            height: 20vh;
+            width: 10vw;
+            float: left;
+        }
+
+        #img2 {
+            height: 20vh;
+            width: 10vw;
+            float: right;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Goals</a>
+            <a href="#">Contacts</a>
+        </div>
+    </nav>
+    <div class="first">
+        <div class="second">
+            <h1>CSS</h1>
+            <p> <img src="/image/it_support.webp" alt="img"> this is css tutorial Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Recusandae, nulla dolor in ratione vel, quo voluptatibus at libero, velit
+                tempora asperiores animi beatae ut aut blanditiis atque ad reprehenderit eius nam sequi necessitatibus
+                quod cum. Perferendis sunt aliquid sint! Impedit nostrum velit fugiat fuga dolorum quo similique
+                deleniti magnam sint?</p>
+            <br><br>
+            <p><img id="img2" src="/image/office.jpg" alt="img">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Ipsa, veritatis vero eos totam numquam repellat tempora animi ut sint neque sapiente tempore
+                similique fugiat quos libero rerum sunt dolores id? Ipsum dolorum in, veritatis eligendi libero voluptas
+                quam culpa dolor. Cum quasi provident doloribus repellendus incidunt dolorum voluptatibus alias
+                consequuntur!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
