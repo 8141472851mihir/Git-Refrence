@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+
+            body{
+                background-color: gray;
+                margin: 0;
+            }
+        
+            #hdiv{
+                position: sticky;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #000;
+                color:#fff;
+                max-width: 100%;
+                height: 10vh;
+                width: 100vw;
+            }
+
+
+            #heading{
+                font-size: 50px;
+                margin-top: 0;
+                padding-left: 300px;
+                text-align: center;
+                background-color: #000;
+            }
+
+            img{
+                position: sticky;
+                margin-left: 2px;
+                margin-top: 2px;
+                padding-left: 0;
+                border-radius: 100%;
+                height: 9.5vh;
+                width: 6.5vw;
+            }
+
+            
+
+            #frm{
+                align-content: center;
+                position: absolute;
+                width: 100%;
+                
+               
+            }
+
+            span{
+                color: red;
+            }
+
+            
+            table{
+                width: 100%;
+            }
+
+            .leftip{
+                width: 95%; 
+                margin-left: 2%;
+                border: #000 solid 3px;
+                border-radius: 5px;
+            }
+
+            .rightip{
+                width: 95%;
+                margin-right: 2%;
+                border: #000 solid 3px;
+                border-radius: 5px;
+
+            }
+            #cadd{
+                padding-right: 15px;
+            }
+
+             
+            .left{
+                margin-left: 2%;
+            }
+
+            .btn{
+                margin-left: 2%;
+                border: #000 solid 3px;
+                text-align: center;
+                background-color: blue;
+                
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+    <div id="hdiv">
+        <img src="./images/CHPL.png" alt="CHPL logo" style="position: absolute;" width="165px" height="80vh">
+        <span id="heading">Communities Heritage Private Limited</span>
+        <span id="cadd">WTT, Near Sanand Chokdi <br>
+            Sarkhej-Gandhinagar Highway,<br>
+            Ahmedabad</span>
+    </div>
+
+    <div id="frm">
+        <table>     
+                    <form action="thnku.html ">
+                        <tr>
+                            <td style="width: 50%;"><label for="name" class="left">Name <span>*</span></label></td>
+                            <td style="width: 50%;" colspan="2"><label for="mname" class="right">Middle Name</label><br></td>
+                        </tr>
+
+
+                        <tr class="fullsize">
+                            <td style="width: 50%;"><input type="text" placeholder="Enter Name Here" name="Name" class="leftip" maxlength="9" min="2" required></td>
+                            <td colspan="2" style="width: 50%;"><input type="text" placeholder="Enter Middle Name" class="rightip" name="mname" style="width: 95%;"><br></td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 50%;"><label for="lname" class="left">Last Name <span>*</span></label></td>
+                            <td><label for="Phone" class="right">Phone No. <span>*</span></label><br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Enter Last Name" name="lname" class="leftip" required></td>
+                            <td>
+                                <select name="CC" id="cc" style="width: fit-content;" required>
+                                    <option value="IND">+91</option>
+                                    <option value="US">+1</option>
+                                    <option value="IND">+91</option>
+                                </select> 
+                                <input type="tel" placeholder="Enter Phone Number" class="rightip" required><br>
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" style="width: 50%;">
+                                <label for="gender" class="left">Gender<span>*</span></label>
+                                <input type="radio" name="gender" id="Male" value="Male" required>
+                                <label for="gender">Male</label>
+                                <input type="radio" name="gender" id="gender" value="female">
+                                <label for="gender">Female</label>
+                            </td>
+                            <td>
+                                <label for="bldgrp" class="right">Bloodgroup</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width: 50%;">
+                                <select name="bldgrp" class="rightip">
+                                    <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 50%;">
+                                <label for="dob" class="left">Date of Birth</label>
+                            </td>
+                            <td style="width: 50%;">
+                                <label for="Mail" class="right">Mail Id</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 50%;">
+                                <input type="date" class="left" name="dob" id="dob">
+                            </td>
+                            <td style="width: 50%;">
+                                <input type="mail" class="rightip" name="Mail" id="Mail" placeholder="enter Mail">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td style="width: 50%;">
+                                <label for="dsg" class="left">Designation</label>
+                            </td>
+                            <td style="width: 50%;">
+                                <label for="photo">photo</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;">
+                                <input type="text" class="leftip" name="dsg" id="dsg">
+                            </td>
+                            <td style="width: 50%;">
+                                <input type="file" name="photo" class="rightip" id="photo">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cmp" class="left">Company Name</label>
+                            </td>
+                            <td>
+                                <label for="bzntype">Business type</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="leftip" type="text" name="cmp" id="cmpname">
+                            </td>
+                            <td>
+                                <select name="bzntype" id="bzntype" class="rightip">
+                                    <option value="s">Service Based</option>
+                                    <option value="p">product Based</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="city" class="left">City</label></td>
+                            <td><label for="area" class="right">Area</label></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <select name="city" id="city" class="leftip">
+                                    <option value="01">Ahmedabad</option>
+                                    <option value="10">Jamnagar</option>
+                                    <option value="03">Rajkot</option>
+                                    <option value="23">Anand</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="area" id="area" class="rightip">
+                                    <option value="M">Makarba</option>
+                                    <option value="T">Thaltej</option>
+                                    <option value="P">Prahladnagar</option>
+                                    <option value="sbr">Sindhu Bhavan Road</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="left" for="mnum">Membership Number</label></td>
+                            <td><label for="CCnum" class="right">company contactNumber</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="tel" name="mnum" id="mnum" class="leftip"></td>
+                            <td><input type="tel" name="CCnum" id="CCnum" class="rightip" ></td>
+                        </tr>
+
+                        <tr>
+                            <td><label class="left" for="cmail">Company Mail</label></td>
+                            <td><label for="clogo" class="right">Company logo</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="cmail" id="cmail" class="leftip"></td>
+                            <td><input type="file" name="clogo" id="clogo" class="rightip"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="brochure" class="left">brochure</label></td>
+                            <td><label for="web" class="right">website</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="file" name="brochure" id="brochure" class="leftip"></td>
+                            <td><input type="text" name="web" id="web" class="rightip"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="dsm" class="left">Describe more</label></td>
+                            <td><label for="add" class="right">Address</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="leftip" name="dsm" id="dsm"></td>
+                            <td><input type="text" name="add" class="rightip" id="add"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="rft" class="left">Refer type</label></td>
+                        </tr>   
+                        <tr>
+                            <td> <select name="rft" id="rft" class="leftip">
+                                <option value="rel">Relative</option>
+                                <option value="rel">Relative</option>
+                                <option value="old classmate">old classmate</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn" type="submit" name="submit" value="submit"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <iframe class="leftip" width="560" height="315" src="https://www.youtube.com/embed/dGlhcyzNo_w?si=sFl4KiJBHOsmv5R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </td>
+                            <td> 
+                                <iframe class="rightip" width="560" height="315" src="https://www.youtube.com/embed/0DBD_NNWbag?si=KEpfsVDqIN7cjY44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><video src="./images/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4" autoplay muted controls></video></td>
+                            <td><audio src="./images/4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4" controls></audio></td>
+                        </tr>
+                    </form>
+        </table>
+    </div>
+</div>
+</body>
+</html>

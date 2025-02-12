@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css" integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css" integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+    <link rel="icon" href="./images/pngwing.com.png">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            position: fixed;
+            height: 100px;
+            top: 0;
+            background-color: rgb(0, 137, 27);
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+
+        .leftaligned{
+            float: left;
+        }
+
+        .rightaligned{
+            float: right;
+        }
+
+
+        .sidebar{
+            position: fixed;
+            height: 100%;
+            width: 150px;
+            padding-left: 0px;
+            margin: 0;
+            background-color: rgb(5, 32, 151);
+            color: white;
+            display: flex;
+            justify-content: center;
+            overflow: scroll;
+
+        }
+
+       .hdrcontent:hover{
+            color: red;
+            background-color: #fff;
+        }
+
+        .ddcontent{
+            display: none;
+        }
+
+        .hdrcontent:hover .ddcontent{
+            display: block;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hello{
+            margin-left: 150px;
+            margin-top: 100px;
+            height: 1000px;
+            width: 90.1%;
+            overflow-x: hidden;
+            background-color: rgb(137, 0, 0);
+        }
+
+        #menusidebar{
+            display: none; 
+        }
+
+        .imgresponsive{
+            
+            width: 100%;
+            height: auto;
+            
+        }
+        
+        
+
+        @media only screen and (max-width: 600px) {
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                position: fixed;
+                height: 100px;
+                top: 0;
+                background-color: rgb(0, 137, 27);
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+                
+            }
+
+            .leftaligned{
+                float: left;
+            }
+
+            .rightaligned{
+                float: right;
+            }
+
+            .hello{
+            
+            margin-top: 100px;
+            height: 1000px;
+            width: 90.1%;
+            overflow-x: hidden;
+            background-color: rgb(137, 0, 0);
+            }
+
+        .sidebar{
+            display: none;
+        }
+
+        #menusidebar{
+            display: block;
+        }
+
+        .menusidebar:hover .sidebar{
+            display: block;
+        }
+
+        #bell{
+            display: none;
+        }
+        #user{
+            display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="leftaligned">
+            <!-- <i class="fa fa-bars" style="font-size: 30px; color: white; margin-left: 20px; margin-top: 50px; left: 0;"></i> -->
+             <img src="./images/CHPL PSD (1) (1).png" style="width: 150px; height: 100px    ;" alt="">
+        </div>
+
+
+        <div class="rightaligned">
+            <i class="fa-solid fa-bell" id="bell" style="font-size: 26px; color: white; margin-top: 35px; margin-right: 20px;"></i>
+            <i class="fa-solid fa-user" id="user" style="font-size: 26px; color: white; margin-top: 35px; margin-right: 20px;"></i>
+            <i class="fa-solid fa-bars" id="menusidebar" style="font-size: 26px; color: white; margin-top: 35px; margin-right: 20px;"></i>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <div class="sidebar">
+       <ul style="list-style-type: none; padding-inline-start: 0px;">
+            <li class="hdrcontent"><i class="fa-solid fa-house"></i>&nbsp; Home</li>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+            <li class="hdrcontent"><i class="fa-solid fa-house"></i>&nbsp; Home</li>
+
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <li class="hdrcontent"><i class="fa-solid fa-house"></i>&nbsp; Home</li>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+            <li class="hdrcontent"><i class="fa-solid fa-house"></i>&nbsp; Home</li>
+
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="hdrcontent">
+                <li><i class="fa-solid fa-info"></i> &nbsp; About US <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="hdrcontent">
+                <li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; contact us <i class="fa fa-angle-down"></i></li> 
+                <div class="ddcontent"> 
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </div>
+
+            <br>
+        </ul>
+    </div>
+
+
+    
+
+
+    <div class="hello">
+        <img src="./images/Background system&Data graphy gif.gif" style="width: 100%;">
+        
+    </div>
+</body>
+</html>

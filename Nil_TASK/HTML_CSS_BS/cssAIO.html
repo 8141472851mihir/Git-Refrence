@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS practicals</title>
+    <style>
+        #hello{
+            background-color: black;  
+            height: 100px;
+            text-align: center;
+            padding-top: 6px;
+            box-sizing: border-box;
+        }        
+
+        h1{
+            color: green !important;
+            
+            }
+        
+        .world{
+            width: 100%;
+            margin-top: 3%;
+            
+            
+        }
+
+        .containerheading{
+            font-size: 36px; color: blue; 
+        }
+        
+        .containertext{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .container1{
+            border: 5px solid;
+            background-color: #928f8f;
+        }
+
+        .mainimg{
+            float: left;
+            width: 800px;
+            margin: 10px;
+        }
+
+        .container2{
+            margin: 80px;
+            display: flex;
+            justify-content: space-between;
+              
+        }
+
+        .innercontainer{
+            background-color: #928f8f;
+            max-width: 400px;
+            border: 1px solid;
+            max-height: 650px;
+            /* transition: all;
+            transition-duration: 1s; */
+            transition: transform 1s;
+        }
+
+        .innercontainer:hover{
+            transform: scale(1.2);
+            border: 2px solid;
+            
+        }
+
+        .innercontainerheading{
+            color: darkblue;
+            font-size: 24px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .innercontainertext{
+            font-size: 20px;
+            text-align: center;
+            margin: 8px;
+            
+        }
+
+        .footer{
+            bottom: 0;
+            background-color: darkblue;
+        }
+        .footercontainer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c1, .c2, .c3, .c4, .c5, .c6{
+            color: aliceblue;
+            margin: 20px;
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header id="hello">
+        <h1 style="font-size: 36px; color: aliceblue;">Hello Car Enthusiast</h1>
+    </header>
+
+
+    <div class="world">
+        <div class="container1">
+            <img class="mainimg" src="./images/g63 AMG.jpg" style=" float: left;" alt="">
+            <p class="containerheading"><b>Expressive design</b></p>
+            <p class="containertext">
+                Even at rest, the new Mercedes-AMG G 63 is already enormously powerful and brimming with potential.
+                The AMG-specific radiator grille and the 4-branch, side-oriented AMG exhaust system make the most
+                powerful G-Class instantly recognisable. Large air inlets with vertical louvers and AMG wheel-arch
+                extensions enhance the striking front visage and emphasise its extroverted character -
+                as does the AMG emblem on the bonnet. Bold light-alloy wheels are a powerful style
+                complement to the prestigious design.</p>
+        </div>
+
+
+            <div class="container2">
+                
+                <div class="innercontainer">
+                    <p class="innercontainerheading"><b>Powerful drive unit</b></p>
+                    <img style="height: 250px; width: 350px; margin-left: 25px; ;" src="./images/amg e & t.jpeg" alt="">                
+                    <p class="innercontainertext">
+                        At the heart of the Mercedes-AMG G 63 is the legendary 4.0-litre V8 biturbo engine with 430 kW (585 hp) and 850 Nm of torque. This has been coupled with a starter generator for the first time and boasts even more explosive power delivery and breathtaking torque.
+                    </p>
+
+                </div>
+
+
+                <div class="innercontainer">
+                    <p class="innercontainerheading"><b>Luxurious ambience</b></p>
+                    <img style="height: 260px; width: 340px; margin-left: 30px; z-index: 1;" src="./images/amg interior.jpeg" alt=""><br>
+                    <p class="innercontainertext">
+                        Inside the Mercedes-AMG G 63,
+                        first-class materials meet perfect workmanship and a design
+                        language with character. State-of-the-art technology, such as
+                        the intelligent MBUX multimedia system with augmented reality
+                        navigation and off-road display, blends harmoniously into the
+                        overall concept. In addition, the customisation options for
+                        the interior are almost limitless and meet the highest demands on quality.
+                    </p>
+                </div>
+
+                    <div class="innercontainer">
+                        <p class="innercontainerheading"><b>Outstanding driving stability</b></p>
+                        <img src="./images/amg stability.jpg" style="height: 220px; width: 350px; margin-left: 25px; z-index: 1;" alt="">
+                        <p class="innercontainertext">
+                            The standard AMG RIDE CONTROL suspension with adaptive, electronically controlled damping system allows the Mercedes-AMG G 63 to perform the familiar balancing act between off-road comfort and on-road dynamics. Simply select your desired set-up: "Comfort", "Sport" and "Sport+". Depending on the driving situation, the roll-and-pitch stabilisation system continuously regulates the damper control and reduces movements of the bodywork.
+                        </p>
+                    </div>
+            </div>
+            <div class="footer">
+                <div class="footercontainer">
+                    <table class="c1">
+                        <tr>
+                            <td><b>Popular models</b></td>
+                        </tr>
+                        <tr>
+                            <td>Electric Cars</td>
+                        </tr>
+                        <tr>
+                            <td>SUV</td>
+                        </tr>
+                        <tr>
+                            <td>Cabriolets & Roadsters</td>
+                        </tr>
+                        <tr>
+                            <td>Coupé</td>
+                        </tr>
+                        <tr>
+                            <td>Plug-in Hybrid</td>
+                        </tr>
+                    </table>
+
+                    <table class="c2">
+                        <tr>
+                            <td><b>Buy a Vehicle</b></td>
+                        </tr>
+                        <tr>
+                            <td>Find a new car</td>
+                        </tr>
+                        <tr>
+                            <td>Configure your car</td>
+                        </tr>
+                        <tr>
+                            <td>All brochures</td>
+                        </tr>
+                        <tr>
+                            <td>Model overview</td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Program</td>
+                        </tr>
+                    </table>
+
+                    <table class="c3">
+                        <tr>
+                            <td><b>Shopping Guide</b></td>
+                        </tr>
+                        <tr>
+                            <td>Book a test drive</td>
+                        </tr>
+                        <tr>
+                            <td>Nearest Showroom</td>
+                        </tr>
+                        <tr>
+                            <td>Finance</td>
+                        </tr>
+                        <tr>
+                            <td>Mercedes-Benz Collection</td>
+                        </tr>
+
+                    </table>
+
+
+                    <table class="c4">
+                        <tr>
+                            <td><b>Owners</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>Book a service appointment</td>
+                        </tr>
+                        <tr>
+                            <td>Owner's Manuals</td>
+                        </tr>
+                        <tr>
+                            <td>Service warranty terms and conditions</td>
+                        </tr>
+                        <tr>
+                            <td>Grievance Redressal Mechanism</td>
+                        </tr>
+                        <tr>
+                            <td>FAQ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <table class="c5">
+                        <tr>
+                            <td><b>Technology</b></td>
+                        </tr>
+                        <tr>
+                            <td>Electric mobility</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                About Mercedes me</td>
+                        </tr>
+                        <tr>
+                            <td>Connect services</td>
+                        </tr>
+                    </table>
+
+                    <table class="c6">
+
+                        <tr>
+                            <td><b>Discover Mercedes</b></td>
+                        </tr>
+                        <tr>
+                            <td>Contact</td>
+                        </tr>
+                        <tr>
+                            <td>Secretarial Compliance Disclosure</td>
+                        </tr>
+                        <tr>
+                            <td>Press Release</td>
+                        </tr>
+                        <tr>
+                            <td>Careers</td>
+                        </tr>
+                        <tr>
+                            <td>Privacy</td>
+                        </tr>
+                        <tr>
+                            <td>Fair Practice Code</td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Governance Policy (MBFS)</td>
+                        </tr>
+                        <tr>
+                            <td>Ombudsman Scheme for NBFS</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
+
+    </div>
+</body>
+</html>

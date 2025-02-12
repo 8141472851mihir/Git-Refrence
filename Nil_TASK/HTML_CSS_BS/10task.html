@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(94, 94, 94);
+            font-family: Arial, sans-serif;
+        }
+        .upperhdr{
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .upperhdrtag{
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .upperhdrtag:hover{
+            color: lightgray;
+        }
+
+
+        .hdr{
+            min-height: 10%;
+            background-color: #333;
+            color: aliceblue;
+            font: 1.5em sans-serif;
+            border: #fff 5px solid;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #logo{
+            height: 100px;
+            width: 200px;
+            margin-left: 2%;  
+        }
+
+        #logo:hover{
+            transform: scale(1.2);
+        }
+
+        .hdrcontent{
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .hdrcontent:hover{
+            color: lightgray;
+        }
+
+        #iconhdr{
+            display: inline;
+            padding-right: 2%;
+            font-size: 24px;
+        }
+
+
+        .ddcontent{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                padding: 10px;
+        }
+
+        .ddcontent a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .ddcontent a:hover{
+            background-color: #ccc;
+        }
+
+
+        
+
+        .maindiv{
+            background-image: url(./images/g63\ AMG.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 20%;
+            padding-top: 10%;
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .maincontent{
+            margin: 0;
+            color: maroon;
+            font-size: 24px;
+        }
+
+        .medium{
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #btn{
+            background-color: darkred;
+            height: 50px;
+            width: 100px;
+            color: white;
+            font-size: medium;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #btn:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="upperhdr">
+        <a href="contact@chplgroup.org" class="upperhdrtag">contact@chplgroup.org</a>
+       <a href="https://www.chplgroup.org/contact" class="upperhdrtag">CHPL Worldwide</a>
+    </div>
+
+
+    <div class="hdr">
+            <img id="logo" src="./images/CHPL PSD (1) (1).png" alt="Chpl logo">
+        <nav style="display: flex;">
+            
+                <a href="#" class="hdrcontent">Home</a>
+                <div class="hdrcontent">
+                    <a href="#" class="hdrcontent" id="ddbtn">About Us <i class="fa fa-angle-down"></i></a>
+                    <div class="ddcontent"> 
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 1</a>
+                    </div>
+                </div>
+                <a href="#" class="hdrcontent">Our Product <i class="fa fa-angle-down"></i></a>
+                <a href="#" class="hdrcontent">Our Client </a>
+                <a href="#" class="hdrcontent">Career</a>
+                <a href="#" class="hdrcontent">Contact Us</a>
+            
+        </nav>
+
+            <i id="iconhdr" class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="maindiv">
+        <p class="">Communities Heritage Private Limited</p>
+        <p class="maincontent">Simplify Complexity </p> 
+        <p class="maincontent" id=""> through Technology</p>
+        <button id="btn">Contact us</button>
+    </div>
+    
+</body>
+</html>  

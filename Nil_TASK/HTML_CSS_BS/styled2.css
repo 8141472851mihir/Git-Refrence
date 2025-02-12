@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    margin-top: 0;
+}
+
+#hdiv{
+    position: fixed;
+    background-color: #000;
+    color:#fff;
+    margin: 0;
+    max-width: 100%;
+    height: 10vh;
+    width: 100vw;
+    /* overflow-y: initial; */
+}
+
+
+#hdiv p{
+    font-size: 50px;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+img{
+    position: absolute;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 5;
+}
+
+
+
+
+#navdiv{
+    position: fixed;
+    float: left;
+    background-color: rgb(1, 1, 75);
+    margin-top: 10vh;
+    margin-left: 0;
+    padding: 5px;
+    min-height: 100%;
+    height: 100vh;
+    width: 10vw;
+}
+
+#content{
+    margin-left: 11vw;
+    padding-top: 10vh;
+    float: left ;
+
+}
+
+#content .table{
+    font-size: 3px;
+    float: left;
+}
+
+
+#rfm, #abtus, #cntus{
+    padding-top: 10vh;
+}
+
+
+.space{
+    height: 900px;
+}
+
+a{
+    color: coral;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+}   
+
+#abtus p{
+    text-align: justify;
+    margin: 3px;
+}

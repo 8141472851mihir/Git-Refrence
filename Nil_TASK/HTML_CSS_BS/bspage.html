@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>bootstrap webpage</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-theme="dark">
+    <ul class="nav nav-tabs align-items-center bg-black fixed-top">
+        <li class="nav-item">
+            <a href="#demo" class="navbar-brand d-none d-sm-block" >
+                <img src="./images/landrover png.png" style="width: 100px;" alt="">
+            </a>
+        </li>
+        
+       
+        <div class="dropdown">
+            <a class="btn btn-outline-danger dropdown-toggle mx-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Range Rover
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#RR">Autobiography</a></li>
+              <li><a class="dropdown-item" href="#">Sports</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="dropdown">
+            <a class="btn btn-outline-warning dropdown-toggle mx-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Defender
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#Defender">90</a></li>
+              <li><a class="dropdown-item" href="#Defender">110</a></li>
+              <li><a class="dropdown-item" href="#Defender">130</a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown">
+            <a class="btn btn-outline-success dropdown-toggle mx-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Discovery
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#Discovery">Discovery S</a></li>
+              <li><a class="dropdown-item" href="#Discovery">Dynamic HSE</a></li>
+              <li><a class="dropdown-item" href="#Discovery">Metropolitan Edition</a></li>
+            </ul>
+        </div>
+
+
+    </ul>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/rr autobiography.avif" class="d-block w-100"  alt="rra">
+                <div class="carousel-caption">
+                    <h2>The OG</h2>
+                    <p>Range Rover Autobiography</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./images/defender2.jpg" class="d-block w-100"  alt="rrv">
+                <div class="carousel-caption">
+                    <h2>The Ultimate Offroad</h2>
+                    <p>Land Rover Defender</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./images/rr evoque.avif" class="d-block w-100" alt="rre">
+                <div class="carousel-caption">
+                    <h2>The Evoque</h2>
+                    <p>Perfect size of city area with all the capacity</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="row mt-5" id="RR">
+        <div class="h2">Range Rover</div>
+        <img src="./images/rr a2.jpg" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/rr a3.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="row mt-5" id="Defender">
+        <div class="h2">Defender</div>
+        <img src="./images/defender1.webp" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/defender2.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+    <hr>
+    <hr>
+
+
+    <div class="row mt-5" id="Discovery">
+        <div class="h2">Discovery</div>
+        <img src="./images/discovery1.jpg" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/discovery2.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+
+
+
+    <button type="button" class="btn btn-primary" data-bs-target="#mymodal" data-bs-toggle="modal">Terms & Conditions</button>
+
+    <div id="mymodal" class="modal">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-header">terms & conditions</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                        Terms of Use
+                            Thank you for visiting our website. The BMW Group appreciates your interest in the company and its products and services.
+
+                            IMPORTANT
+                            PLEASE READ THESE TERMS AND CONDITIONS BEFORE YOU PROCEED CAREFULLY. BY ACCESSING THIS SITE AND ANY PAGES THEREOF, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS BELOW. THE AMOUNT AND TYPE OF INFORMATION RECEIVED DEPENDS ON HOW YOU USE THE SITE. IF YOU DO NOT AGREE TO THIS POLICY, PLEASE DO NOT ACCESS THIS SITE, OR ANY PAGES THEREOF.
+
+                            1. Eligibility :
+                            You warrant that you are competent to contract as per Indian Contract Act, 1872 in accordance with all terms and conditions of booking, sale and delivery of vehicle(s) manufactured and marketed by BMW India Private Limited (hereinafter referred to as "BMW India") through its Authorised Dealers available across India.
+
+                            2. Copyrights
+                            Copyright, BMW Group. All Rights Reserved.
+
+                            
+
+                            The text, images, graphics, sound files, animation files, video files and their arrangement on the website made available by BMW Group Website are all subject to copyright and other intellectual property protection. These objects may not be copied for commercial use or distribution, nor may these objects be modified or reposted to other sites. The Website may contain images whose copyrights/TM are attributable to third parties.
+
+                            3. Trademarks:
+                            Unless otherwise indicated, all marks displayed on BMW website are subject to the trademark rights of BMW group, this applies especially to its model name plates, and its corporate logos and emblems.
+
+                            4. Use of information and materials:
+                            The information and materials contained in these pages, and the terms, conditions, and descriptions that appear, are subject to change. Unauthorized use of BMW's web sites and systems including but not limited to unauthorized entry into BMW's systems, misuse of passwords, or misuse of any information posted on a site is strictly prohibited. Not all products and services are available in all geographic areas. Your eligibility for particular products and services is subject to final determination by BMW and/or its dealers or affiliates.
+
+                            5. Warranties, Liability:
+                            The information on these websites is provided "as is" and without warranty of any kind, expressed or implied, including (but not limited to) any implied warranties of merchantability, fitness for any particular purpose, or non-infringement of third party rights. While the information provided is believed to be accurate, it may include errors or inaccuracies. In no event shall BMW Group India be liable to any person for any special, indirect or consequential damages of whatsoever kind arising out of your use or access to the website, including loss of profit or the like whether or not in the contemplation of the parties, whether based on breach of contract, tort (including negligence), product liability or otherwise. BMW India is not liable to you for any damage or alteration to your equipment including but not limited to computer equipment, handheld device or mobile telephones as a result of the access or use of the website.BMW Group India is not responsible for the contents of websites that are maintained by third parties and therefore waives its liability for any links from this website to other websites.
+
+                            6. Licences:
+                            The BMW Group India has sought to achieve an innovative and informative website. However, you also need to understand that the BMW Group India must protect its intellectual property, including its patents, trademarks, and copyrights. Accordingly, please appreciate that no license to use the intellectual property of BMW Group companies or the intellectual property of third parties has been granted by this website.
+
+                            7. Availability:
+                            This site is not intended for distribution to, or use by, any person or entity in any jurisdiction or country where such distribution or use would be contrary to local law or regulation.
+
+                            8. Modification of these terms of use:
+                            BMW India reserves the right to change the terms, conditions, and notices under which the BMW India Web Sites are offered, including but not limited to the charges associated with the use of the BMW Web Sites. You are responsible for regularly reviewing these terms and conditions.
+
+                            9. Additional Terms:
+                            Certain sections or pages on this site deals with brands other than BMW which has separate and additional to these terms and conditions. In the event of a conflict, the additional terms and conditions will govern.
+
+                            10. Data Protection.
+                            The high standards you expect from our products and services are our guideline for handling your data. Our aim is to create and maintain the basis for a trusting business relationship with our customers and prospects. The confidentiality and integrity of your personal data is top priority for us. Further information on data protection, as well as your rights, can be found in our Privacy Policy
+
+                            11. Prices
+                            Price prevailing at the time of invoicing will be applicable. Ex-showroom price inclusive of GST (incl compensation cess) as applicable but excludes Road Tax, Tax collected at Source (TCS), GST on Tax collected at source, RTO, statutory taxes/fees, other local tax/cess levies and insurance. Prices and options are subject to change without prior notice. Prices and options are subject to change without prior notice. The ex-showroom price, offers and timeline for delivery of car are indicative only. Customers are advised to contact the booking dealer for final confirmation. The consumer offer on a vehicle, if applicable, will be set off while delivery of vehicle at the respective dealerships.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

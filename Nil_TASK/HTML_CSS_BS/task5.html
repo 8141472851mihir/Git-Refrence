@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./res/jquerycdn.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+
+        $(document).ready(function(){
+            $('#btn1, #btn6').click(function(){
+                $('#Login').fadeIn("slow");
+                $('#card1').fadeOut("slow");
+                $('#otp').fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#btn1, #btn6').click(function(){
+                $('#Login').fadeIn("slow");
+                $('#card1').fadeOut("slow");
+                $('#otp').fadeOut("slow");
+            });
+        });
+        $(document).ready(function(){
+            $('#btn1, #btn6').click(function(){
+                $('#otp').fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#btn2').click(function(){
+                $('#otp').fadeIn("slow");
+                $('#card1').fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#btn3').click(function(){
+                $('#card1').fadeIn("slow");
+                $('#Login').fadeOut("slow");
+            });
+        });
+
+
+        $(document).ready(function(){
+            $('#btn2 , #btn4').click(function(){
+                $('#OTP').fadeIn("slow");
+                $('#reg').fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#regForm').click(function(){
+                $('#reg').fadeIn("slow");
+                $('#OTP').fadeOut("slow");
+            });
+        });
+
+
+    </script>
+    <title>Registration form</title>
+</head>
+<body>
+
+
+    <!-- Registration -->
+    <div class="card m-5" id="card1">
+        <div class="card-header row">
+            <div class="col" id="regForm"><h2>Registration form</h2></div>
+        </div>
+        
+        <div class="card-body" id="reg">
+            <form >
+                <div class="row m-2">
+                    <label for="mail" class="col-1">mail:</label>
+                    <div class="col-11">
+                        <input type="text" class="form-control col-10" name="mail" id="mail" placeholder="enter your mail">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <label for="pass" class="col-1">Password:</label>
+                    <div class="col-11">
+                        <input type="password" class="form-control col-11" name="pass" id="pass" placeholder="enter your password">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <label for="cnfpass" class="col-1">confirm Password:</label>
+                    <div class="col-11">
+                        <input type="password" class="form-control col-11" name="cnfpass" id="cnfpass" placeholder="enter your password again">
+                    </div>
+                </div>
+
+                <div class="row m-2">
+                    <label for="phn" class="col-1">phone no:</label>
+                    <div class="col-11">
+                        <input type="tel" class="form-control col-11" name="phn" id="phn" placeholder="enter your phone no">
+                    </div>
+                </div>
+
+                <div class=" card-footer d-flex">
+                    <button type="button" class="col-2 btn btn-danger mx-auto" id="btn1">Login</button>
+                    <button type="submit" class="col-2 btn btn-primary mx-auto">Submit</button>
+                    <button type="button" class="col-2 btn btn-warning mx-auto" id="btn2">OTP</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<!-- Login -->
+    <div class="card m-5" style="display: none;" id="Login">
+        <div class="card-header">
+            <h2>Login Form</h2>
+        </div>
+        <div class="card-body">
+            <form id="loginForm">
+                <div class="row m-2">
+                    <label for="email" class="col-1">mail:</label>
+                    <div class="col-11">
+                        <input type="text" class="form-control col-10" name="email" id="email" placeholder="enter your mail">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <label for="lpass" class="col-1">Password:</label>
+                    <div class="col-11">
+                        <input type="password" class="form-control col-11" name="lpass" id="lpass" placeholder="enter your password">
+                    </div>
+                </div>
+                <div class="row justify-content-center gap-5">
+                    <button type="button" class="col-2 btn btn-primary" id="btn3">Registration</button>
+                    <button type="submit" class="col-2 btn btn-danger">Login</button>
+                    <button type="button" class="col-2 btn btn-warning" id="btn4">OTP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- OTP -->
+    <div class="card m-5" style="display: none;" id="OTP">
+        <div class="card-header">
+            <h2>otp Form</h2>
+        </div>
+        <div class="card-body">
+            <form id="loginForm">
+                <div class="row m-2">
+                    <label for="email" class="col-1">mail:</label>
+                    <div class="col-11">
+                        <input type="text" class="form-control col-10" name="email" id="email" placeholder="enter your mail">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <label for="otp" class="col-1">OTP:</label>
+                    <div class="col-11">
+                        <input type="password" class="form-control col-11" name="otp" id="otp" placeholder="enter your password">
+                    </div>
+                </div>
+                <div class="row justify-content-center gap-5">
+                    <button type="button" class="col-2 btn btn-primary" id="btn5">Registration</button>
+                    <button type="submit" class="col-2 btn btn-danger">submit</button>
+                    <button type="button" class="col-2 btn btn-warning" id="btn6">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
