@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="card">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>country</th>
+                    <th>State</th>
+                    <th>action</th>
+                    <th>remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>alice</td>
+                    <td>                       
+                        <select class="form-select country" id="Country" onchange="changestatus(this.value);">
+                            <option disabled selected>Select Country</option>
+                            <option value="India">India</option>
+                            <option value="US">USA</option>
+                        </select>
+                    </td>
+
+                    <td> 
+                        <select class="form-select state" aria-label="Default select example" id="state" >
+                            <option disabled selected>Select State</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" role="switch" disabled onchange="remarks_show(this);">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="printremark"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>alice</td>
+                    <td>                       
+                        <select class="form-select country" id="Country2" onchange="changestatus(this.value);">
+                            <option disabled selected>Select Country</option>
+                            <option value="India">India</option>
+                            <option value="US">USA</option>
+                        </select>
+                    </td>
+
+                    <td> 
+                        <select class="form-select state" aria-label="Default select example" id="state" >
+                            <option disabled selected>Select State</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" role="switch" disabled onchange="remarks_show(this);" value="1">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="printremark"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+
+    <script>
+        function changestatus(countryValue) {
+            // Find the closest <tr> to the select element
+            var row = $(event.target).closest("tr");
+            var statedropdown = row.find(".state");
+            var switchbutton = row.find(".form-check-input");
+    
+            // Make AJAX request with the selected country value
+            $.ajax({
+                type: "POST",
+                url: "hello.php",
+                data: {
+                    status: countryValue // Pass only the country value, not the entire DOM element
+                },
+                success: function (data) {
+                    var wrl = JSON.parse(data);
+                    var output = "<option disabled selected>select State</option> "; // Initialize output
+                    for (let i = 0; i < wrl.length; i++) {
+                        output += "<option>" + wrl[i] + "</option>";
+                    }
+                    // Update the state dropdown options
+                    statedropdown.html(output);
+                    // Enable the switch button
+                    switchbutton.prop('disabled', false);
+                    switchbutton.prop("checked", true); // You can adjust this based on the response
+                }
+            });
+        }
+    
+        function remarks_show(element) {
+            var row = $(element).closest('tr');
+            var switchinput = row.find('.form-check-input');
+            var printremark = row.find('.printremark');
+            var send_data = switchinput.is(':checked') ? 1 : 0;
+            
+            var c = row.find(".country") // Send 1 if checked, else 0
+            var s = row.find(".state");
+            
+            // Make AJAX request to get the remark status
+            $.ajax({
+                type: "POST",
+                url: "helloh1.php",
+                data: {
+                    remarks: send_data // Send status (1 or 0)
+                },
+                success: function (data) {
+                    var output;
+                    
+                    if (data == 1) {
+                        output = '<p>Active</p>';
+                        c.attr("disabled",false);
+                        s.attr("disabled",false);
+                        
+
+                    } else {
+                        output = '<p>Deactive</p>';
+                        c.attr("disabled",true);
+                        s.attr("disabled",true);
+
+                    }
+                    
+                    // Update the printremark div with the result
+                    printremark.html(output);
+                }
+            });
+        }
+
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+
+        document.onkeydown = (e) => {
+            // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+            if (
+                event.keyCode === 123 ||
+                ctrlShiftKey(e, 'I') ||
+                ctrlShiftKey(e, 'J') ||
+                ctrlShiftKey(e, 'C') ||
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+                return false;
+        };
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./res/jquerycdn.js"></script>
+    <script>
+        //toggle btn for hide show function
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $('#p').toggle();
+            });
+        });
+
+        //hide text with double click
+        $(document).ready(function(){
+            $('#p1').on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                },
+                dblclick:function(){
+                $('#p1').hide();
+            }
+            });
+        });
+
+        //fade in out 
+        $(document).ready(function(){
+            $('#btn2').click(function(){
+                $('#img1, #btn3').fadeIn("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('#btn3').click(function(){
+                $('#img1, #btn3').fadeOut("slow");
+            });
+        });
+
+        $(document).ready(function(){
+            $('.div').click(function(){
+                $('.div1').slideToggle();
+            });
+        });
+
+        $(document).ready(function(){
+            $('.div').hover(function(){
+                alert("you hovered over hello");
+            })
+        });
+
+
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn1">click btn</button>
+    <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, fuga.</p>
+    <hr><br>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, consectetur.</p>
+
+    <button id="btn2">click to show img</button>
+    <button id="btn3" style="display: none;">click to fade out</button>
+    <br>
+    <img src="./images/ford_mustang_ford_car_141743_3840x2400.jpg" style="width: 500px; display: none;" id="img1" alt="">
+    <br>
+    <hr>
+
+    <div class="div" style="width: 100%; background-color: blue;text-align: center; margin-bottom: 0;">
+        <h1>hello</h1>
+    </div>
+    <div class="div1" style="width: 100%; background-color: blue;text-align: center; display: none; margin-top: 0;">
+        <h1>world</h1>
+    </div>
+
+
+    <div class="div2" style="width: 100%; background-color: blue;text-align: center; margin-bottom: 0;">
+        <h1>hello</h1>
+    </div>
+
+</body>
+</html>

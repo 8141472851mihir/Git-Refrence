@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: large; background-color: burlywood;">Registration Form</h2>
+        <form action="./thnku.html">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" name="fn" placeholder="Enter your first name" maxlength="9" required>
+                        <input type="text" name="ln" placeholder="enter your Last name" maxlength="9" required><br></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>phone number</label> 
+                        </td>
+                        <td>
+                            <input type="tel" name="Phone" placeholder="Enter phone number" maxlength="12" required><br>
+                        </td>
+                    </tr>
+                    <!-- <input type="text" name="state" placeholder="enter your state"><br> -->
+
+                    <tr><td>
+                            <label>Select state</label>
+                        </td>
+                        <td>
+                            <select name="state" id="state" required>
+                                <option value="none">-select a state</option>
+                                <option value="GJ">Gujarat</option>
+                                <option value="RJ">Rajasthan</option>
+                                <option value="DL">Delhi</option>
+                                <option value="JK">Jammu And Kashmir</option>
+                            </select><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label> Select City</label>
+                        </td>
+                        <td>
+                            <select name="City" id="City" required>
+                                <option value="none">-select a City</option>
+                                <option value="GJ">Ahmedabad</option>
+                                <option value="RJ">Jaipur</option>
+                                <option value="DL">New Delhi</option>
+                                <option value="JK">Shreenagar</option>
+                            </select><br>
+                        </td>
+                    </tr>
+                    <!-- <input type="text" name="city" placeholder="enter your city"><br> -->
+                    <tr>
+                        <td>
+                            <label for="gender"> Select gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="male" maxlength="9" required>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label><br> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Select DOB</label></td>
+                        <td>
+                            <input type="date" name="dob" id="dob" maxlength="9" required><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Enter Age</label>
+                        </td>
+                        <td>
+                            <input type="number" name="Age" placeholder="Enter your Age" maxlength="3" required><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Select hobbies</label>
+                        </td>
+                        <td><input type="checkbox" name="hobbies" id="hobbies" maxlength="9">
+                            <label for="Cricket">Cricket</label>
+                            <input type="checkbox" name="hobbies" id="hobbies">
+                            <label for="Football">Football</label><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                 </table>
+                 
+            </fieldset>
+        </form>
+
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Land Rover Webpage</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".nav" data-bs-theme="Light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-none d-sm-block" href="#demo">
+                <img src="./images/landrover png.png" style="width: 100px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Range Rover
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#RR">Autobiography</a></li>
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Defender
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Defender">90</a></li>
+                            <li><a class="dropdown-item" href="#Defender">110</a></li>
+                            <li><a class="dropdown-item" href="#Defender">130</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Discovery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Discovery">Discovery S</a></li>
+                            <li><a class="dropdown-item" href="#Discovery">Dynamic HSE</a></li>
+                            <li><a class="dropdown-item" href="#Discovery">Metropolitan Edition</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/rr autobiography.avif" class="d-block w-100" alt="rra">
+                <div class="carousel-caption">
+                    <h2>The OG</h2>
+                    <p>Range Rover Autobiography</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./images/defender2.jpg" class="d-block w-100" alt="rrv">
+                <div class="carousel-caption">
+                    <h2>The Ultimate Offroad</h2>
+                    <p>Land Rover Defender</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./images/rr evoque.avif" class="d-block w-100" alt="rre">
+                <div class="carousel-caption">
+                    <h2>The Evoque</h2>
+                    <p>Perfect size of city area with all the capacity</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="row mt-5" id="RR">
+        <div class="h2">Range Rover</div>
+        <img src="./images/rr a2.jpg" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/rr a3.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="row mt-5" id="Defender">
+        <div class="h2">Defender</div>
+        <img src="./images/defender1.webp" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/defender2.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="row mt-5" id="Discovery">
+        <div class="h2">Discovery</div>
+        <img src="./images/discovery1.jpg" class="col-lg-6 col-sm-12" alt="">
+        <img src="./images/discovery2.jpg" class="col-lg-6 col-sm-12" alt="">
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-target="#mymodal" data-bs-toggle="modal">Terms & Conditions</button>
+
+    <div id="mymodal" class="modal">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-header">Terms & Conditions</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Terms & Conditions content -->
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
