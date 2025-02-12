@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/communities_heritage_private_limited_logo.jpg">
+    <title>Task no.5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        nav {
+            background-color: black;
+            font-size: 25px;
+            height: 25px;
+            width: 99.8%;
+            border: 2px solid aqua;
+            position: fixed;
+            top: 0;
+            overflow-y: hidden;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: aqua;
+
+        }
+
+        a:hover {
+            color: red;
+
+        }
+
+        .start {
+            border: 2px solid blue;
+            height: 600px;
+            width: 99%;
+            margin: 0.5%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .startpic {
+            height: 90%;
+            width: 40%;
+            margin-top: 25%;
+            border: 2px solid black;
+            margin-top: 3%;
+            background-color: black;
+            padding-left: 1vw;
+        }
+
+        .startpic:hover {
+            border: 5px solid white;
+        }
+
+        #mycom {
+            margin-top: 100px;
+            height: 40%;
+            width: 25%;
+            opacity: 0.5;
+        }
+
+        #mycom:hover {
+            margin-top: 100px;
+            height: 65%;
+            width: 46%;
+            border: 2px solid white;
+            opacity: 1;
+        }
+
+        #mya {
+            margin-top: 100px;
+            height: 40%;
+            width: 25%;
+            opacity: 0.5;
+        }
+
+        #mya:hover {
+            margin-top: 100px;
+            height: 65%;
+            width: 46%;
+            border: 2px solid white;
+            opacity: 1;
+        }
+
+        #mys {
+            margin-top: 100px;
+            height: 40%;
+            width: 25%;
+            opacity: 0.5;
+        }
+
+        #mys:hover {
+            margin-top: 100px;
+            height: 65%;
+            width: 46%;
+            border: 2px solid white;
+            opacity: 1;
+        }
+
+        #mya:hover #mycom {
+            display: none;
+        }
+
+        .first {
+            margin-top: 3%;
+            border: 2px solid red;
+            height: 90%;
+            width: 40%;
+            float: left;
+
+        }
+
+        .second {
+            border: 2px solid darkblue;
+            height: 80%;
+            width: 80%;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+
+        }
+
+        .second::-webkit-scrollbar {
+            display: none;
+        }
+
+        .first h1 {
+            background-color: black;
+            color: white;
+        }
+
+        .first h1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h1::first-letter {
+            color: red;
+            background-color: yellowgreen;
+        }
+
+        img {
+            height: 15vh;
+            width: 10vw;
+            float: left;
+            padding-right: 5px;
+        }
+
+        #img2 {
+            height: 16vh;
+            width: 10vw;
+            float: right;
+            padding-right: 20px;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #img3 {
+            height: 16vh;
+            width: 10vw;
+            float: left;
+            padding-right: 5px;
+        }
+
+        web p:hover {
+            color: red;
+            background-color: black;
+        }
+
+        #img4 {
+            height: 16vh;
+            width: 10vw;
+            float: right;
+
+        }
+
+        .ourproduct {
+            background-color: rebeccapurple;
+            width: 100%;
+        }
+
+        #ourproduct {
+            background-color: white;
+            text-decoration: none;
+            text-align: center;
+            border: 2px solid black;
+        }
+       
+        ul li:hover {
+            background-color: black;
+            color: red;
+        }
+
+        .myso {
+            border: 2px solid black;
+            background-color: white;
+            width: 95%;
+            padding: 20px;
+            opacity: 0.7;
+
+        }
+
+        .myso:hover {
+            background-color: black;
+            color: white;
+            opacity: 1;
+        }
+
+        .myso:hover #myso,
+        .myco:hover #myco {
+            height: 20%;
+            width: 20%;
+            margin: 2vw;
+            background-color: white;
+            border: 2px solid white;
+            transition: all;
+            transition-duration: 0.7s;
+        }
+
+        .myasso {
+            border: 2px solid red;
+            background-color: aqua;
+            color: black;
+            width: 95%;
+            padding: 20px;
+            margin-right: 5px;
+
+
+        }
+
+        .myasso:hover {
+            background-color: blue;
+            color: aqua;
+        }
+
+        .myasso:hover #myasso {
+            height: 20%;
+            width: 23%;
+            margin-right: 2vw;
+            border: 2px solid white;
+            background-color: white;
+            transition: 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Goals</a>
+            <a href="#">Contacts</a>
+        </div>
+    </nav>
+    <div class="start">
+
+        <br><br>
+
+        <div class="first">
+            <div class="second">
+                <h1>Information</h1>
+                <p> <img src="/image/it_support.webp" alt="img"> this is css tutorial Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Recusandae, nulla dolor in ratione vel, quo voluptatibus at libero,
+                    velit tempora asperiores animi beatae ut aut blanditiis atque ad reprehenderit eius nam sequi
+                    necessitatibus quod cum. Perferendis sunt aliquid sint! Impedit nostrum velit fugiat fuga dolorum
+                    quo similique deleniti magnam sint?</p><br><br>
+
+                <p><img id="img2" src="/image/office.jpg" alt="img">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Ipsa, veritatis vero eos totam numquam repellat tempora animi ut sint neque sapiente tempore
+                    similique fugiat quos libero rerum sunt dolores id? Ipsum dolorum in, veritatis eligendi libero
+                    voluptas quam culpa dolor. Cum quasi provident doloribus repellendus incidunt dolorum voluptatibus
+                    alias consequuntur!</p><br><br>
+
+                <p><img id="img3" src="/image/office2.webp" alt="img">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Soluta voluptates ratione vel alias, eveniet voluptate, illum molestias porro et
+                    dignissimos quas minima doloribus omnis deleniti minus molestiae. Quam, harum? Libero possimus
+                    sapiente est nihil quis nobis vitae dicta accusantium alias culpa temporibus quos iusto, reiciendis
+                    suscipit voluptas adipisci hic. Aperiam?</p><br><br>
+
+                <p><img id="img4" src="/image/assosiation management.webp" alt="img">Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Ipsa, veritatis vero eos totam numquam repellat tempora animi ut sint
+                    neque sapiente tempore similique fugiat quos libero rerum sunt dolores id? Ipsum dolorum in,
+                    veritatis eligendi libero voluptas quam culpa dolor. Cum quasi provident doloribus repellendus
+                    incidunt dolorum voluptatibus alias consequuntur!</p><br><br><br>
+
+                <p> <img src="/image/it_support.webp" alt="img"> this is css tutorial Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Recusandae, nulla dolor in ratione vel, quo voluptatibus at libero,
+                    velit tempora asperiores animi beatae ut aut blanditiis atque ad reprehenderit eius nam sequi
+                    necessitatibus quod cum. Perferendis sunt aliquid sint! Impedit nostrum velit fugiat fuga dolorum
+                    quo similique deleniti magnam sint?</p>
+                <br><br>
+                <p><img id="img2" src="/image/office.jpg" alt="img">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Ipsa, veritatis vero eos totam numquam repellat tempora animi ut sint neque sapiente tempore
+                    similique fugiat quos libero rerum sunt dolores id? Ipsum dolorum in, veritatis eligendi libero
+                    voluptas quam culpa dolor. Cum quasi provident doloribus repellendus incidunt dolorum voluptatibus
+                    alias consequuntur!</p><br><br>
+                <p><img id="img3" src="/image/office2.webp" alt="img">Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Soluta voluptates ratione vel alias, eveniet voluptate, illum molestias porro et
+                    dignissimos quas minima doloribus omnis deleniti minus molestiae. Quam, harum? Libero possimus
+                    sapiente est nihil quis nobis vitae dicta accusantium alias culpa temporibus quos iusto, reiciendis
+                    suscipit voluptas adipisci hic. Aperiam?</p><br><br>
+                <p><img id="img4" src="/image/assosiation management.webp" alt="img">Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Ipsa, veritatis vero eos totam numquam repellat tempora animi ut sint
+                    neque sapiente tempore similique fugiat quos libero rerum sunt dolores id? Ipsum dolorum in,
+                    veritatis eligendi libero voluptas quam culpa dolor. Cum quasi provident doloribus repellendus
+                    incidunt dolorum voluptatibus alias consequuntur!</p><br><br>
+            </div>
+
+        </div>
+        <div class="startpic">
+            <a href="#myco"><img id="mycom" src="/image/Myco.png" alt="img"></a>
+            <a href="#myso"><img id="mys" src="image/My_Smart_Society.png" alt="img"></a>
+            <a href="#myasso"><img id="mya" src="/image/my_association.png" alt="img"></a>
+        </div>
+    </div>
+
+    <div class="ourproduct">
+        <h1 id="ourproduct">Our Products</h1>
+        <div class="myco">
+            <img id="myco" src="/image/Myco.png" alt="img">
+            <a href="#mycom">
+                <h1><u>MyCo</u></h1>
+            </a><br><br><br>
+            <h3>Introducing MyCo: Empowering Smart Company Management & Employee Productivity </h3><br><br>
+
+            Revolutionize your workforce management with our cutting-edge MyCo app! Streamline HR tasks, from employee
+            onboarding to payroll processing, effortlessly. Simplify time tracking, location tracking, task management,
+            leave management, reporting management, order management & document vault, and performance evaluations—all
+            in one intuitive platform. Maximize productivity, enhance collaboration, and drive business growth with our
+            user-friendly MyCo app. Try it today and experience the power of seamless HR management! <br><br><br>
+
+            The Major Objective of developing MyCo Solution is to provide Smarter & Easier Mobile Solution to any
+            enterprise which brings entire of their management at their fingertips! <br><br><br>
+
+            <h2><u>Key Features</u></h2>
+            Any Company, small or big has been largely created with a core purpose of growth and progression towards
+            self-sufficiency. However, the fact is that most of them struggle in facing day-to-day challenges as well as
+            managing their tasks smoothly.
+
+            <ul><b><i>
+                        <li>Smart Company Management</li>
+                        <li>Learning & Productivity Management</li>
+                        <li>Employee Tools & Performance Management</li>
+                        <li>Employee Tracking & Travel Summary</li>
+                    </i></b>
+            </ul>
+            </p>
+        </div>
+    </div> <br><br>
+
+    <div class="myso">
+        <img id="myso" src="/image/My_Smart_Society.png" alt="img">
+        <a href="#mys">
+            <h1>My Smart Society</h1>
+        </a><br><br>
+        <h3>Introducing Smart Society: The world is progressing towards MODERNITY AND PEOPLE ARE BECOMING SMARTER.</h3>
+        <br>
+
+
+        The concepts of Smart Society, Smart Technology, Smart Cities, Digital Transformation, and the Internet of
+        Things have received a lot of attention. Perform Green cuts through the hype to provide proven strategic
+        leadership for local governments, the federal government, and businesses that are striving to do more with less
+        and use available technology to revolutionise the way citizens, cities, communities, and services collaborate to
+        create a truly Smart Society that benefits everyone.
+
+        Real Estate Developer(s) needs an effective and lasting communication with their end clienteles which is the
+        most crucial aspect of their business<br><br>
+
+        The Major Objective of developing MyCo Solution is to provide Smarter & Easier Mobile Solution to any enterprise
+        which brings entire of their management at their fingertips! <br><br>
+
+        <h2><u>Key Features</u></h2>
+        In the present era, the purpose of choosing a residential society is not just limited to living close to
+        essential amenities, but today HOUSING SOCIETY MEMBERS REQUIRE many more features in their society invariably
+        OVER TECHNOLOGY / IT PLATFORM.
+        <ul><b><i>
+                    <li> Easy and one way connect with building resources such as maids, cooks, gardners etc.</li>
+                    <li>Smart Society platform not only establishes and builds brand but also ensures brand recall</li>
+                    <li>Parking management, parcel management, Security aspects etc.</li>
+                </i>
+            </b>
+        </ul>
+        </p>
+    </div>
+    <br><br>
+
+    <div class="myasso">
+        <img id="myasso" src="/image/my_association.png" alt="img">
+        <a href="#">
+            <h1><u>My Assoiation</u></h1>
+        </a><br><br><br>
+        <h3>Introducing My Association: It is an essential & die-hard need of any association
+
+        </h3><br>
+
+        My Association is a revolutionary association management app & a platform which brings together every member of
+        an association under a single umbrella making Management, Connectivity, Collaboration & Productivity much
+        easier, faster and efficient. One of the unique attributes of My Association is its ability to effect positive
+        change in the culture of any association. Beyond a specific mission the purpose of My Association is its power
+        to leverage its member’s expertise and other resources to address the growth of business collaboration needs &
+        improve collective value and purpose of its very existence.<br><br>
+
+        A need of a close ended platform that can enhance multiple benefits to all its stakeholders right from the
+        committee to all its members and can also open an interactive window to the business world.!<br><br>
+
+        <h2><u>Key Features</u></h2>
+        Any Association is created keeping a certain purpose in the mind like contribution in the growth of the members
+        of the association and creating different opportunities & events to expand the horizon of the enterprises in the
+        association.
+
+        <ul><b><i>
+                    <li> Member Directory</li>
+                    <li>Notice Board</li>
+                    <li>Geo Tag</li>
+                    <li>Vendor</li>
+                </i></b>
+        </ul>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
