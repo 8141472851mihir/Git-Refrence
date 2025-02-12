@@ -1,0 +1,504 @@
+[33mcommit 60300b340e260208a5983f11592fd62545eb1acf[m[33m ([m[1;36mHEAD -> [m[1;32mSagar_new_commit[m[33m, [m[1;32msagar2[m[33m)[m
+Author: sagar <vyassagar4321@gmail.com>
+Date:   Tue Feb 11 18:20:11 2025 +0530
+
+    commit again
+
+[33mcommit 3f7bd28169e99e78243aa836c305d233a155b382[m
+Merge: 5ab6e9f 74baa1c
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:17:30 2025 +0530
+
+    Merge pull request #2 from 8141472851mihir/darshan
+    
+    new message 123
+
+[33mcommit 74baa1ccd662fc4acc530b7c6982b0ffee1d8f1b[m
+Merge: 70db4bd 5ab6e9f
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:17:20 2025 +0530
+
+    Merge branch 'main' into darshan
+
+[33mcommit 5ab6e9f2891ba90679256e91415bd6c13fd30ef7[m
+Merge: 4741958 73af0d5
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:16:43 2025 +0530
+
+    Merge pull request #3 from 8141472851mihir/sohel1
+    
+    Sohel1
+
+[33mcommit 47419587ac688ccc1158a2fe96c3c5a6bf815aa1[m
+Merge: bd55864 f94942f
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:16:25 2025 +0530
+
+    Merge pull request #14 from 8141472851mihir/Nil
+    
+    h1.txt
+
+[33mcommit bd55864d693248665eaad1c753250e6c80fe7c38[m
+Merge: 5b0a06b 3fab47a
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:15:47 2025 +0530
+
+    Merge pull request #15 from 8141472851mihir/nandani
+    
+    Nandani
+
+[33mcommit 3fab47a22b9ce0eb5c141cd1ab761bfee064ac94[m
+Merge: 12657e7 5b0a06b
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 18:14:53 2025 +0530
+
+    Merge branch 'main' into nandani
+
+[33mcommit 5b0a06b5cc5c9c9eae852d382da0382371cd34ea[m
+Merge: 8c99eba 3a66781
+Author: omjoshi003 <79136871+omjoshi003@users.noreply.github.com>
+Date:   Tue Feb 11 18:14:13 2025 +0530
+
+    Merge pull request #1 from 8141472851mihir/om1
+    
+    Om1
+
+[33mcommit 8c99eba52d447480981181a5eb50da6d76d68016[m
+Merge: 7c3ba3e e66f010
+Author: NikunjBamaniya <112943785+NikunjBamaniya@users.noreply.github.com>
+Date:   Tue Feb 11 18:14:01 2025 +0530
+
+    Merge pull request #9 from 8141472851mihir/Nikunj
+    
+    Nikunj
+
+[33mcommit 7c3ba3e6c0b2e221ec49826d4a11006da52aa488[m
+Merge: 3283161 0a0da0f
+Author: manangundigara <144093842+manangundigara@users.noreply.github.com>
+Date:   Tue Feb 11 18:13:46 2025 +0530
+
+    Merge pull request #13 from 8141472851mihir/manan2
+    
+    new manan
+
+[33mcommit 3283161d9679640d62ab161ef43d6c9ed5ac8ab9[m
+Merge: 2b3a11c bbea910
+Author: parekhprashil <99709767+parekhprashil@users.noreply.github.com>
+Date:   Tue Feb 11 18:13:36 2025 +0530
+
+    Merge pull request #6 from 8141472851mihir/prashil2
+    
+    new prashil
+
+[33mcommit 2b3a11ce131074721a676813c93d72bdea524669[m
+Merge: cb063a8 f27956c
+Author: Sagar Vyas <90019379+Sagar562@users.noreply.github.com>
+Date:   Tue Feb 11 18:13:28 2025 +0530
+
+    Merge pull request #8 from 8141472851mihir/sagar2
+    
+    Sagar2
+
+[33mcommit cb063a8a2aede60f1953bc3e5774b8b018e776f8[m
+Merge: 5b8e1d8 7a8cbc9
+Author: Dhruvi <dhruviraval56@gmail.com>
+Date:   Tue Feb 11 18:13:18 2025 +0530
+
+    Merge pull request #7 from 8141472851mihir/dhruvi
+    
+    Dhruvi
+
+[33mcommit 5b8e1d89b4e8755bc5d33661daf2bca270403b5a[m
+Merge: f907cf0 39515b0
+Author: AAKASH-0212 <aakashkushwaha0249@gmail.com>
+Date:   Tue Feb 11 18:13:10 2025 +0530
+
+    Merge pull request #11 from 8141472851mihir/AAKASH
+    
+    Aakash
+
+[33mcommit f907cf0f1daa6257cde9096e0c31540ec5d7afe4[m
+Merge: d915c67 4463672
+Author: Akhtar Tarakwadiya <119571434+AkhtarTarakwadiya@users.noreply.github.com>
+Date:   Tue Feb 11 18:12:52 2025 +0530
+
+    Merge pull request #4 from 8141472851mihir/akhtar
+    
+    Akhtar
+
+[33mcommit d915c675e7362bc07fe3419827920be6a298de3a[m
+Merge: f923302 55babc5
+Author: Vaibhavi992 <122507114+Vaibhavi992@users.noreply.github.com>
+Date:   Tue Feb 11 18:12:30 2025 +0530
+
+    Merge pull request #12 from 8141472851mihir/helly
+    
+    hello
+
+[33mcommit f9233022e984ec58bc9507916b2dfc648411668f[m
+Merge: 7224169 7fe8ac1
+Author: Dixit Patel <122333279+Dixu972@users.noreply.github.com>
+Date:   Tue Feb 11 18:12:15 2025 +0530
+
+    Merge pull request #5 from 8141472851mihir/dixu
+    
+    CRUD
+
+[33mcommit 39515b0592f727d5cdc42fb54e79f0d5827518a2[m
+Merge: 21e9fdb 7224169
+Author: AAKASH-0212 <aakashkushwaha0249@gmail.com>
+Date:   Tue Feb 11 18:11:42 2025 +0530
+
+    Merge branch 'main' into AAKASH
+
+[33mcommit 70db4bdba4d62c62ccf87834984ffee9b767c842[m
+Merge: 2669ce4 7224169
+Author: Darshan Vasoya <79476940+Darshan1511@users.noreply.github.com>
+Date:   Tue Feb 11 18:11:13 2025 +0530
+
+    Merge branch 'main' into darshan
+
+[33mcommit 55babc50fcf95c4fa0881ef49e09d44c445040b1[m
+Merge: 6f8a055 7224169
+Author: Vaibhavi992 <122507114+Vaibhavi992@users.noreply.github.com>
+Date:   Tue Feb 11 18:11:11 2025 +0530
+
+    Merge branch 'main' into helly
+
+[33mcommit 7fe8ac1d72d199dc85e621774aa0daf0086f5646[m
+Merge: 0a5f95b 7224169
+Author: Dixit Patel <122333279+Dixu972@users.noreply.github.com>
+Date:   Tue Feb 11 18:10:45 2025 +0530
+
+    Merge branch 'main' into dixu
+
+[33mcommit 4463672eb8cced57d6b81b12b7108a660e4657e3[m
+Merge: 9c7fe4d 7224169
+Author: Akhtar Tarakwadiya <119571434+AkhtarTarakwadiya@users.noreply.github.com>
+Date:   Tue Feb 11 18:10:31 2025 +0530
+
+    Merge branch 'main' into akhtar
+
+[33mcommit 7a8cbc907e7889faa5e72e652eac76ffc71cad64[m
+Merge: e627177 7224169
+Author: Dhruvi <dhruviraval56@gmail.com>
+Date:   Tue Feb 11 18:10:15 2025 +0530
+
+    Merge branch 'main' into dhruvi
+
+[33mcommit 722416926b6e4526c2f6b1359f98243a9c6dc8cd[m
+Merge: e9e37e4 f10cf00
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 18:09:37 2025 +0530
+
+    Merge pull request #10 from 8141472851mihir/vivek1
+    
+    added by vivek
+
+[33mcommit f27956ca80922bf95a07516637b4abbe49319db5[m
+Merge: 00098bb e9e37e4
+Author: Sagar Vyas <90019379+Sagar562@users.noreply.github.com>
+Date:   Tue Feb 11 18:09:17 2025 +0530
+
+    Merge branch 'main' into sagar2
+
+[33mcommit e66f010c3bcd60276a3793c79b3ccd8610db378e[m
+Author: Nikunj Bamaniya <nikubamaniya2003@gmail.com>
+Date:   Tue Feb 11 18:02:37 2025 +0530
+
+    fjksdf
+
+[33mcommit 0a0da0fbb581d35ac8a9c3273474384c70f4eab0[m
+Author: manangundigara <manangundigara3511@gmail.com>
+Date:   Tue Feb 11 17:57:51 2025 +0530
+
+    new manan
+
+[33mcommit f10cf0076693cec5faeb7a206f97c8b04bdf1479[m
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 17:57:19 2025 +0530
+
+    added by vivek
+
+[33mcommit bbea9107a3e8f283dacfb81481904a7eeca45ab1[m
+Author: parekhprashil <d22dcs167@charusat.edu.in>
+Date:   Tue Feb 11 17:56:21 2025 +0530
+
+    new prashil
+
+[33mcommit f94942f29bb6c359a6aeb7229d18eb4a78e9aa75[m
+Author: Nil Sadariya <nilsadariya10@gmail.com>
+Date:   Tue Feb 11 17:48:03 2025 +0530
+
+    h1.txt
+
+[33mcommit e9e37e4f0c35b8393d832718a830daf47b6a9405[m
+Merge: 3eaa94f 570c720
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 17:35:22 2025 +0530
+
+    commit by vivek
+
+[33mcommit 3eaa94fe6a50297b544f7e7c6f50790d22a405a9[m
+Merge: 9f17fb0 e37c571
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 17:34:47 2025 +0530
+
+    commit by vivek
+
+[33mcommit 570c7204acd66686b130a028876c6bc8bfaca22e[m
+Merge: dd1ac3b e37c571
+Author: parekhprashil <d22dcs167@charusat.edu.in>
+Date:   Tue Feb 11 17:33:51 2025 +0530
+
+    commit
+
+[33mcommit 9f17fb0cc2e3524345260495d98286f296c34fa9[m
+Merge: 118fd40 85108ca
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 17:33:37 2025 +0530
+
+    commit by vivek
+
+[33mcommit 3a667811bc5ffe887c5ecf455b91cf4a0750c064[m
+Author: Om Joshi <omjoshi003@gmail.com>
+Date:   Tue Feb 11 17:33:15 2025 +0530
+
+    commit message123
+
+[33mcommit 12657e73c09a133fbb0f12b051b2b74af8ac50ea[m
+Merge: 71e1e67 85108ca
+Author: nandani876 <amitshorthia@gmail.com>
+Date:   Tue Feb 11 17:32:19 2025 +0530
+
+    create new file
+
+[33mcommit 00098bbc7c54c9ff022a7f9e5e3840955add1d61[m[33m ([m[1;32mmain[m[33m)[m
+Author: sagar <vyassagar4321@gmail.com>
+Date:   Tue Feb 11 16:49:24 2025 +0530
+
+    new message Sagar
+
+[33mcommit dd1ac3bacec1059307f1e7179ba8f62e1eb9a86c[m
+Merge: 8098399 85108ca
+Author: parekhprashil <d22dcs167@charusat.edu.in>
+Date:   Tue Feb 11 17:30:56 2025 +0530
+
+    commit by prashil
+
+[33mcommit e37c5714d675c525f307bcb707c3b7ac753ac5d4[m
+Merge: 9f4e775 85108ca
+Author: manangundigara <manangundigara3511@gmail.com>
+Date:   Tue Feb 11 17:29:24 2025 +0530
+
+    commit 2 by manan
+
+[33mcommit 118fd407de32176b85fb3fb689f68f4da4d4ec83[m
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 16:57:14 2025 +0530
+
+    demo
+
+[33mcommit 73af0d5cfaeeb802e12c2dac4517fc337b6cdaa0[m
+Author: sohelkhan19 <pathansohel2330@gmail.com>
+Date:   Tue Feb 11 16:54:59 2025 +0530
+
+    Sohel's file 3
+
+[33mcommit 9c7fe4de7dbac1e5655654072ef1d3b88c8bdc39[m
+Author: Akhtar-47 <akhtar47tarakwadiya@gmail.com>
+Date:   Tue Feb 11 16:54:42 2025 +0530
+
+    Testing
+
+[33mcommit e6271773631ae5e0ada68b6dcadaef6d819ef100[m
+Author: dhruvi1503-raval <dhruviraval56@gmail.com>
+Date:   Tue Feb 11 16:54:22 2025 +0530
+
+    helllloooo
+
+[33mcommit 2669ce461dbc186a9334e7266fb4acec8af9ab8a[m
+Author: Darshan Vasoya <dsvasoya2002@gmail.com>
+Date:   Tue Feb 11 16:46:09 2025 +0530
+
+    new message 123
+
+[33mcommit 7b40407a6f5ac6c74a85ea9538e28a668ae0eeee[m
+Author: Om Joshi <omjoshi003@gmail.com>
+Date:   Tue Feb 11 16:45:44 2025 +0530
+
+    new message
+
+[33mcommit 21e9fdb1e652776c3e5ebccb4cc806eb173c53ae[m
+Author: AAKASH KUSHWAHA <aakashkushwaha0249@gmail.com>
+Date:   Tue Feb 11 16:52:54 2025 +0530
+
+    the commit message
+
+[33mcommit 8098399147761306d0540ff4c3560a9f08743b40[m
+Author: parekhprashil <d22dcs167@charusat.edu.in>
+Date:   Tue Feb 11 16:51:27 2025 +0530
+
+    commit 2 by prashil
+
+[33mcommit e73eb6410fd87825e91924d78000696387f5d32d[m
+Author: dhruvi1503-raval <dhruviraval56@gmail.com>
+Date:   Tue Feb 11 16:47:01 2025 +0530
+
+    hello
+
+[33mcommit 9d523f87d6f0c92f1524b98e7ce9dbca1f8d22b5[m
+Author: AAKASH KUSHWAHA <aakashkushwaha0249@gmail.com>
+Date:   Tue Feb 11 16:46:57 2025 +0530
+
+    the message 2
+
+[33mcommit 3860e7e32dee56f1d1f42b6d6884a42c926f61d9[m
+Author: Nikunj Bamaniya <nikubamaniya2003@gmail.com>
+Date:   Tue Feb 11 16:46:51 2025 +0530
+
+    hello
+
+[33mcommit ebb3d8c2cfb7012937a09f2412d602a19bc19131[m
+Author: sohelkhan19 <pathansohel2330@gmail.com>
+Date:   Tue Feb 11 16:45:56 2025 +0530
+
+    Sohel's file
+
+[33mcommit 0a5f95b158888154c60a5348e111e9cca17d41ed[m
+Author: Dixu972 <dixitpatel972@gmail.com>
+Date:   Tue Feb 11 16:45:43 2025 +0530
+
+    CRUD
+
+[33mcommit 6f8a05515b34f2a4dfa687adc3134281180121ad[m
+Author: vaibhavi992 <vaibhavipatel991@gmail.com>
+Date:   Tue Feb 11 16:45:42 2025 +0530
+
+    hello
+
+[33mcommit 57b908adf92c5334aed9d850620399982db93fc6[m
+Author: AAKASH KUSHWAHA <aakashkushwaha0249@gmail.com>
+Date:   Tue Feb 11 16:45:35 2025 +0530
+
+    THE MESSAGE
+
+[33mcommit 85108caf12917cacca6eb500e32aa62f45499ab3[m
+Author: Nil Sadariya <nilsadariya10@gmail.com>
+Date:   Tue Feb 11 16:45:30 2025 +0530
+
+    Nil Patel
+
+[33mcommit 9f4e77595400dc3393ef93cffeadbf758567f1fc[m
+Author: manangundigara <manangundigara3511@gmail.com>
+Date:   Tue Feb 11 16:45:05 2025 +0530
+
+    commit by manan
+
+[33mcommit ae4d9e565fc894303b7eece752311141117b0d05[m
+Author: Savani9635 <viveksavani763@gmail.com>
+Date:   Tue Feb 11 16:45:05 2025 +0530
+
+    vivek
+
+[33mcommit 0e235b08064001d6666bf8a6ec3fe4fa7ec6053f[m
+Author: parekhprashil <d22dcs167@charusat.edu.in>
+Date:   Tue Feb 11 16:44:59 2025 +0530
+
+    This is commit by prashil
+
+[33mcommit 71e1e6739b7e381c0914b0a42991f56956b254a7[m
+Author: nandani876 <amitshorthia@gmail.com>
+Date:   Tue Feb 11 16:44:48 2025 +0530
+
+    create new file
+
+[33mcommit 6090dacd7db19b49ad0e758962e5bbb0843ec649[m
+Author: Akhtar-47 <akhtar47tarakwadiya@gmail.com>
+Date:   Tue Feb 11 16:44:46 2025 +0530
+
+    New File Created
+
+[33mcommit e59d04905916b5f08ecf40e881648555a4031877[m
+Author: sagar <vyassagar4321@gmail.com>
+Date:   Tue Feb 11 16:44:20 2025 +0530
+
+    sagar
+
+[33mcommit 8b3076ab09e780e5ddaebf7ceb9d362775594a05[m
+Author: Akhtar-47 <akhtar47tarakwadiya@gmail.com>
+Date:   Tue Feb 11 16:05:05 2025 +0530
+
+    Created New File
+
+[33mcommit 3c533dc9f92fe747ca766f7294ff7f00aebf1cf8[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 14:44:59 2025 +0530
+
+    Update Git commands
+
+[33mcommit 0aeb30fbb2ece2f062b8587a4b86ad0531c914fc[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 13:13:00 2025 +0530
+
+    Update Git commands
+
+[33mcommit 73519c6b9e290ea3a5e7f7a48541b7d2d95a2909[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 13:10:27 2025 +0530
+
+    Create Git commands
+
+[33mcommit 3829609f733f994b3707b408a2bc2085db99adb7[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:37:38 2025 +0530
+
+    Update SSH Setup Ubuntu
+
+[33mcommit 5cbf66decf65c32f14aeadeb1df2f0c13d54e7a4[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:37:28 2025 +0530
+
+    Rename SSH Setup Ubantu to SSH Setup Ubuntu
+
+[33mcommit d445a92f8d2c36ee0a2e9b6a94a458f9cb2d8238[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:37:02 2025 +0530
+
+    Update SSH Setup Ubantu
+
+[33mcommit 7d854688a95773522540599bae76a33a72ed0985[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:31:15 2025 +0530
+
+    Create SSH Setup Ubantu
+
+[33mcommit d4a4aa30b1091eaab8033b017343ea02e323fe5e[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:29:10 2025 +0530
+
+    Update and rename SSH Setup to SSH Setup Windows
+
+[33mcommit 720f220f0b29c744a9f48927d413d68522775a52[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:13:14 2025 +0530
+
+    Create SSH Setup
+
+[33mcommit f0c7f4aa45d311871a4025a2cd72aa399152b533[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:12:00 2025 +0530
+
+    Update README.md
+
+[33mcommit 2cad15b64126219e9c790e61162e22f2bd475055[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 12:11:24 2025 +0530
+
+    Update README.md
+
+[33mcommit 643e1acd5673f96d3353090024b86bcdcfdca6ee[m
+Author: Patel Mihir <patelmihir0430@gmail.com>
+Date:   Tue Feb 11 11:20:17 2025 +0530
+
+    Initial commit
