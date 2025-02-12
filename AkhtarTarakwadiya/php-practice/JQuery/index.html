@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center">JQuery Practice</h2>
+
+    <p>Hide - Example of Hide Event...</p>
+    <br />
+
+    <ol id="oll">
+        <li>India</li>
+        <li>USA</li>
+        <li>UAE</li>
+        <li>Shri Lanka</li>
+        <li>UK</li>
+        <li>Qatar</li>
+        <li>Singapor</li>
+    </ol>
+
+    <!-- For Fades Examples -->
+    <div id="div1" style="width: 80px; height: 80px; display: none; background-color: red"></div>
+    <br />
+    <div id="div2" style="width: 80px; height: 80px; display: none; background-color: green"></div>
+    <br />
+    <div id="div3" style="width: 80px; height: 80px; display: none; background-color: blue"></div>
+    <br />
+
+    <!-- For Slides Examples -->
+
+    <button id="hide">Hide Above List</button>
+    <button id="show">Show Above List</button>
+    <button id="AKSHAY">Toggle</button>
+
+    <button id="fadein">FadeIn Examples</button>
+    <button id="fadeout">FadeOut Examples</button>
+    <button id="fadeToggle">Fade Toggle Examples</button>
+    <button id="fadeTo">FadeTO Examples</button><br /><br>
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    <br />
+    <button id="down">Slide Down</button>
+    <button id="up">Slide Up</button>
+    <button id="togle">Slide Toggle</button><br />
+
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        // console.log("Document is ready");
+
+        $("#hide").click(function () {
+            $("#oll").hide();
+        });
+
+        $("#show").click(function () {
+            $("#oll").show();
+        });
+
+        $("#AKSHAY").click(function () {
+            $("#oll").toggle();
+            //   console.log("Toggle Test");
+        });
+
+        $("p").click(function () {
+            $("p").hide();
+        });
+
+        // FadeIn Examples...
+        $("#fadein").click(function () {
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(3000);
+        });
+
+        // FadeOut Examples...
+        $("#fadeout").click(function () {
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(3000);
+        });
+
+        // FadeToggle Example...
+        $("#fadeToggle").click(function () {
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+        });
+        // FadeTo Example...
+        $("#fadeTo").click(function () {
+            $("#div1").fadeTo("slow", 0.15);
+            $("#div2").fadeTo("slow", 0.4);
+            $("#div3").fadeTo("slow", 0.7);
+        });
+
+        // Slide Down Examples...
+        $("#down").click(function () {
+            $("#panel").slideDown("slow");
+        });
+
+        // Slide Up Examples...
+        $("#up").click(function () {
+            $("#panel").slideUp("slow");
+        });
+        // Slide Toggle Examples...
+        $("#togle").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+</script>

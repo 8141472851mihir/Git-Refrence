@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./image/communities_heritage_private_limited_logo.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainform {
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            border: 2px solid black;
+
+        }
+
+        .fl {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            background-color: yellowgreen;
+
+            overflow: hidden;
+        }
+
+        .company_image img {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        .fmname {
+            /* height: 200px; */
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fname input {
+            width: 45vw;
+        }
+
+        .mname input {
+            width: 45vw;
+        }
+
+        .lmobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .genblood {
+            width: 100%;
+            display: block;
+            /* justify-content: space-around; */
+        }
+
+        .blood {
+            margin-left: 3vw;
+        }
+
+        .gen {
+            margin-left: 0;
+        }
+
+
+
+        .lmobile input {
+            width: 45vw;
+        }
+
+        .mobile input {
+            width: 40vw;
+        }
+
+        .lmobile select {
+            width: 5vw;
+        }
+
+        /* input{
+            width: 45vw;
+        } */
+        select {
+            width: 45vw;
+        }
+
+        .dobmail {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .dob input {
+            width: 45vw;
+        }
+
+        .mail input {
+            width: 45vw;
+        }
+
+        .desphoto {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .des input {
+            width: 45vw;
+        }
+
+        .photo input {
+            width: 45vw;
+            border: 1px solid black;
+        }
+
+        .conamebtype {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .coname input {
+            width: 45vw;
+        }
+
+        .bytpe input {
+            width: 45vw;
+        }
+
+        .cityarea {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .city input {
+            width: 45vw;
+        }
+
+        .area select {
+            width: 45vw;
+        }
+
+        .describeadd {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .describe input {
+            width: 45vw;
+        }
+
+        .add input {
+            width: 45vw;
+        }
+
+        .meconame {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .me input {
+            width: 45vw;
+        }
+
+        .coname input {
+            width: 45vw;
+        }
+
+        .comailcologo {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .comail input {
+            width: 45vw;
+        }
+
+        .cologo input {
+            width: 45vw;
+            border: 1px solid black;
+
+        }
+
+        .broweb {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bro input {
+            width: 45vw;
+            border: 1px solid black;
+
+        }
+
+        .web input {
+            width: 45vw;
+        }
+
+        .refertype {
+            width: 45vw;
+            margin-left: 2vw;
+        }
+
+        .resub {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .reset {
+            margin-left: 2vw;
+        }
+
+        .submit {
+            margin-left: 2vw;
+        }
+
+        span {
+            color: red;
+        }
+
+        iframe {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="company_image">
+                <img src="/image/chpl_logo.png">
+            </div>
+            <div class="company_name">
+                <h1>Communities Heritage Private Limited</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="form">
+
+        <form action="/submitpage.html" style="margin-top:100px;">
+            <fieldset>
+                <legend>
+                    <h1>Registration Form</h1>
+                </legend>
+                <div class="fmname">
+                    <div class="fname">
+                        <label for="fname">First Name<span>*</span></label>
+                        <br>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+
+
+                    <div class="mname">
+                        <label for="mname">Middle Name</label><br>
+                        <input type="text" id="mname" name="mname">
+                    </div>
+                </div>
+
+                <div class="lmobile">
+                    <div class="lname">
+                        <label for="lname">Last Name<span>*</span></label><br>
+                        <input type="text" id="lname" name="lname" required>
+
+                    </div>
+                    <div class="mobile">
+                        <label for="mobile">Mobile no.<span>*</span></label><br>
+                        <select name="mobile" id="mobile" required>
+                            <option value="+90">+90</option>
+                            <option value="+91" selected>+91(India)</option>
+                            <option value="+92">+92</option>
+                            <option value="+95">+95</option>
+                        </select>
+                        <input type="tel" maxlength="10" id="mobile" name="mobile">
+                    </div>
+                </div>
+
+                <div class="genblood">
+                    <div class="gen">
+                        <label for="gender">Gender<span>*</span></label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="blood">
+                        <label for="bg">Blood Group</label>
+                        <select name="bg" id="bg">
+                            <option value="" disabled selected>-----select-----</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="dobmail">
+                    <div class="dob">
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" name="dob" id="dob">
+
+                    </div>
+                    <div class="mail">
+                        <label for="email">E-mail Address</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="desphoto">
+                    <div class="des">
+                        <label for="des">DESIGNATION</label><br>
+                        <input type="text" id=" des" name="des">
+
+                    </div>
+                    <div class="photo">
+                        <label for="photo">PHOTO</label><br>
+                        <input type="file" id="photo" name="photo">
+
+                    </div>
+                </div>
+
+                <div class="conamebtype">
+                    <div class="coname">
+                        <label for="cname">COMPANY NAME<span>*</span></label><br>
+                        <input type="text" id="cname" name="cname">
+                    </div>
+                    <div class="btype">
+                        <label for="btype">BUSINESS TYPE :</label><br>
+                        <select name="btype" id="btype">
+                            <option value="" selected disabled>-----select-----</option>
+                            <option value="it service">IT SERVICE</option>
+                            <option value="product base">Product Base</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="financial ">financial</option>
+                            <option value="loan">loan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cityarea">
+                    <div class="city">
+                        <label for="city">CITY<span>*</span></label><br>
+                        <select name="city" id="city" required>
+                            <option value="" disabled selected>-----select-----</option>
+                            <option value="ahmedabad">AHMEDABAD</option>
+                            <option value="bhopal">BHOPAL</option>
+                            <option value="delhi">DELHI</option>
+                            <option value="mumbai">MUMBAI</option>
+                            <option value="chennai">CHENNAI</option>
+                        </select>
+                    </div>
+                    <div class="area">
+                        <label for="area">AREA<span>*</span></label>
+                        <br>
+                        <select name="area" id="area" required>
+                            <option value="" disabled selected>-----select-----</option>
+                            <option value="east city">EAST CITY</option>
+                            <option value="west city">WEST CITY</option>
+                            <option value="main city">MAIN CITY</option>
+                            <option value="north citY">NORTH CITY</option>
+                            <option value="south city">SOUTH CITY</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="meconame">
+                    <div class="me">
+                        <label for="mn">MEMBERSHIP NUMBER</label><br>
+                        <input type="number" id="mn" name="mn">
+
+
+                    </div>
+                    <div class="coname">
+                        <label for="compname">COMPANY CONTACT NUMBER<span>*</span></label><br>
+                        <input type="tel" maxlength="10" id="compname" name="compname">
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="comailcologo">
+                    <div class="comail">
+                        <label for="comail">COMPANY E-MAIL</label>
+                        <input type="email" id="comail" name="comail">
+                    </div>
+                    <div class="cologo">
+                        <label for="cologo">COMPANY LOGO</label><br>
+                        <input type="file" id="cologo" name="cologo">
+                    </div>
+                </div>
+
+                <div class="broweb">
+                    <div class="bro">
+                        <label for="brochure">BROCHURE</label><br>
+                        <input type="file" id="complogo" name="complogo">
+
+                    </div>
+                    <div class="web">
+                        <label for="website">WEBSITE</label><br>
+                        <input type="url" id="compemail" name="compemail">
+                    </div>
+                </div>
+
+
+                <div class="describeadd">
+                    <div class="describe">
+                        <label for="describemore">DESCRIBE MORE</label><br>
+                        <input type="text" id="compname" name="compname">
+
+
+                    </div>
+                    <div class="add">
+                        <label for="address">ADDRESS<span>*</span></label><br>
+                        <input type="text" id="compname" name="compname">
+                    </div>
+                </div>
+
+
+                <div class="refertype">
+                    <label for="refertype">REFER TYPE<span>*</span></label>
+                    <br>
+
+                    <select name="refertype" id="refertype">
+                        <option value="" disabled selected>-----select-----</option>
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                        <option value="D1">D1</option>
+                        <option value="D2">D2</option>
+                    </select><br><br></br>
+                </div>
+                <div class="resub">
+                    <div class="reset">
+
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit">
+
+                </div>
+
+                </fielset>
+        </form>
+
+
+        <div class="box">
+
+            <iframe src="./form2.html" frameborder="0"></iframe>
+
+        </div>
+
+        <video height="500px" width="100%" autoplay muted controls>
+            <source src="/image/video_20230324_112702.mp4" type="video/mp4">
+        </video>
+
+
+
+
+</body>
+
+</html>

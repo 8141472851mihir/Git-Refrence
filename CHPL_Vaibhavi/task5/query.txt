@@ -1,0 +1,102 @@
+Insert Query:
+INSERT INTO employeedata VALUES('','Heli','patel','10-12-14','Heli@gmail.com','8523463223','134','134','30000','Admin','1-5-24','new Maninagr','Ahmedabad','Gujarat'),('','chirag','patel','12-1-92','chirag@yahoo.com','8452362362','12345','12345','35000','Marketing','18-6-23','vastral','Ahmedabad','Gujarat'),('','Heena','gohil','12-6-92','heena@yahoo.com','8326323531','456','456','25000','developer','18-6-24','jasodanagar','surat','Gujarat'),('','Ravi','panchal','10-9-2003','ravi@gmail.com','8452385362','7895','7895','25000','Marketing','18-6-23','maninagar','Bhavnagar','Gujarat');
+
+INSERT INTO `employeedata`(`emp_id`, `first_name`, `last_name`, `birthdate`, `email`, `phone_no`, `password`, `confirmpassword`, `salary`, `work_dep`, `hiredate`, `address`, `city`, `state`) VALUES ('','Shreya','parekh','10-1-2006','shreya@gmail.com','8125364942','4525','4525','15000','admin','12-6-24','maninagar','Anand','Gujarat');
+
+//Select Query:
+
+SELECT * FROM `employeedata` ;
+
+SELECT first_name, city,state FROM employeedata;
+
+SELECT DISTINCT city FROM employeedata;
+
+SELECT * FROM `employeedata` WHERE city="Ahmedabad";
+
+SELECT *FROM employeedata WHERE salary>15000;
+
+SELECT * FROM employeedata WHERE salary BETWEEN 20000 AND 30000;
+
+SELECT * FROM employeedata WHERE first_name LIKE 'H%';
+
+SELECT * FROM employeedata WHERE city IN('Ahmedabad','Gujarat');
+
+SELECT * FROM `employeedata` WHERE city='Anand' AND state='Gujarat';
+
+SELECT * FROM `employeedata` WHERE city='Bhavnagar' OR state='Gujarat';
+
+SELECT * FROM `employeedata` WHERE NOT address='vastral';
+
+SELECT * FROM `employeedata` ORDER BY city ASC;
+
+SELECT * FROM `employeedata` ORDER BY city DESC;
+
+SELECT first_name,phone_no,address FROM employeedata WHERE address IS NULL;
+
+SELECT first_name,phone_no,address FROM employeedata WHERE address IS NOT NULL;
+
+UPDATE employeedata SET address='hatkeshwar' WHERE emp_id=3;
+
+DELETE FROM `employeedata` WHERE emp_id='6';
+
+SELECT * FROM `employeedata` WHERE city='Ahmedabad' LIMIT 5;
+
+SELECT * FROM `employeedata` LIMIT 2 OFFSET 3;
+
+SELECT MIN(salary) AS minsalary FROM employeedata;
+
+SELECT Max(salary) AS maxsalary FROM employeedata;
+
+SELECT COUNT(emp_id) FROM employeedata;
+
+SELECT AVG(salary) FROM employeedata;
+
+SELECT SUM(salary) FROM employeedata;
+
+-------------------------order table query-------------------------
+
+INSERT INTO orderdata VALUES('','3','watch','1149','2','2298','Done','Delivered'),('','5','mobile','32000','1','32000','Done','Inprocess'),('','2','T-shirt','100','5','500','cancelled','notdelivered'),('','8','TV','45000','1','45000','Done','Delivered'),('','10','washingmachine','50000','1','50000','Done','Inprocess');
+
+SELECT * FROM `orderdata`;
+
+SELECT pro_name,pro_price FROM orderdata;
+
+SELECT DISTINCT pro_name FROM orderdata;
+
+SELECT * FROM orderdata WHERE pro_name='TV';
+
+SELECT * FROM `orderdata` WHERE qty >1;
+
+SELECT * FROM `orderdata` WHERE amount BETWEEN 500 AND 60000;
+
+SELECT * FROM orderdata WHERE pro_name LIKE'm%';
+
+SELECT * FROM orderdata WHERE pro_name IN ('TV','Ahmedabad');
+
+SELECT * FROM orderdata WHERE pro_name='mobile' AND city='Ahmedabad';
+
+SELECT * FROM orderdata WHERE address='vastral' OR city='Ahmedabad';
+
+SELECT * FROM orderdata WHERE NOT address='vastral' AND NOT city='Ahmedabad';
+
+SELECT * FROM orderdata ORDER BY pro_name ASC;
+
+SELECT * FROM orderdata ORDER BY pro_name DESC;
+
+SELECT pro_name,pro_price FROM `orderdata` WHERE address IS null;
+
+SELECT pro_name,pro_price FROM `orderdata` WHERE address IS  NOT null;
+
+UPDATE orderdata SET pro_name='Refrigerator',pro_price='25590' WHERE order_id=5;
+
+DELETE FROM orderdata WHERE pro_name='Refrigerator';
+
+SELECT * FROM `orderdata` WHERE order_id LIMIT 4;
+SELECT * FROM `orderdata`LIMIT 5;
+SELECT * FROM `orderdata`LIMIT 2 OFFSET 3;
+
+SELECT MIN(amount) AS lowamount FROM orderdata;
+SELECT MAX(amount) AS highamount FROM orderdata;
+SELECT COUNT(order_id)  FROM orderdata;
+SELECT AVG(amount)  FROM orderdata;
+SELECT SUM(amount)  FROM orderdata;

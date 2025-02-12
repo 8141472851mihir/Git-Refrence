@@ -1,0 +1,139 @@
+#insta {
+    padding: 5px;
+}
+
+#insta:hover {
+    color: white;
+    background-color: red;
+    border-radius: 20%;
+    transition: 0.3s;
+}
+
+#wm {
+    padding: 5px;
+}
+
+#wm:hover {
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+
+#fb {
+    padding: 5px;
+}
+
+#fb:hover {
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+
+#linkedin {
+    padding: 5px;
+}
+
+#linkedin:hover {
+    color: white;
+    background-color: blue;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 10%;
+
+}
+
+div.dt-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    height: 100vh;
+    /* background: rgba(255, 255, 255, 0.1); */
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    /* color: white; */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background: #495057;
+    color: white;
+
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.card-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+table {
+    width: 100% !important;
+}
+
+#navv {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+#add {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: black;
+    /* border: 2px solid black; */
+}
+
+#add:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}

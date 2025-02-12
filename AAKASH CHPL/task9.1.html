@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="/image/communities_heritage_private_limited_logo.jpg">
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-3 w-100 mb-3">
+        <div class="card">
+            <div class="card-body px-5 border border-3">
+
+                <form action="img_mapping.html" class="was-validated">
+                    <div class="h1">MAINTENANCE</div>
+                    <hr>
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Maintenance Details</u></legend>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label for="name">NAME<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-sm-10 row">
+                                <input type="text" class="form-control col-sm-12" placeholder="Full Name" minlength="2"
+                                    maxlength="51" id="name" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label class="col-sm-2" for="description">DESCRIPTION</label>
+
+                            <div class="col-sm-10 row">
+                                <textarea name="description" id="description" rows="2" maxlength="200"
+                                    class="rounded col-sm-12" required></textarea>
+                            </div>
+
+
+                        </div>
+                    </div><br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Maintenance Type</u></legend>
+
+                        <div class="row">
+                            <label class="col-sm-2" for="maintenance type">MAINTENANCE TYPE <span
+                                    class="text-danger">*</span></label>
+
+                            <div class="col-sm-10 row">
+                                <select class="form-control col-sm-12" name="maintenance type" id="maintenance type"
+                                    required>
+                                    <option value="" selected disabled>-----Select-----</option>
+                                    <option value="a">Type-A</option>
+                                    <option value="b">Type-B</option>
+                                    <option value="c">Type-C</option>
+                                    <option value="d">Type-D</option>
+                                    <option value="e">Type-E</option>
+                                    <option value="f">Type-F</option>
+                                    <option value="g">Type-G</option>
+                                    <option value="h">Type-H</option>
+                                    <OPtion value="i">Type-I</OPtion>
+
+                                </select>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Maintenance Amount</u></legend>
+                        <div class="row">
+                            <label class="col-sm-2" for="amount type">AMOUNT TYPE<span
+                                    class="text-danger">*</span></label>
+                            <div class=" col-sm-3 mx-1">
+                                <input type="radio" class="form-check-input" id="fixed" name="amount type radio"
+                                    value="fixed" required>
+                                <label class="form-check-label" for="fixed">FIXED</label>
+                            </div>
+                            <div class="col-sm-2 form-check mx-3">
+                                <input type="radio" class="form-check-input" id="square feet wise"
+                                    name="amount type radio" value="square feet wise" required>
+                                <label class="form-check-label" for="square feet wise">SQURE FEET WISE</label>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label class="col-sm-2" for="amount">Amount<span class="text-danger ">*</span></label>
+                            <div class="col-sm-10 row ">
+                                <div class="col-sm-4 row">
+                                    <input class="form-control col-sm-12 my-2" type="text" id="for owner"
+                                        placeholder=" for Owner" minlength="2" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class="col-sm-4 row">
+                                    <input class="col-sm-12 my-2 form-control ms-2" type="text" id="for tenant"
+                                        placeholder=" for Tenant" minlength="2" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class=" my-2 col-sm-4 row ">
+                                    <input class="col-sm-12 form-control ms-3" minlength="2" type="text"
+                                        id="for close unit" placeholder=" for Close Unit" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Auto Generate Maintenance</u></legend>
+
+                        <div class="row">
+                            <label class="col-sm-2" for="auto generate">AUTO GENERATE <span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-3 mx-1">
+                                <input type="radio" class="form-check-input" id="yes" name="auto generate" value="yes"
+                                    required>
+                                <label class="form-check-label" for="yes">YES</label>
+                            </div>
+                            <div class="col-sm-2 mx-3 form-check">
+                                <input type="radio" class="form-check-input" id="no" name="auto generate" value="no"
+                                    required>
+                                <label class="form-check-label" for="no">NO</label>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Maintenance Balance Sheet & UNITS</u></legend>
+
+                        <div class="row">
+                            <label class="col-sm-2" for="balance sheet">BALANCE SHEET<span
+                                    class="text-danger">*</span></label>
+                            <div class="col-sm-4 row">
+                                <select class="col-sm-12 form-control" name="balance sheet" id="balance sheet" required>
+                                    <option value="" disabled selected>-----Select-----</option>
+                                    <option value="balance sheet A1">Balance Sheet A1</option>
+                                    <option value="balance sheet B1">Balance Sheet B1</option>
+                                    <option value="balance sheet C1">Balance Sheet C1</option>
+                                    <option value="balance sheet D1">Balance Sheet D1</option>
+                                    <option value="balance sheet E1">Balance Sheet E1</option>
+                                    <option value="balance sheet F1">Balance Sheet F1</option>
+                                    <option value="balance sheet G1">Balance Sheet G1</option>
+
+                                </select>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+
+
+                            <label class="col-sm-2" for="units">UNITS <span class="text-danger">*</span></label>
+                            <div class="col-sm-4 row">
+                                <select class="col-sm-12 form-control" name="units" id="units" required>
+                                    <option value="" disabled selected>-----Select-----</option>
+                                    <option value="less than  & equale to 500 units">Less than or Equale to 500 Units
+                                    </option>
+                                    <option value="less than 1500 units & more than 500 units">Less than 1500 Units &
+                                        More
+                                        than 500 Units</option>
+                                    <option value="less than 2500 units & more than 1500 units">Less than 2500 Units &
+                                        More
+                                        than 1500 Units</option>
+                                    <option value="more than & equale to 2500 units">More than or Equale to 2500 Units
+                                    </option>
+                                </select>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Maintenance Bill Type</u></legend>
+
+                        <div class="row">
+                            <label class="col-sm-2 " for="bill type">BILL TYPE<span class="text-danger">*</span></label>
+                            <div class="col-sm-10 row">
+                                <select class="col-sm-12 form-control" name="bill type" id="bill type" required>
+                                    <option value="" disabled selected>-----Select-----</option>
+                                    <option value="housing bill">Housing Bill</option>
+                                    <option value="company bill">Company Bill</option>
+                                    <option value="factory bill">Factory Bill</option>
+                                    <option value="industy bill">Industry Bill</option>
+                                </select>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="border border-1 w-100 p-3">
+                        <legend><u>Publish</u></legend>
+
+                        <div class="row">
+                            <label class="col-sm-2" for="publish">PUBLISH<span class="text-danger">*</span></label>
+                            <div class=" col-sm-3 mx-1">
+                                <input type="radio" class="form-check-input" id="save & publish later"
+                                    name="publish radio" value="save & publish later" required>
+                                <label class="form-check-label" for="save & publish later">SAVE & PUBLISH
+                                    LATER</label>
+                            </div>
+                            <div class="col-sm-2 mx-3 form-check">
+                                <input type="radio" class="form-check-input" id="publish now" name="publish radio"
+                                    value="publish now" required>
+                                <label class="form-check-label" for="publish now">PUBLISH NOW</label>
+                            </div>
+                        </div>
+                    </div><br><br><br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-1 d-flex justify-content-center">
+                            <button type="submit" class="mx-2 btn btn-dark text-white">SAVE</button>
+
+                            <button type="reset" class="mx-2 btn btn-danger text-white">RESET</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

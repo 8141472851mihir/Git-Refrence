@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Images/co-logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style1.css">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="head">
+            <img src="../../Images/co-logo-removebg-preview.png" alt="">
+            <h2>Communities Heritage Pvt Ltd</h2>
+        </div>
+    </div>
+    <div class="ma">
+        <div class="main">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="content">
+            <form action="index1.html" method="post" target="_self">
+                <!-- <div class="first"> -->
+                <label class="tllab" for="fname" >First Name<span>*</span></label>
+                <label class="trlab1" for="mname">Middle Name</label>
+                <br>
+                <input type="text" class="tlbox" required name="fname" id="fname">
+                <input type="text" class="trbox" name="mname" id="mname">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="second"> -->
+                <label class="tllab" for="lname">Last Name<span>*</span></label>
+                <label class="trlab2" for="mobile">Mobile No.<span>*</span></label>
+                <br>
+                <input type="text" class="tlbox" required name="lname" id="lname">
+                <select name="ccode" class="trbox1" id="ccode">
+                    <option value="" disabled selected>--Country Code--</option>
+                    <option value="+91">India (+91)</option>
+                    <option value="+12">USA (+12)</option>
+                    <option value="+75">Russia (+75)</option>
+                </select>
+                <input type="tel" class="trbox2" min="10" max="13" pattern="[0-9]{10}" required name="number" id="number">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="third"> -->
+                <div class="align">
+                    <div class="al1">
+                        <label for="gender" class="l1">Gender<span>*</span></label>
+                        <input type="radio" required name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" required name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="al2">
+                        <label for="bloodg">Blood Group</label>
+                        <br>
+                        <select name="bg" id="bg">
+                            <option value="" disabled selected>--Blood Group Type--</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="O+">O+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="O-">O-</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <label class="trlab3" for="bloodg">Blood Group</label>
+                <br>
+                <div class="xyz">
+                    <label class="tllab" for="gender">Gender<span>*</span></label>
+                    <input type="radio" name="male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="female" id="female">
+                    <label for="female">Female</label>
+                    <select name="bg" class="trbox3" id="bg">
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="O+">O+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="O-">O-</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div> -->
+                <!-- <br> -->
+                <!-- </div> -->
+                <!-- <div class="fourth"> -->
+                <label class="tllab" for="dob">Date of Birth</label>
+                <label class="trlab4" for="email">Email ID</label>
+                <br>
+                <input type="date" class="tlbox" name="dob" id="dob">
+                <input type="email" class="trbox" name="email" id="email">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="fifth"> -->
+                <label class="tllab" for="design">Designation</label>
+                <label class="trlab5" for="photo">Photo</label>
+                <br>
+                <input type="text" class="tlbox" name="design" id="design">
+                <input type="file" class="trbox" src="" alt="photo">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="sixth"> -->
+                <label class="tllab" for="com">Company Name<span>*</span></label>
+                <label class="trlab6" for="btype">Business Type</label>
+                <br>
+                <input type="text" class="tlbox" required name="com" id="com">
+                <select name="btype" class="trbox" id="btype">
+                    <option value="" disabled selected>--Type of business--</option>
+                    <option value="local">Local</option>
+                    <option value="inter">International</option>
+                </select>
+                <br>
+                <!-- </div> -->
+                <!-- <div class="seventh"> -->
+                <label class="tllab" for="City">City<span>*</span></label>
+                <label class="trlab7" for="area">Area<span>*</span></label>
+                <br>
+                <select class="tlbox4" required name="City" id="City">
+                    <option value="" disabled selected>--Select City--</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="baroda">Baroda</option>
+                    <option value="surat">Surat</option>
+                </select>
+                <select class="trbox4" required name="area" id="area">
+                    <option value="" disabled selected>--Select Area--</option>
+                    <option value="Sanand">Sanand</option>
+                    <option value="maninager">Maninager</option>
+                    <option value="naroda">Naroda</option>
+                </select>
+                <br>
+                <!-- </div> -->
+                <!-- <div class="eigth"> -->
+                <label class="tllab" for="memnum">Membership Number</label>
+                <label class="trlab8" for="comcon">Company Contact Number</label>
+                <br>
+                <input type="number" class="tlbox" name="memnum" id="memnum">
+                <input type="comcon" class="trbox" name="comcon" id="comcon">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="nineth"> -->
+                <label class="tllab" for="cemail">Company Email</label>
+                <label class="trlab9" for="clogo">Company Logo</label>
+                <br>
+                <input type="email" class="tlbox" name="cemail" id="cemail">
+                <input type="file" class="trbox" name="clogo" id="clogo">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="tenth"> -->
+                <label class="tllab" for="brochure">Brochure</label>
+                <label class="trlab10" for="website">Website</label>
+                <br>
+                <input type="file" class="tlbox" name="brochure" id="brochure">
+                <input type="text" class="trbox" name="website" id="website">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="eleventh"> -->
+                <label class="tllab" for="more">Describe More</label>
+                <label class="trlab11" for="address">Address<span>*</span></label>
+                <br>
+                <input type="text" class="tlbox" name="more" id="more">
+                <input type="text" class="trbox" required name="address" id="address">
+                <br>
+                <!-- </div> -->
+                <!-- <div class="twelth"> -->
+                <label class="tllab" for="refer">Refer Type<span>*</span></label>
+                <br>
+                <select name="refer" required class="tlbox12" id="refer">
+                    <option value="" disabled selected>--Select Type--</option>
+                    <option value="simple">Simple</option>
+                    <option value="advance">Advance</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <!-- </div> -->
+                <div class="thirteenth">
+                    <input class="submit" type="submit" name="submit" id="submit">
+                    <input class="reset" type="reset" name="reset" id="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

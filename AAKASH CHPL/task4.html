@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMUNITITES HERITAGE PRIVATE LIMITED</title>
+    <link rel="icon" href="image/communities_heritage_private_limited_logo.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            background-color: whitesmoke;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav {
+            top: 100px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+        }
+
+        .company_image img {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        #iframe {
+            margin-top: 10vh;
+            padding-top: 50px;
+        }
+
+        iframe {
+            height: 100vh;
+            width: 98%;
+        }
+
+        #contact {
+            display: flex;
+        }
+
+        .headbar {
+            height: auto;
+            width: 100 vw;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .main {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 750px;
+            width: 100% vw;
+        }
+
+
+
+        #mainpic img {
+            height: 800px;
+            width: 100%;
+            border-radius: 0 0 0 15%;
+        }
+
+        .about {
+            float: left;
+            overflow: hidden;
+
+        }
+
+        .about .aboutbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: black;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .about:hover .aboutbtn {
+            color: red;
+        }
+
+        .about-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .about-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .about-content a:hover {
+            color: red;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .about:hover .about-content {
+            display: block;
+        }
+
+        #chplworldwide {
+            display: flex;
+            color: white;
+        }
+
+        .content {
+            height: 750px;
+            width: auto;
+            display: flex;
+            padding: 100px;
+            justify-content: space-around;
+            padding: 30px;
+            background-color: grey;
+        }
+
+        .content1,
+        .content2,
+        .content3 {
+            text-wrap: initial;
+            height: auto;
+            width: 25vw;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            justify-content: center;
+            padding-top: 20px;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+        }
+
+        .content1::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content2::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content3::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content1:hover {
+            border: 2.5px solid white;
+
+        }
+
+        .content2:hover {
+            border: 2.5px solid white;
+
+        }
+
+        .content3:hover {
+            border: 2.5px solid white;
+
+        }
+
+        .content1 img,
+        .content2 img,
+        .content3 img {
+            height: 45%;
+            width: 100%;
+        }
+
+        a h2 {
+            color: white;
+        }
+
+        .myco-h2:hover {
+            color: red;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+        .form {
+            background-image: url(/image/colorful.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px double red;
+            opacity: 1;
+
+        }
+
+        fb,
+        sb,
+        tb,
+        fob {
+            border: 2px solid;
+        }
+
+        .form {
+            color: white;
+            margin-top: 5px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .form:hover {
+            border: 4px solid purple;
+        }
+
+        .map {
+            height: 580px;
+            width: 50%;
+            border: 2px solid black;
+            margin-left: 25%;
+        }
+
+        .map:hover {
+            background: 3px solid red;
+        }
+
+        .mapheader:hover {
+            background: 3px solid red;
+            color: red;
+        }
+
+        .maphead:hover {
+            background: 3px solid red;
+            color: red;
+            background-color: black;
+        }
+
+        .maphead {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        #map {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 3vh;
+            background-color: black;
+            color: white;
+            /* position:fixed; */
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer:hover {
+            text-align: center;
+            border: 2px solid red;
+            font-size: 3vh;
+            background-color: black;
+            color: aqua;
+            /* position:fixed; */
+            bottom: 0;
+            width: 100%;
+        }
+
+        #os {
+            background-color: lightseagreen;
+            margin-top: 10px;
+        }
+
+        #os:hover {
+            background-color: black;
+            border: 3px solid rebeccapurple;
+            color: aqua;
+            z-index: 2;
+        }
+
+        #oow {
+            background-color: lightseagreen;
+            margin-top: 10px;
+        }
+
+        #oow:hover {
+            background-color: black;
+            border: 3px solid rebeccapurple;
+            color: aqua;
+            z-index: 2;
+        }
+
+        .main #mainpic img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .myco {
+            height: 505px;
+            width: 98%;
+            border: 2px solid;
+            margin-bottom: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 2%;
+        }
+
+        .myco img {
+            height: 500px;
+            width: 30%;
+            float: left;
+        }
+
+        li:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="company_image">
+                <img src="/image/chpl_logo.png">
+            </div>
+            <div class="company_name">
+                <h1>Communities Heritage Private Limited</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div id="contact">
+            <span>&#128231;</span>
+            <a href="#">
+                <h2>contact@chpl</h2>
+            </a>
+        </div>
+        <div id="chplworldwide">
+            <span>&#127760;</span>
+            <a href="#">
+                <h2>CHPL Worldwide</h2>
+            </a>
+        </div>
+    </nav>
+    <div class="headbar">
+        <a href="#">Home</a>
+
+
+
+        <div class="about">
+            <button class="aboutbtn">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>About
+            </button>
+            <div class="about-content">
+                <a href="#">About Us</a>
+                <a href="#">Our Team</a>
+                <a href="#">Testimonial</a>
+                <a href="#">Gallery</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+
+
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">Our clients</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+
+    </div>
+
+    <div class="main">
+        <div id="mainpic">
+
+            <h1>MyCo</h1>
+            <img src="/image/colorful.png" alt="office2">
+        </div>
+    </div>
+    <br><br><br>
+    <center>
+        <h1 id="os">Our Specializations</h1>
+    </center>
+    <div class="content">
+
+
+        <div class="content1">
+            <center><a href="#">
+                    <h2>Residential State Management</h2>
+                </a></center><br>
+            <img src="/image/office.jpg" alt="img"><br><br><br>
+            <p>With a view to meeting a vital issue of providing holistic facilities to the urban people in view of fast
+                urbanization, building of beautiful, clean, developmental and vibrant cities and keeping the necessities
+                of all inclusive growth into account, the Government has declared the year of 2005 as the year of urban
+                development and initiated for organized development of the cities.
+
+            </p> <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque dignissimos hic cum
+                reprehenderit officiis recusandae, sed, dolorem eveniet, aspernatur quia perspiciatis placeat commodi et
+                beatae mollitia. Facilis, nulla molestias!
+                Quasi consequatur repudiandae quaerat atque, provident adipisci, reprehenderit neque fugit ea laborum
+                facere, vitae quia iusto modi magni! Accusamus itaque fugit, impedit laudantium doloribus ratione
+                molestiae consequatur ab in ducimus?
+                Debitis quaerat, aliquam doloribus alias qui, quos animi sed earum, voluptates exercitationem architecto
+                ad nemo quod iure nulla. Magni modi voluptas nulla iure illum! Totam soluta neque tempora corrupti
+                dignissimos.
+                Placeat enim magni similique corrupti sunt debitis animi aspernatur ut doloremque, sit odio neque
+                exercitationem perferendis quisquam tempora impedit nostrum ipsa culpa dolore voluptatibus accusamus!
+                Saepe placeat maiores fugit voluptatum.
+                Et beatae architecto quibusdam ipsum quae voluptates, exercitationem iusto? Nesciunt sint repudiandae
+                hic laboriosam, amet eveniet quaerat odio eius alias dolores iusto quas ipsam provident nulla ducimus
+                voluptatem obcaecati ab!
+                Nesciunt deleniti mollitia aperiam eos culpa, dignissimos porro perspiciatis odio eaque voluptatem
+                excepturi omnis quis ad officiis perferendis repellat. Exercitationem sequi neque eaque aspernatur
+                maxime voluptate officia porro. Ducimus, ullam.
+                Sapiente nobis itaque obcaecati, fuga quod explicabo? A aliquam soluta temporibus, officia sapiente,
+                explicabo nulla ipsum dolores veritatis cum nihil culpa ut repellat, iure et fugit id non at maiores.
+            </p>
+
+        </div>
+        <div class="content2">
+            <center><a href="#">
+                    <h2>IT Services & Support</h2>
+                </a></center><br>
+            <img src="/image/it_support.webp" alt="img"><br><br><br>
+            <p>Our resident technicians, permanently based at your end customer's site, provide continuous support to
+                efficiently resolve end-user IT issues.
+
+                Our customers can rely on their presence for immediate IT support, ensuring that technical problems are
+                promptly addressed. We enhance productivity, reduce downtime, and guarantee a seamless IT experience for
+                businesses on agreed business hours.</p>
+
+            <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque dignissimos hic cum
+                reprehenderit officiis recusandae, sed, dolorem eveniet, aspernatur quia perspiciatis placeat commodi et
+                beatae mollitia. Facilis, nulla molestias!
+                Quasi consequatur repudiandae quaerat atque, provident adipisci, reprehenderit neque fugit ea laborum
+                facere, vitae quia iusto modi magni! Accusamus itaque fugit, impedit laudantium doloribus ratione
+                molestiae consequatur ab in ducimus?
+                Debitis quaerat, aliquam doloribus alias qui, quos animi sed earum, voluptates exercitationem architecto
+                ad nemo quod iure nulla. Magni modi voluptas nulla iure illum! Totam soluta neque tempora corrupti
+                dignissimos.
+                Placeat enim magni similique corrupti sunt debitis animi aspernatur ut doloremque, sit odio neque
+                exercitationem perferendis quisquam tempora impedit nostrum ipsa culpa dolore voluptatibus accusamus!
+                Saepe placeat maiores fugit voluptatum.
+                Et beatae architecto quibusdam ipsum quae voluptates, exercitationem iusto? Nesciunt sint repudiandae
+                hic laboriosam, amet eveniet quaerat odio eius alias dolores iusto quas ipsam provident nulla ducimus
+                voluptatem obcaecati ab!
+                Nesciunt deleniti mollitia aperiam eos culpa, dignissimos porro perspiciatis odio eaque voluptatem
+                excepturi omnis quis ad officiis perferendis repellat. Exercitationem sequi neque eaque aspernatur
+                maxime voluptate officia porro. Ducimus, ullam.
+                Sapiente nobis itaque obcaecati, fuga quod explicabo? A aliquam soluta temporibus, officia sapiente,
+                explicabo nulla ipsum dolores veritatis cum nihil culpa ut repellat, iure et fugit id non at maiores.
+            </p>
+        </div>
+        <div class="content3">
+            <center><a href="#">
+                    <h2>Assosition Management System</h2>
+                </a></center><br>
+            <img src="/image/assosiation management.webp" alt="img"><br><br><br>
+            <p>An association management system (AMS) can help your organization’s staff do all this and more. With this
+                software, association leaders can use the most up-to-date information to personalize communications
+                based on constituents’ interests and past involvement levels, generate accurate reports, effectively
+                plan events and more</p>
+
+            <br><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque dignissimos hic cum
+                reprehenderit officiis recusandae, sed, dolorem eveniet, aspernatur quia perspiciatis placeat commodi et
+                beatae mollitia. Facilis, nulla molestias!
+                Quasi consequatur repudiandae quaerat atque, provident adipisci, reprehenderit neque fugit ea laborum
+                facere, vitae quia iusto modi magni! Accusamus itaque fugit, impedit laudantium doloribus ratione
+                molestiae consequatur ab in ducimus?
+                Debitis quaerat, aliquam doloribus alias qui, quos animi sed earum, voluptates exercitationem architecto
+                ad nemo quod iure nulla. Magni modi voluptas nulla iure illum! Totam soluta neque tempora corrupti
+                dignissimos.
+                Placeat enim magni similique corrupti sunt debitis animi aspernatur ut doloremque, sit odio neque
+                exercitationem perferendis quisquam tempora impedit nostrum ipsa culpa dolore voluptatibus accusamus!
+                Saepe placeat maiores fugit voluptatum.
+                Et beatae architecto quibusdam ipsum quae voluptates, exercitationem iusto? Nesciunt sint repudiandae
+                hic laboriosam, amet eveniet quaerat odio eius alias dolores iusto quas ipsam provident nulla ducimus
+                voluptatem obcaecati ab!
+                Nesciunt deleniti mollitia aperiam eos culpa, dignissimos porro perspiciatis odio eaque voluptatem
+                excepturi omnis quis ad officiis perferendis repellat. Exercitationem sequi neque eaque aspernatur
+                maxime voluptate officia porro. Ducimus, ullam.
+                Sapiente nobis itaque obcaecati, fuga quod explicabo? A aliquam soluta temporibus, officia sapiente,
+                explicabo nulla ipsum dolores veritatis cum nihil culpa ut repellat, iure et fugit id non at maiores.
+            </p>
+        </div>
+    </div>
+
+    <div id="iframe">
+        <center>
+            <h1 id="oow"><u>Our Official Website</u>
+            </h1>
+        </center>
+        <iframe src="https://www.chplgroup.org/index"></iframe>
+    </div>
+
+    <div class="form">
+        <h2 style="color: white;">Registration Form</h2>
+        <form action="submitpage.html" method="get">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="fname">First Name<span>*</span> </label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last Name : </label>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+
+                <label for="mobile">Mobile No.<span>*</span> </label>
+                <select name="mobile" id="mobile" required>
+                    <option value="+90">+90</option>
+                    <option value="+92">+92</option>
+                    <option value="+91" selected>+91</option>
+                    <option value="+93">+93</option>
+                    <option value="+94">+94</option>
+                    <option value="+95">+95</option>
+                </select>
+                <input type="tel" id="mobile" name="mobile" minlength=10 maxlength=10 required><br><br>
+
+                <label for="email">Email Address <span>*</span> </label>
+                <input type="email"><br><br>
+
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value="ASAM">ASAM</option>
+                    <option value="UP">UP</option>
+                    <option value="MP">MP</option>
+                    <option value="MAHARASTRA">MAHARASTRA</option>
+                    <option value="RAJASTHAN">RAJASTHAN</option>
+                    <option value="Gujarat" selected>Gujarat</option>
+                </select><br><br>
+
+                <label for="city">City </label>
+                <select name="city" id="city" required>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Prayagraj">Prayagraj</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bhopal" selected>Bhopal</option>
+                </select><br><br>
+
+                <label for="dob">Date of Birth<span>*</span></label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="age">Your Age : </label>
+                <input type="number" min="1" max="100"><br><br>
+
+                <label for="gender">Gender<span>*</span> </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="language">Choose known Languages : </label><br>
+                <input type="checkbox" id="english" name="english">
+                <label for="english">English</label><br>
+                <input type="checkbox" id="hindi" name="hindi">
+                <label for="hindi">Hindi</label><br>
+                <input type="checkbox" id="gujarati" name="gujarati">
+                <label for="gujarati">Gujarati</label><br>
+                <input type="checkbox" id="marathi" name="marathi">
+                <label for="marathi">Marathi</label><br><br>
+
+
+
+                <input type="reset">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div><br><br><br><br><br>
+
+    <div class="map">
+        <div class="maphead">
+            <h1><u>Location</u></h1>
+        </div>
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9420238856983!2d72.49422557476923!3d22.98915931757532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b0448528dd1%3A0x1f5b6738ff8c2766!2sCHPL%20(Communities%20Heritage%20Private%20Limited)!5e0!3m2!1sen!2sin!4v1736498792160!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <br><br>
+
+
+    <div class="myco">
+        <p><img src="/image/Myco.png" alt="img">
+            <a href="#">
+                <h1><u>MyCo</u></h1>
+            </a><br><br><br>
+        <h3>Introducing MyCo: Empowering Smart Company Management & Employee Productivity </h3><br>
+
+        Revolutionize your workforce management with our cutting-edge MyCo app! Streamline HR tasks, from employee
+        onboarding to payroll processing, effortlessly. Simplify time tracking, location tracking, task management,
+        leave management, reporting management, order management & document vault, and performance evaluations—all in
+        one intuitive platform. Maximize productivity, enhance collaboration, and drive business growth with our
+        user-friendly MyCo app. Try it today and experience the power of seamless HR management! <br><br>
+
+        The Major Objective of developing MyCo Solution is to provide Smarter & Easier Mobile Solution to any enterprise
+        which brings entire of their management at their fingertips! <br><br>
+
+        <h2><u>Key Features</u></h2>
+        Any Company, small or big has been largely created with a core purpose of growth and progression towards
+        self-sufficiency. However, the fact is that most of them struggle in facing day-to-day challenges as well as
+        managing their tasks smoothly.
+
+        <ul><b><i>
+                    <li>Smart Company Management</li>
+                    <li>Learning & Productivity Management</li>
+                    <li>Employee Tools & Performance Management</li>
+                    <li>Employee Tracking & Travel Summary</li>
+                </i></b>
+        </ul>
+
+
+
+
+        </p>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <h1>@chpl.ahmedabad</h1>
+        </div>
+    </footer>
+</body>
+
+</html>

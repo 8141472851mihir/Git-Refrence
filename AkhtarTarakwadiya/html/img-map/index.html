@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+      .img-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .img-container img {
+        height: 300px;
+        width: 300px;
+        border: 1px solid;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Map</h2>
+    <div class="img-container">
+      <img src="images/reg.png" alt="Poster" usemap="#poster"/>
+      <map name="poster">
+        <area shape="rect" coords="" href="cover.html" alt="Cover Photo">
+        <area shape="rect" coords="" href="linkedin.html" alt="LinkedIn Photo">
+        <area shape="rect" coords="" href="reg.html" alt="Post Photo">
+      </map>
+    </div>
+  </body>
+</html>

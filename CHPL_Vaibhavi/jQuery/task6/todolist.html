@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../jqueryCDN.js"></script>
+</head>
+
+<body>
+    
+
+            <h5>TO-DO List</h5>
+            <hr>
+            <input type="text"  id="task" name="item" placeholder="Enter Item">
+            <button id="add-btn" type="submit" class="btn btn-secondary">Add Item</button>
+            <p id="task-count">Total Item: 0</p>
+            <div id="todo-list"></div>
+
+    
+
+
+    <script>
+        $(document).ready(function () {
+            
+            $('#add-btn').click(function () {
+                var task = $('#task').val();
+                if (task !== '') {
+                    $('#todo-list').append(`
+                        <div class="alert alert-secondary alert-dismissible" role="alert">
+                            ${task}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    `);
+                    $('#task').val('');
+                    updateCount();
+                }
+            });
+            $(document).on('click', '.btn-close', function () {
+                $(this).remove();
+                updateCount();
+            });
+            function updateCount() {
+                $("#task-count").text("Total Item: " + $("#todo-list .alert").length);
+            }
+        });
+    </script>
+</body>
+
+</html>

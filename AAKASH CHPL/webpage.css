@@ -1,0 +1,63 @@
+* {
+    background-color: white;
+}
+
+#head {
+    background-color: black;
+    /* border: 2px solid black; */
+    color: white;
+}
+
+p {
+    background-color: red;
+}
+
+p:hover {
+    background-color: aqua;
+}
+
+.book {
+    background-color: aqua;
+    display: flex;
+
+}
+
+#book1 {
+    background-color: orangered;
+}
+
+#book2 {
+    background-color: white;
+}
+
+#book3 {
+    background-color: green;
+}
+
+nav {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: crimson;
+}
+
+.the {
+    font-size: 2vw;
+    color: black;
+}
+
+.arc {
+    font-size: 10vw;
+    color: black;
+}
+
+footer {
+    background-color: yellow;
+    height: 50px;
+}
