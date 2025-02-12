@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="../HTML/images/logo-dark.png" type="image/x-icon">
+    <title>Form Task</title>
+
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h6 class="mt-2 border-bottom border-3 border-dark">Society Amenities</h6>
+
+        <div class="card border rounded-2 shadow-lg p-3 mb-4 bg-white">
+
+            <form action="" class="was-validated">
+
+                <!-- Category -->
+                <div class="row mt-2">
+                    <div class="col-sm-2">
+                        <label for="dropdown-category">AMENITY CATEGORY<span>*</span></label>
+                    </div>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="dropdown-category" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- Name -->
+                <div class="row mt-2">
+                    <div class="col-sm-2">
+                        <label for="name">NAME<span>*</span></label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" id="name" name="name" class="form-control" minlength="2" maxlength="30 " required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- type & capacity  -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="a-type">AMENITY TYPE<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="a-type" name="amenity-type" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-2">
+                        <label for="capacity">TOTAL PERSON CAPACITY<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="capacity" name="person-capacity" class="form-control" placeholder="per slot" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- Booking type & completion -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="bookingtype">BOOKING TYPE<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="booking" name="booking-type" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label for="completion">ALLOW NEXT BOOKING AFTER PREV. BOOKING COMPLETION<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="completion" name="booking-completion" class="form-control" placeholder="No" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- MInimum & maximum -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="mini-booking">MINIMUM PERSON BOOKING<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="mini-booking" name="minimum-booking" class="form-control" placeholder="Per Slot(Single Booking)"
+                            required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label for="max-booking">MAXIMUM PERSON BOOKING<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="max-booking" name="maximum-booking" class="form-control" placeholder="Per Slot(Single Booking)"
+                            required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- Booking FOr & Guest Booking -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="allow-for">ALLOW BOOKING FOR<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="allow-type" name="booking-for" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-2">
+                        <label for="allow-guest">ALLOW GUEST BOOKING<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="allow-guest" name="allow-guest-booking" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- Same time &same time by family -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="booking-time">BOOKING OTHER AMENITY SAME TIME<span>*</span>
+                        </label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="booking-time" name="booking-same-time" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label for="booking-family">BOOKING OTHER AMENITY SAME TIME BY FAMILY<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="booking-family" name="booking-same-family" required>
+                            <option value="" selected disabled>--Select Type--</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- After min & Before Min -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="aft-min">NEXT BOOKING AFTER MIN.(ONLY FOR SINGLE BOOKING)</label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="aft-min" name="after-min" class="form-control" placeholder="In Minutes" > 
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label for="brfore-min">BOOKING CANCELLATION BEFORE MIN.</label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" id="brfore-min" name="before-min" class="form-control" placeholder="In Minutes" >
+                    </div>
+                </div>
+
+                <!-- Slot booking & Person booking -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="multiple-slot">MULTIPLE TIME SLOT BOOKING AT SAME TIME<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="multiple-slot" name="multiple-slot-same-time" required>
+                            <option value="" selected disabled>No</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label for="even-person">EVEN PERSON BOOKING<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="even-person" name="een-person-booking" required>
+                            <option value="" selected disabled>No</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- BOoking For -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="multiple-time-slot">MULTIPLE TIME SLOT BOOKING AT SAME TIME<span>*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" id="multiple-time-slot" name="multiple-time-slot-same-time" required>
+                            <option value="" selected disabled>ALL</option>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <!-- AMENITY PHOTO -->
+                <div class="row mt-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label for="photo">AMENITY PHOTO<span>*</span></label>
+                    </div>
+                    <div class="col-md-3"><input type="file" class="form-control" id="photo-1" name="photo-1" required>
+                    </div>
+                    <div class="col-md-4"><input type="file" class="form-control" id="photo-2" name="photo-2" required>
+                    </div>
+                    <div class="col-md-3"><input type="file" class="form-control" id="photo-3" name="photo-3" required>
+                    </div>
+                </div>
+
+                <!-- last line -->
+                <div class="row mt-2">
+                    <div class="col-sm-2"></div>
+                    <div class="d-flex col-sm-8 border border-1">
+                        <div class="col-sm-3">PACKAGE TYPE</div>
+                        <div class="col-sm-3">NO OF PERSON</div>
+                        <div class="col-sm-3">AMOUNT</div>
+                        <div class="col-sm-2">BOOKING FOR</div>
+                        <div class="col-sm-1">#</div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+
+                <!-- Button -->
+                <div class="row border-top mt-2"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn mt-2 bg-dark text-white">SAVE</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Image-map -->
+         <div class="image map">
+        <h3>Image Map</h3>
+        <img src="../HTML/images/image_map_main.jpg" alt="image" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Google" title="Google" href="https://www.google.com/" coords="231,258,186" shape="circle">
+            <area target="_blank" alt="YOutube" title="YOutube" href="https://www.youtube.com/" coords="567,86,908,424" shape="rect">
+            <area target="_blank" alt="W3Schools" title="W3Schools" href="https://www.w3schools.com/" coords="223,539,410,911,35,911" shape="poly">
+            <area target="_blank" alt="GeeksforGeeks" title="GeeksforGeeks" href="https://www.geeksforgeeks.org/" coords="457,638,929,904" shape="rect">
+        </map>
+    </div>
+    </div>
+</body>
+</html>

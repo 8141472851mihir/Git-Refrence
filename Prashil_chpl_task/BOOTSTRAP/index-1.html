@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="../HTML/images/logo-dark.png" type="image/x-icon">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-success fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.chplgroup.org/" target="_blank"><img src="../HTML/images/logo-dark.png"
+          style="width: 80px;"></a>
+      <div class="spinner-grow spinner-grow-sm"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav  mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#products">Products</a></li>
+              <li><a class="dropdown-item" href="#image-gallery">Image Gallery</a></li>
+              <li><a class="dropdown-item" href="#table">Table</a></li>
+              <li><a class="dropdown-item" href="#subscribe">Subscribe</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!--icon and profile -->
+        <i class="fa-solid fa-magnifying-glass mx-1"></i>
+        <i class="fa-solid fa-bell mx-1"></i>
+        <a class="navbar-brand" href="#">
+          <img src="../HTML/images/profile.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body content -->
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../HTML/images/Sun-Temple.jpg" alt="Sun Temple" class="d-block" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Sun Temple</h3>
+          <p>An ancient marvel of architecture and culture.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../HTML/images/Lal Qila.jpg" alt="Lal Qila" class="d-block" style="width:100% ; height:554px">
+        <div class="carousel-caption">
+          <h3>Lal Qila</h3>
+          <p>The historic Red Fort of India.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../HTML/images/taj mahal.jpg" alt="Taj Mahal" class="d-block" style="width:100%">
+
+        <div class="carousel-caption">
+          <h3>Taj Mahal</h3>
+          <p>A symbol of eternal love and beauty.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <br>
+
+  <!-- About Us -->
+  <div id="about" class="container-fluid bg-secondary text-white py-5 px-2">
+    <img src="../HTML/images/_MG_3967.JPG" height="250px" width="230px"
+      class="float-end mx-5 border border-3 rounded-circle" alt="about">
+    <h1>About Me</h1>
+    <p>My Mane is <strong>Darshan Vasoya.</strong>I am from Ahmedabad.I am working in Communities Heritage PVT. LTD.</p>
+    <p>I am completed my SSC in Sarvoday vidhyamandir, and completed my HSC in Sarthak Vidhyalaya.</p>
+
+    <!-- Process bar -->
+    <div class="w-50">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:97%">HTML</div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped" style="width:90%">CSS</div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped" style="width:80%">JAVASCRIPT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Images Section -->
+  <h3 class="text-center mb-4 mt-4 shadow p-4 mb-4 bg-white">Featured Products</h3>
+  <div class="container " id="products">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <img src="../HTML/images/laptop.jpg" class="card-img-top" alt="Laptop">
+          <div class="card-body">
+            <h5 class="card-title">Laptop</h5>
+            <p class="card-text">Powerful and sleek design for all your professional needs.</p>
+            <button class="btn btn-primary" href="#view-more" id="viewmore" data-bs-toggle="collapse">View More</button>
+            <div id="view-more" class="collapse">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptas. Laboriosam
+              sintnumquam beatae, dignissimos tenetur, temporibus ratione, expedita quidem illo unde
+              exercitationem ab id soluta asperiores incidunt amet saepe!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <img src="../HTML/images/tab.jpg" class="card-img-top" alt="Tablet" height="334px">
+          <div class="card-body">
+            <h5 class="card-title">Tablet</h5>
+            <p class="card-text">Experience versatility and portability at its best.</p>
+            <button class="btn btn-primary">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Offcanvas -->
+  <div class="container">
+    <div class="offcanvas offcanvas-start" id="myCanvas">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title">@_darshan_1511</h2>
+        <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h4><a class="text-decoration-none" href="#">Home</a></h4>
+        <h4><a class="text-decoration-none" href="#about">About</a></h4>
+        <h4><a class="text-decoration-none" href="#image-gallery">Image Gallery</a></h4>
+        <h4><a class="text-decoration-none" href="#contact">Contact</a></h4>
+      </div>
+    </div>
+    <h4>Off canvas</h4>
+    <button type="button" class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">OffCanvas</button>
+  </div>
+
+  <!--Image Gallery  -->
+  <h3 class="text-center mb-4 shadow p-4  mt-3 mb-4 bg-white" id="image-gallery">Image Gallery</h3>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="../HTML/images/coffee.jpg" alt="image-1" class="w-100 mb-4 border border-top-0 border-2">
+        <img src="../HTML/images/coffee.jpg" alt="image-2" class="w-100  border border-5">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../HTML/images/coffee.jpg" alt="image-1" class="w-100 mb-4 border border-danger border-3">
+        <img src="../HTML/images/coffee.jpg" alt="image-2" class="w-100  rounded-start">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../HTML/images/coffee.jpg" alt="image-1" class="w-100 mb-4 rounded-circle">
+        <img src="../HTML/images/coffee.jpg" alt="image-2" class="w-100 rounded-2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <h3 class="text-center mb-4 mt-4 shadow p-4 mb-4 bg-white" id="table">Table</h3>
+  <div class="row">
+    <div class="col-12">
+    <table class="table table-sm table-hover">
+      <thead class="table-success">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Mobile No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Darshan</td>
+          <td>Vasoya</td>
+          <td>darshan@gmail.com</td>
+          <td>1235467890</td>
+        </tr>
+        <tr>
+          <td>Ankit</td>
+          <td>Patel</td>
+          <td>ankit@gmail.com</td>
+          <td>7896523410</td>
+        </tr>
+        <tr>
+          <td>Jay</td>
+          <td>joshi</td>
+          <td>jay@gmail.com</td>
+          <td>5236104789</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <!-- Contact Us -->
+  <div id="contact" class="container-fluid bg-info py-5 px-2 mt-3">
+    <h1 class="text-center">Contact Us</h1>
+    <form>
+      <label for="name">Enter Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name:"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your E-mail" /><br><br>
+
+      <label for="message">Enter your Message:</label>
+      <input type="text" name="message" id="message" placeholder="Enter your Message "><br><br>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Subscribe Page</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your E-mail" />
+          </form>
+          <div class="alert alert-success mt-2">
+            <strong>Success!</strong> Subscribe Successfully!
+          </div>
+        </div>
+
+        <!-- modal Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!"
+            data-bs-dismiss="modal">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flex -->
+  <div class="mt-4 d-flex p-3 bg-secondary text-white">
+    <div class="p-3 bg-danger">Flex-1</div>
+    <div class="p-3 bg-success">Flex-2</div>
+    <div class="p-3 bg-info">Flex-3</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3 mt-3">
+    <p>&copy; 2025 CHPL Groups. All Rights Reserved. | Follow us on
+      <a href="#" class="text-decoration-none text-white"><i class="fab fa-facebook mx-2"></i></a>
+      <a href="#" class="text-decoration-none text-white"><i class="fab fa-twitter mx-2"></i></a>
+      <a href="#" class="text-decoration-none text-white"><i class="fab fa-instagram mx-2"></i></a>
+      <button type="button" id="subscribe" class="btn btn-danger float-end" data-bs-toggle="modal"
+        data-bs-target="#modal">Subscribe</button>
+    </p>
+  </footer>
+</body>
+</html>

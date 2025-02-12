@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Modern Styled Form</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .body-container {
+            scroll-margin-top: 80px;
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        .about-us h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-us p {
+            margin: 20px auto;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            text-align: justify;
+        }
+
+
+        .image-box {
+            position: relative;
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-box p {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .image-box ul {
+            list-style-type: none;
+            margin-top: 15px;
+            padding: 0;
+        }
+
+        .image-box li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .list {
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .list h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .list ul,
+        .list ol {
+            margin-left: 40px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .form-container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 400px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .form-container h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #ffdd57;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ffdd57;
+            color: #333;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #e6c644;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #fff;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="images/logo-dark.png" alt="Logo">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contactus">Contact Us</a>
+            <a href="#education">Education</a>
+            <a href="#form">Form</a>
+        </div>
+    </nav>
+
+    <div class="body-container">
+
+        <div class="about-us" id="about">
+            <h1>About Myself</h1>
+            <p>My name is <b>Darshan Vasoya</b>. I am from <i>Ahmedabad</i> and currently working at CHPL Company. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid odit modi, dolorum quae laborum ab
+                doloribus praesentium animi nemo! Temporibus necessitatibus iure quis voluptate.</p>
+        </div>
+
+        <!-- Image with Hover Zoom and Description -->
+        <div class="image-box">
+            <img src="./images/mustang.jpg" alt="Shelby Mustang GT">
+            <p>"The Shelby Mustang GT is a high-performance variant of the iconic Ford Mustang, designed for those who
+                crave speed and agility. With its upgraded engine, precision handling, and distinctive Shelby styling,
+                the GT delivers an exhilarating driving experience."</p>
+            <ul>
+                <li><strong>Engine:</strong> 5.0L V8</li>
+                <li><strong>Horsepower:</strong> 450 hp</li>
+                <li><strong>Torque:</strong> 410 lb-ft</li>
+                <li><strong>0-60 mph:</strong> 3.9 seconds</li>
+                <li><strong>Top Speed:</strong> 155 mph</li>
+                <li><strong>Transmission:</strong> 6-speed manual</li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>Things I Like to Do:</h2>
+            <ul>
+                <li>Playing video games</li>
+                <li>Watching movies</li>
+                <li>Exploring new places</li>
+                <li>Learning web development</li>
+            </ul>
+
+            <h2>Goals for 2025:</h2>
+            <ol>
+                <li>Launch my new project</li>
+                <li>Travel to Europe</li>
+                <li>Learn advanced CSS animations</li>
+                <li>Read 20 books</li>
+            </ol>
+        </div>
+
+        <div class="about-us" id="form">
+            <h1>Register Form</h1>
+        </div>
+        <div class="form-container" id="form">
+
+            <h2>Register</h2>
+            <form action="#" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="links">
+                <a href="#">Forgot Password?</a> | <a href="#">Login</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Darshan Vasoya. All Rights Reserved.</p>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contactus">Contact</a>
+        <a href="#form">Register</a>
+    </footer>
+
+</body>
+
+</html>

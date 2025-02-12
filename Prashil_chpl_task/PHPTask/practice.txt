@@ -1,0 +1,32 @@
+CREATE TABLE `practice`.`order` ( `Id` INT NOT NULL AUTO_INCREMENT , `OrderDate` DATE NOT NULL , `CustomerName` VARCHAR(50) NOT NULL , `TotalAmount` BIGINT NOT NULL , `OrderNumber` BIGINT NOT NULL , `DeliveryDate` DATE NOT NULL , `CustomerAddress` TEXT NOT NULL , PRIMARY KEY (`Id`))
+INSERT INTO `order` (`Id`, `OrderDate`, `CustomerName`, `TotalAmount`, `OrderNumber`, `DeliveryDate`, `CustomerAddress`) VALUES (NULL, '2012-07-04', 'Rajesh', '85440', '542378', '2012-07-10', 'Navrangpura Ahmedabad')
+INSERT INTO `order` (`Id`, `OrderDate`, `CustomerName`, `TotalAmount`, `OrderNumber`, `DeliveryDate`, `CustomerAddress`) VALUES (NULL, '2012-07-05', 'Sanjay', '791863', '542379', '2012-07-15', 'Chandlodiya Ahmedabad')
+INSERT INTO `order` (`Id`, `OrderDate`, `CustomerName`, `TotalAmount`, `OrderNumber`, `DeliveryDate`, `CustomerAddress`) VALUES (NULL, '2012-08-09', 'Ramesh', '763730', '542382', '2012-07-10', 'Ramol Ahmedabad'), (NULL, '2012-08-01', 'Bhaktesh', '871376', '542400', '2012-08-05', 'CG Road Ahmedabad');
+INSERT INTO `order` (`Id`, `OrderDate`, `CustomerName`, `TotalAmount`, `OrderNumber`, `DeliveryDate`, `CustomerAddress`) VALUES (NULL, '2012-08-15', 'Suketu', '85620', '542383', '2012-08-20', 'Ramol Ahmedabad'), (NULL, '2012-08-20', 'Bhadrsh', '901376', '542401', '2012-08-25', 'CG Road Ahmedabad');
+SELECT * FROM `order`;
+SELECT CustomerName,CustomerAddress FROM `order`;
+SELECT * FROM `order` WHERE OrderNumber = 542401;
+SELECT * FROM `order` WHERE CustomerAddress = "CG Road Ahmedabad";
+SELECT * FROM `order` WHERE CustomerAddress = "CG Road Ahmedabad" AND id = 4;
+SELECT * FROM `order` WHERE CustomerAddress = "CG Road Ahmedabad" OR id = 7;
+SELECT * FROM `order` WHERE NOT CustomerAddress = "CG Road Ahmedabad" OR id = 7;
+SELECT * FROM `order` ORDER BY CustomerName;
+SELECT * FROM `order` ORDER BY CustomerName DESC, TotalAmount ASC;
+SELECT * FROM `order` ORDER BY DeliveryDate DESC;
+INSERT INTO `order`( `OrderDate`, `CustomerName`, `TotalAmount`, `OrderNumber`, `DeliveryDate`, `CustomerAddress`) VALUES ('2025-01-01','Jay','5000','542301','2025-02-01','Super Market Morbi')
+UPDATE `order` SET `CustomerAddress`='Noida UP' WHERE Id = 10;
+UPDATE `order` SET `CustomerName`='Bhavesh' WHERE Id = 10;
+UPDATE `order` SET `DeliveryDate` ='2012-08-15' WHERE Id = 3;
+DELETE FROM `order` WHERE Id = 10;
+SELECT * FROM `order` WHERE 1 = 1 LIMIT 5 OFFSET 2;
+SELECT * FROM `order` LIMIT 5;
+SELECT * FROM `order` ORDER BY TotalAmount LIMIT 5;
+SELECT MIN(TotalAmount) as LowestTotal FROM `order`;
+SELECT MAX(TotalAmount) as MaximumTotal FROM `order`;
+SELECT COUNT(TotalAmount) as CountofRow FROM `order`;
+SELECT AVG(TotalAmount) as AvgofTotal FROM `order`;
+SELECT SUM(TotalAmount) as sumofTotal FROM `order`;
+SELECT * FROM `order` WHERE CustomerName LIKE "p%";
+SELECT * FROM `order` WHERE CustomerName LIKE "_a%";
+SELECT * FROM `order` WHERE CustomerName LIKE "%a_";
+SELECT * FROM `order` WHERE CustomerName LIKE "%h";
