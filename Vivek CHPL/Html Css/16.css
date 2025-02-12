@@ -1,0 +1,65 @@
+body {
+  background-color: beige;
+}
+h1 {
+  color: aqua;
+  text-align: center;
+  background-color: #fc9;
+  /* opacity: 0.3; */
+  border-radius: 20px;
+  text-decoration: underline overline;
+  /* text-decoration-line: line-through; */
+  text-decoration-color: royalblue;
+}
+#try {
+  font-family: Verdana;
+  font-size: 20px;
+  background-image: url(./images/nature.jpeg);
+  margin: 20px 25px 40px 50px;
+}
+#back {
+  background-image: url(./images/back.jpeg);
+  /* background-position: top; */
+  border-style: dashed dotted double groove;
+  border-width: 5px;
+  border-color: blueviolet;
+  padding: 5px 10px 7px 25px;
+}
+#new {
+  border-top-style: double;
+  border-right-style: dashed;
+  border-bottom-style: dotted;
+  border-left-style: groove;
+  border-width: 6px;
+  border-color: red green blue yellow;
+  text-transform: capitalize;
+  text-indent: 50px;
+}
+h3 {
+  /* border-left: 2px solid red; */
+  border: 1px solid black;
+  outline-offset: 10px;
+  outline: 1px solid red;
+}
+h4 {
+  border-bottom: 2px solid palevioletred;
+  outline-style: double;
+}
+button{
+  height: 70px;
+  width: 70px;
+  color: brown;
+}
+#click:hover{
+  background-color: black;
+}
+#click2{
+  height: 70px;
+  width: 70px;
+  background-color: hotpink;
+  color: black;
+}
+#click2:hover{
+  background-color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(5, 29, 31);
+  color: #707172;
+  height: 50px;
+}
+header:hover {
+  color: #520e11;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.menus {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-top: 20px;
+}
+a:hover {
+  color: #a00004;
+}
+#cname {
+  color: #b12b2e;
+  padding-left: 19%;
+  text-shadow: burlywood 2px 2px 5px;
+}
+.forp {
+  font-size: xx-large;
+}
+#g {
+  color: #a00004;
+}
+
+#forlorem {
+  color: black;
+}
+button {
+  background-color: #a00004;
+  color: white;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #051d1f;
+}
+
+.forstatic {
+  margin-left: 19%;
+}
+.bg {
+  background-image: url("./images/xyz.jpg");
+  border-bottom-left-radius: 100px;
+  height: 350px;
+}
+h2 {
+  text-align: center;
+}
+#os {
+  text-align: center;
+}
+.forrow {
+  border: 1px solid black;
+  width: 270px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.mainforspecial {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 5%; */
+}
+.one {
+  background-image: url(./images/real.jpeg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.second {
+  background-image: url(./images/asso.jpeg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.third {
+  background-image: url(./images/hrms.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+lorem {
+  color: #707172;
+}
+.list{
+    display: flex;
+}
+div.tab{
+    background-image: url(./images/back.jpeg);
+    width: 500px;
+    height: 400px;
+}
+div.databac{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+#mycoimg{
+    width: 500px;
+    height: 400px;
+}
+.btnco {
+    background-color: #a00004;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+  }
+  .btnco:hover {
+    background-color: #051d1f;
+  }
+  .title:hover{
+    color: #a00004;
+  }
+  .imgm{
+    background-image: url(./images/back.jpeg);
+  }
+  .forrow:hover{
+    background-color: #ECF2FC;
+  }

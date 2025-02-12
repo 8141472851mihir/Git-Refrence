@@ -1,0 +1,53 @@
+2. SELECT * FROM `emp`;
+   SELECT name,city FROM `emp`;
+
+3. SELECT * FROM `emp` WHERE city="bhavnagar";
+   SELECT * FROM `emp` WHERE salary>200000;
+
+4. SELECT * FROM `emp` WHERE salary=200000 and designation="hr manager";
+   SELECT * FROM `emp` WHERE salary=200000 or designation="manager";
+   SELECT * FROM `emp` WHERE not city="morbi";
+   SELECT * FROM `emp` WHERE city="bhavnagar" AND (salary=40000 or salary=500000);
+   SELECT * FROM `emp` WHERE NOT city="bhavnagar" AND NOT city="morbi";
+
+5. SELECT * FROM `emp` ORDER BY city;
+   SELECT * FROM `emp` ORDER BY designation DESC;
+   SELECT * FROM `emp` ORDER BY salary DESC, city ASC;
+   SELECT * FROM `emp` ORDER BY salary, city;
+
+6. INSERT INTO emp (doj, number) VALUES ("2004-11-26",6622554412);
+
+7. SELECT * FROM `emp` WHERE name IS null;
+   SELECT * FROM `emp` WHERE name IS NOT null;
+
+8. UPDATE emp SET doj="2005-12-15", number=7894562584 WHERE id=8;
+
+9. DELETE FROM emp WHERE id=9;
+
+10. SELECT * FROM `emp` LIMIT 3;
+    SELECT * FROM `emp` LIMIT 3 OFFSET 3;
+    SELECT * FROM `emp` WHERE city="bhavnagar" LIMIT 2;
+    SELECT * FROM `emp` ORDER BY city LIMIT 6;
+
+11. SELECT MIN(salary) AS SmallestSalary FROM emp;
+    SELECT MAX(salary) AS HighestSalary FROM emp;
+
+12. SELECT COUNT(name) FROM emp;
+    SELECT AVG(salary) FROM emp;
+    SELECT SUM(salary) FROM emp;
+
+13. SELECT * FROM emp WHERE name LIKE "v%";
+    SELECT * FROM emp WHERE name LIKE "%k";
+    SELECT * FROM emp WHERE name LIKE "%vi%";
+    SELECT * FROM emp WHERE name LIKE "_i%";
+    SELECT * FROM emp WHERE name LIKE "n%l";
+    SELECT * FROM emp WHERE name NOT LIKE "v%";
+
+
+INSERT INTO `orderitem` (`order_item_id`, `order_id`, `product_id`, `quantity`, `price`) VALUES (NULL, '1', '1', '2', '50000');
+
+INSERT INTO `payment` (`payment_id`, `order_id`, `user_id`, `amount`, `payment_status`, `payment_date`) VALUES (NULL, '1', '1', '50000', 'completed', '2025-01-02');
+
+INSERT INTO `cart` (`cart_id`, `user_id`, `product_id`, `quantity`) VALUES (NULL, '1', '1', '2');
+
+INSERT INTO `review` (`review_id`, `user_id`, `product_id`, `rating`, `comment`) VALUES (NULL, '1', '1', '5', 'nice laptop');
