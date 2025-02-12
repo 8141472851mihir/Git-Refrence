@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>task-2</title>
+    <script>
+        $(document).ready(function () {
+            $("#incsize").click(function () {
+                $("div").animate({
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            });
+            $("#decsize").click(function () {
+                $("div").animate({
+                    height: '-=150px',
+                    width: '-=150px'
+                });
+            });
+            $("#reset").click(function () {
+                $("div").animate({
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="incsize">increase size</button> 
+    <button id="decsize">decrease size</button>
+    <button id="reset">Reset size</button>
+    <div style="background:#98bf21;height:150px;width:150px;position:absolute; margin: 10px;"></div>
+</body>
+
+</html>

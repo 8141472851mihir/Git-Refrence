@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>toggal color</title>
+    <script>
+        $(document).ready(function () {
+            $(".toggal").click(function () {
+                $(".div1").toggleClass("change");
+            });
+            $("#start").click(function () {
+                $("div").animate({ left: '440px' },5000);  
+            });
+
+            $("#stop").click(function () {
+                $("div").stop();
+            });
+        });
+    </script>
+    <style>
+        .div1 {
+            background-color: lightblue;
+            height: 50px;
+            width: 500px;
+        }
+
+        .change {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h2>click the button to toggal color</h2>
+    </div>
+    <button class="toggal">toggal color</button>
+
+    <hr>
+    <button id="start"> start animation</button>
+    <button id="stop"> stop animation</button>
+
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+
+</body>
+
+</html>

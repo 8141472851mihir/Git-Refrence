@@ -1,0 +1,32 @@
+
+INSERT INTO order_table(customer_name, product_name, product_price, product_sell, product_date) 
+VALUES ('veer','ac','45000','550000','2024-10-10');
+
+INSERT INTO order_table(customer_name, product_name, product_price, product_sell, product_date) 
+VALUES ('dharmi','light','500','1000','2024-12-10'),
+('ganesh','ring','40000','600000','2024-05-20'),
+('rudra','ac','45000','550000','2024-08-22'),
+('rudri','ac','45000','550000','2024-02-02'),
+('gagan','ac','45000','550000','2024-04-30'),
+('abhishek','ac','45000','550000','2024-06-29');
+INSERT INTO order_table (customer_name,product_name,product_date)
+VALUES('bhavya', 'washing machine','2025-01-21');
+
+SELECT customer_name,product_name,product_price FROM `order_table` WHERE product_sell < 50000;
+SELECT customer_name,product_name,product_price FROM `order_table` WHERE product_name = 'tv' AND product_sell < 50000;
+SELECT customer_name,product_name,product_price FROM `order_table` WHERE product_name = 'tv' OR product_sell < 50000;
+SELECT * FROM `order_table` WHERE NOT product_name = 'ac';
+SELECT * FROM `order_table` WHERE customer_name = 'veer' AND (product_name = 'ac' OR product_price = 45000);
+SELECT * FROM order_table ORDER BY product_date;
+SELECT * FROM order_table ORDER BY product_sell DESC;
+SELECT * FROM order_table ORDER BY product_name, product_sell DESC;
+UPDATE order_table SET product_price = 50000 WHERE product_price = 40000; 
+DELETE FROM order_table WHERE customer_name = 'rudra';
+SELECT * FROM `order_table` LIMIT 5;
+SELECT * FROM `order_table` LIMIT 5 OFFSET 2;
+SELECT MIN(product_price) AS minproductprice FROM order_table WHERE product_name = 'ac';
+SELECT MAX(product_price) AS minproductprice FROM order_table;
+SELECT COUNT(customer_name) FROM order_table where product_name = 'tv';
+SELECT SUM(product_sell) FROM order_table WHERE product_name = 'ac';
+SELECT AVG(product_sell) FROM order_table;
+SELECT * FROM order_table where customer_name like 'r%';

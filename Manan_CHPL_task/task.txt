@@ -1,0 +1,78 @@
+Task 1: Use Wildcards, IN, and BETWEEN Operators
+Write a query to find students whose names start with 'A' or end with 'n', have an age between 18 and 25, and live in cities 'Delhi', 'Mumbai', or 'Pune'.
+
+SELECT s.`first_name`,s.`age`, s.`city` FROM `students` s WHERE s.age BETWEEN 18 AND 25  AND (s.city = "Delhi" OR s.city = "Mumbai" OR s.city = "Pune");  => count of data 3
+
+=> SELECT s.`first_name`,s.`age`, s.`city` FROM `students` s WHERE (s.first_name LIKE 'a%' OR s.first_name LIKE '%n') AND s.age BETWEEN 18 AND 25  AND (s.city = "Delhi" OR s.city = "Mumbai" OR s.city = "Pune" ); => count of data 1
+---------------------------------------------------------------------------------------------------------
+Task 2: Use Aliases, UNION, and GROUP BY
+Get a list of students and courses they are enrolled in. Use aliases for column names.
+Combine this list with a list of all available courses (even if no student is enrolled in them).
+Group the results by course and show how many students are enrolled in each.
+
+ 
+=> SELECT  c.`course_name`  FROM `courses` as c UNION SELECT e.first_name  FROM students as e;  => total count 40
+
+SELECT  c.`course_name`,COUNT(s.student_id) AS student_count FROM `courses` as c LEFT JOIN students as s ON c.course_id = s.course_id GROUP BY s.course_id;  => count of data 20
+
+---------------------------------------------------------------------------------------------------------
+Task 3: Use HAVING, EXISTS, and ANY Operators
+Find courses that have more than 3 students enrolled.
+Only show courses where at least one enrollment exists.
+Use the ANY operator to compare enrollment fees.
+
+=> SELECT e.course_id FROM enrollments as e GROUP BY e.course_id HAVING COUNT(course_id)>3;   => total count 0
+=> SELECT c.`course_name` FROM courses as c WHERE EXISTS (SELECT e.`course_id` FROM enrollments as e WHERE c.course_id = e.course_id GROUP BY e.student_id HAVING COUNT(e.student_id)>=1 );      	 total count 20
+
+=>SELECT s.`first_name` FROM students as s WHERE s.course_id = any (SELECT c.course_id FROM courses as c WHERE c.fee > 50000);
+
+
+---------------------------------------------------------------------------------------------------------
+Task 4: Use INSERT INTO SELECT, SELF JOIN, and LEFT JOIN
+Insert students who completed a course into a new table Alumni with their course info.
+Then, find students who have the same city but different courses (using SELF JOIN).
+Also, retrieve students who are not enrolled in any course.
+
+
+=>INSERT INTO alumni (`student_id`,`course_id`,`Completed_date`)
+SELECT `student_id`,`course_id`,CURRENT_TIMESTAMP FROM enrollments WHERE STATUS = 'Completed';
+
+=>SELECT e.enrollment_id FROM enrollments as e WHERE e.course_id IS NULL;
+=>SELECT e.student_id, e1.`course_id` FROM enrollments as e JOIN enrollments as e1 ON e.student_id = e1.student_id WHERE e1.course_id IS null;
+
+=>SELECT s.`first_name` as student1, s.`course_id` as "student1 course" ,s1.`first_name` AS student2, s1.`course_id` as "student2 course" , s.city as city FROM students s, students s1 WHERE s.`student_id`<> s1.student_id AND s.city=s1.city AND s.`course_id`<> s1.`course_id`;
+
+
+
+more =====================================================================================================
+
+table 
+CREATE TABLE alumni1 (
+    alumni_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT NOT NULL,
+    course_id INT NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    course_name VARCHAR(100) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    duration_months INT NOT NULL,
+    fee DECIMAL(10,2) NOT NULL,
+    completed_date date  
+);
+
+
+sql ===============================================================================================
+INSERT INTO alumni1 (`student_id`,`course_id`,`first_name`,`last_name`,`course_name`,`category`,`duration_months`,`fee`,`completed_date`)
+SELECT s.`student_id`,c.`course_id`,s.`first_name`,s.`last_name`,c.`course_name`,c.`category`,c.`duration_months`,c.`fee`, CURRENT_TIMESTAMP FROM students as s LEFT JOIN courses as c ON s.`course_id` = c.`course_id` LEFT JOIN enrollments as e on e.student_id = s.student_id WHERE STATUS = 'Completed';
+
+
+---------------------------------------------------------------------------------------------------------
+Task 5: Use RIGHT JOIN, INNER JOIN, and CROSS JOIN
+Find students and their enrolled courses using RIGHT JOIN.
+Get a list of students who have not enrolled in any course.
+Perform a CROSS JOIN between students and courses (to suggest course recommendations).
+
+SELECT s.`student_id`,s.`first_name`,c.course_name FROM students as s RIGHT JOIN courses as c  ON s.course_id = c.course_id;
+
+SELECT e.`student_id`, e1.`course_id` from enrollments AS e CROSS JOIN enrollments as e1;
+

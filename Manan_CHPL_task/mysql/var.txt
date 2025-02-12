@@ -1,0 +1,9 @@
+data type -> length
+
+
+CHAR -> 0 to 255 characters
+VARCHAR -> 0 to 65535 characters
+BINARY -> 255 bytes
+TEXT -> 65,535 bytes
+INT -> 0 to 4294967295 bytes
+BIGINT -> 9223372036854775807 bytes

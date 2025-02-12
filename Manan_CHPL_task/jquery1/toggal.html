@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>jquery</title>
+</head>
+
+<body>
+  <button>
+    <h1 class="singal">click</h1>
+  </button>
+  <button>
+    <h1 class="doubal">doubal click</h1>
+  </button>
+  <hr>
+  <p class="p1">hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit nulla blanditiis sapiente
+    libero consequuntur vitae aut illo, veritatis, cum placeat modi repellat velit dolorem beatae nisi iste doloribus
+    officia?</p>
+  <hr>
+  <p class="p2">welconme Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit amet doloremque sint
+    placeat voluptate corrupti soluta inventore voluptates alias sapiente, voluptatum fugit reiciendis asperiores,
+    aliquam iste animi consequuntur. Sed, nulla.
+  </p>
+  <hr>
+  <p class="color">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam error quod totam a, facere voluptas
+    voluptatem at eius amet, expedita nostrum dolorum impedit repellendus, unde deserunt sequi maiores laborum
+    provident.</p>
+  <hr>
+  <button>
+    <p class="p3">mouse up</p>
+  </button>
+  <button>
+    <p class="p4">mouse down</p>
+  </button>
+
+  <button>
+    <p class="p5">hover</p>
+  </button>
+  <br>
+  <button class="but">hi</button>
+  <button class="but">by</button>
+  <br>
+
+  <input type="name" placeholder="name">
+  <input type="text" placeholder="password">
+</body>
+
+</html>
+<script>
+  $(document).ready(function () {
+    $(".singal").click(function () {
+      $(".singal").hide();
+    });
+    $(".doubal").dblclick(function () {
+      $(".doubal").hide();
+    });
+    $(".p1").mouseenter(function () {
+      alert("You entered p1!");
+    });
+    $(".p2").mouseleave(function () {
+      alert("Bye! You now leave p2!");
+    });
+    $(".p3").mouseup(function () {
+      alert("Mouse down over p3!");
+    });
+    $(".p4").mousedown(function () {
+      alert("Mouse down over p4!");
+    });
+    $(".p5").hover(function () {
+      alert("Mouse down over p5!");
+    });
+    $("input").focus(function () {
+      $(this).css("background-color", "red");
+    });
+    $("input").blur(function () {
+      $(this).css("background-color", "green");
+    });
+    $(".but").on("click", function () {
+      $(this).hide();
+    });
+    $(".color").on({
+      mouseenter: function () {
+        $(this).css("background-color", "red");
+      },
+      mouseleave: function () {
+        $(this).css("background-color", "blue");
+      },
+      click: function () {
+        $(this).css("background-color", "yellow");
+      }
+    });
+  });
+</script>

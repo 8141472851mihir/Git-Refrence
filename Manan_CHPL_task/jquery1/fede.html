@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>fead</title>
+    <script>
+        $(document).ready(function () {
+            $(".hide").click(function () {
+                $("p").hide();
+            });
+            $(".show").click(function () {
+                $("p").show();
+            });
+            $(".fadein").click(function () {
+                $("p").fadeIn(3000);
+            });
+            $(".fadeout").click(function () {
+                $("p").fadeOut(100);
+            });
+            $("#toggle").click(function () {
+                $("p").fadeToggle(300);
+            });
+            $("#fadeto").click(function () {
+                $("#div1").fadeTo("slow", 0.1);
+            });
+            $("#open").click(function () {
+                $("#panel").slideDown("slow");
+            });
+            $("#close").click(function () {
+                $("#panel").slideUp("slow");
+            });
+            $("#toggle1").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+            $(".but").click(function () {
+                $("ul li:first").hide();
+            });
+            $(".but1").click(function () {
+                $("ul li:first-child").hide();
+            });
+            $(".href1").click(function () {
+                $("a[target='_blank']").hide();
+            });
+            $(".href").click(function () {
+                $("[href]").hide();
+            });
+            $(".href2").click(function () {
+                $("a[target!='_blank']").hide();
+            });
+            $(".button1").click(function () {
+                $(":button").hide();
+            });
+            $("tr:even").css("background-color","red");
+            $("#even").click(function () {
+                $("tr:even").css("background-color","white");
+                $("tr:odd").css("background-color","yellow");
+            });
+            $("#odd").click(function () {
+                $("tr:even").css("background-color","red");
+                $("tr:odd").css("background-color","white");
+            });
+
+        });
+
+    </script>
+    <style>
+        #panel,
+        #panel1,
+        #close,
+        #open,
+        #toggle1 {
+            padding: 5px;
+            text-align: center;
+            background-color: #94bad7;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel,
+        #panel1 {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus animi sint culpa aut ad, quos fuga
+        voluptate minima aperiam incidunt magnam dolor dolorem, voluptatem accusamus qui veniam? Doloribus, ipsa
+        necessitatibus.</p>
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <button class="fadeout">fade out</button>
+    <button class="fadein">fade in</button>
+    <button id="toggle">fadetoggle</button>
+    <hr>
+    <br>
+    <button id="fadeto">box fade </button><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+
+    <br>
+    <div id="open">open slide</div>
+    <div id="panel"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim autem neque debitis obcaecati
+        vel dolores ut totam ad nihil, ipsam cumque deserunt earum, fuga doloremque aspernatur delectus sapiente quia?
+    </div>
+    <div id="close">close slide</div>
+    <div id="toggle1">slide toggle</div>
+
+
+    <br>
+    <p>List 1:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>List 2:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <button class="but1">both ui li first hide</button>
+    <button class="but">li first hide</button>
+    <br>
+    <br>
+    <a href="">html</a>
+    <a href="" target="_blank">css</a>
+    <br>
+    <button class="href">link hide</button>
+    <button class="href1">_blank hide</button>
+    <button class="href2">not _blank hide</button>
+    <br>
+    <br>
+    <button class="button1">hide all button</button>
+    <table border="1" align="center" style="text-align: center;" >
+    <tr>
+        <th style="width: 200px;">name</th>
+        <th style="width: 50px;">age</th>
+    </tr>
+    <tr>
+        <td>yesh</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>yug</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>om</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>devang</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>jay</td>
+        <td>20</td>
+    </tr>
+    </table>
+<br>
+    <div align="center"><button id="even">even</button>
+    <button id="odd">odd</button>
+</div>
+</body>
+
+</html>

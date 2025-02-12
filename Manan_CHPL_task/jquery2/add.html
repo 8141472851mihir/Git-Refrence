@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Data Add & Remove</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .item {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #container {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            let count = 0;
+
+            function countinc() {
+                $("#count").text("Total Entries: " + count);
+            }
+
+            $("#add-btn").click(function () {
+                let inputValue = $("#text").val().trim();
+
+                if (inputValue !== "") {
+                    count++;
+                    $("#container").append(
+                        `<div class="item">
+                            <span class="text">${inputValue}</span>
+                            <span class="delete-btn">✖</span>
+                        </div>`
+                    );
+                    $("#text").val("");  // Clear input field
+                    countinc();       // Update the total count
+                }
+            });
+
+            // Event delegation for dynamically created delete buttons
+            $("#container").on("click", ".delete-btn", function () {
+                $(this).parent().remove();  // Remove the parent div
+                count--;
+                countinc();              // Update the total count
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Input Field and Add Button -->
+    <p>
+        <input type="text" id="text" placeholder="Enter item">
+        <button id="add-btn">Add Item</button>
+    </p>
+
+    <!-- Data Display Section (Inserted Data Appears Here) -->
+    <div id="container"></div>
+
+    <!-- Total Count Display -->
+    <p id="count">Total Entries: 0</p>
+</body>
+
+</html>
