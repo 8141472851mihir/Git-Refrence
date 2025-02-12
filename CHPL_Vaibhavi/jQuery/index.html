@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquerycdn.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .color {
+            background-color: lightblue;
+            font-size: 20px;
+            color: white;
+        }
+
+        #flip {
+            background-color: lightgrey;
+            text-align: center;
+            font-size: 22px;
+            color: brown;
+        }
+
+        #panel {
+            padding: 50px;
+            text-align: center;
+            background-color: lightblue;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Welcome Our page</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas odio neque impedit dolore, quo id
+            modi ut reprehenderit! Impedit culpa ad quod sit quia.</p>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+    <button class="btn1">signin</button>
+    <br>
+    <hr>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:lightblue;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:pink;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:grey;"></div><br>
+    <button class="btn">click me</button>
+    <br>
+    <hr>
+    <div id="flip">Click to panel</div>
+    <div id="panel">Hello world!</div>
+    <br>
+    <hr>
+    <button class="btn2">Animate</button>
+
+    <div id="box" style="width: 80px;height: 80px;background-color: lightcoral;position: absolute;">Hii</div><br>
+    
+    
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                $("p:first").hide();
+            })
+            $("ul").click(function () {
+                $("li:first").toggle();
+
+            })
+            $(".btn1").mouseup(function () {
+                $("ul li").toggle();
+                $("p").toggleClass("color");
+            })
+            $(".btn").click(function () {
+                $("#div1").fadeIn("slow");
+                $("#div2").fadeIn(5000);
+                $("#div3").fadeIn(2000);
+            });
+            $("#flip").click(function () {
+                $("#panel").slideToggle();
+            })
+            $(".btn2").click(function () {
+
+                var div = $("#box");
+                
+                div.animate({ height: '300px', opacity: '0.4',left:'150px',fontSize: '3em'}, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+                div.animate({ color : 'white'},"slow");
+                div.animate({top:'30px'},"slow");
+                div.animate({bottom:'100px'},"slow");
+                div.animate({top:'350px'})
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
