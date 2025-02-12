@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .square{
+            height: 100px; 
+            width: 100px;
+             background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="increase">increase size</button>
+    <button id="descrease">decrease</button>
+    <button id="reset">reset</button>
+    <br><br>
+    <div id="box" class="square"></div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#increase").click(function(){
+            $("#box").animate({height: "+=50px",width: "+=50px"});
+        });
+        $("#descrease").click(function(){
+            $("#box").animate({height: "-=50px",width: "-=50px"});
+        });
+        $("#reset").click(function(){
+            $("#box").css({"height": "100px", "width": "100px"});
+        });
+    });
+</script>

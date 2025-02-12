@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      div {
+        background-color: skyblue;
+        height: 250px;
+        width: 500px;
+        text-align: center;
+      }
+
+      h3 {
+        padding: 100px;
+      }
+
+      .check {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h3>Click The Button To Toggle Color</h3>
+    </div>
+    <button>Toggle Color</button>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    $("button").click(function () {
+      $("div,h3").toggleClass("check");
+    });
+  });
+</script>

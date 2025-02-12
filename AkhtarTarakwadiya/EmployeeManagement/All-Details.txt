@@ -1,0 +1,61 @@
+FOLDER STRUCTURE FOR THIS PROJECT :-
+
+employee_management_system/
+│── assets/
+│   ├── css/ (style.css)
+│   ├── js/ (script.js)
+│   ├── images/
+│── database/ (db_connection.php, create_tables.sql)
+│── includes/ (header.php, footer.php)
+│── employees/ (add_employee.php, edit_employee.php, list_employees.php)
+│── actions/ (add.php, update.php, delete.php, fetch_designations.php)
+│── uploads/ (profile_pictures/)
+│── index.php
+│── README.md
+
+
+=================================================================
+Queries For DATABASE And TABLES :-
+
+CREATE DATABASE employee_db;
+
+USE employee_db;
+
+-- Departments Table
+CREATE TABLE departments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Designations Table (Related to Departments)
+CREATE TABLE designations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    department_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE
+);
+
+-- Employee Details Table
+CREATE TABLE employee_details (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    gender ENUM('Male', 'Female', 'Other') NOT NULL,
+    department_id INT NOT NULL,
+    designation_id INT NOT NULL,
+    skills VARCHAR(255) NOT NULL,
+    salary DECIMAL(10,2) NOT NULL,
+    joining_date DATE NOT NULL,
+    profile_pic VARCHAR(255) NULL,
+    status ENUM('Active', 'Inactive') DEFAULT 'Active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE,
+    FOREIGN KEY (designation_id) REFERENCES designations(id) ON DELETE CASCADE
+);
+

@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+.img-container {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img-container img {
+    height: 250px;
+    width: 250px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.unorder-list {
+    display: flex;
+    gap: 20px;
+}
+
+.order-list {
+    display: flex;
+    gap: 20px;
+}
+
+.table-ex {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table-ex table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    color: black;
+    background-color: burlywood;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.self {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.websites-ex {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}

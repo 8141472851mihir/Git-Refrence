@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form With Grid System</title>
+    <link rel="shortcut icon" href="images/chpl.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <div class="card mt-2 shadow-lg p-4">
+            <div class="row p-2">
+                <div class="col-md-12 col-sm-2 border-bottom"><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;EVENT</div>
+            </div>
+            <form action="#" class="was-validated">
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="etitle">EVENT Title <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <input type="text" class="form-control" id="etitle" name="etitle"required minlength="5"
+                            maxlength="25">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="edesc">EVENT DESCRIPTION</label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <input type="text" class="form-control p-3" id="edesc" name="edesc" minlength="5"
+                            maxlength="250">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="attach">ATTACHMENT</label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <input type="file" class="form-control" id="attach" name="attach" minlength="5" maxlength="250">
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="days">TOTAL DAYS <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input class="form-control" list="day" name="day" id="days" required>
+                        <datalist id="day">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                        </datalist>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="days">NEED FUND/DONATION FOR THIS EVENT <span
+                                class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" required>
+                            <option value="" selected disabled>---Select---</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="amount">TOTAL DONATION AMOUNT <span
+                                class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" class="form-control" id="amount" name="amount" minlength="5" maxlength="250" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="amount">MINIMUM DONATION AMOUNT PER USER <span
+                                class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" class="form-control" id="amount" name="amount" minlength="5" maxlength="250" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="balance">DONATION BALACNESHEET <span
+                                class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <select class="form-select" required>
+                            <option value="" selected disabled>---Select Balance Sheet---</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-3 ">
+                        <label class="form-lable" for="ephoto">EVENT PHOTO</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" class="form-control" id="ephoto" name="ephoto">
+                        <p>Max Size Upto 3Mb</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" class="form-control" id="ephoto" name="ephoto">
+                        <p>Max Size Upto 3Mb</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="file" class="form-control" id="ephoto" name="ephoto">
+                        <p>Max Size Upto 3Mb</p>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-md-12 col-sm-12">DAY 1</div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="ddate">EVENT DAY 1 DATE <span
+                                class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="date" class="form-control" id="ddate" name="ddate" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 "></div>
+                    <div class="col-md-2 "></div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="dname">EVENT DAY NAME <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10">
+                        <input type="text" class="form-control" id="dname" name="dname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="etype">EVENT TYPE <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-4 col-sm-10 d-flex">
+                        <div class="form-check">
+
+                            <label class="form-check-label" for="radio1"><input type="radio" class="form-check-input"
+                                    id="radio1" name="optradio" value="unpaid" checked required>Unpaid</label>
+                        </div>&nbsp;&nbsp;&nbsp;
+                        <div class="form-check">
+
+                            <label class="form-check-label" for="radio2"> <input type="radio" class="form-check-input"
+                                    id="radio2" name="optradio" value="paid" required>Paid</label>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="edesc">EVENT LOCATION <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <input type="text" class="form-control p-3" id="edesc" name="edesc" minlength="5"
+                            maxlength="250" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-md-2 col-sm-2">
+                        <label class="form-lable" for="maxa">MAXIMUM ALLOWED <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <p>Adult</p>
+                        <input type="text" class="form-control" id="maxa" name="member" placeholder="Member" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <p>Child</p>
+                        <input type="text" class="form-control" id="maxa" name="child" placeholder="Children" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <p>Guest</p>
+                        <input type="text" class="form-control" id="maxa" name="guest" placeholder="Guest" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-4 col-sm-3">
+                        <p>Start Time</p>
+                        <input type="text" class="form-control" id="maxa" name="stime" placeholder="Start Time" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-md-12 col-sm-12 text-danger text-center">NOTE: SET MAXIMUM ALLOWED 0, IF NOT ALLOWED</div>
+                </div>
+                <div class="row border-top m-3">
+                    <div class="text-center mt-2">
+                        <button type="submit" class="p-1 btn btn-dark text-white"><i class="fa-regular fa-square-check"></i>&nbsp;SAVE</button>
+                         <button type="reset" class="p-1 btn btn-danger text-white"><i class="fa-solid fa-x"></i>&nbsp; RESET</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
