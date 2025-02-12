@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+        margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(230, 113, 117);
+    z-index: 1000;
+}
+
+nav {
+    margin-top: 67px;
+    width: 20%;
+    height: 100%;
+    background: #6ba4c9;
+    padding: 20px;
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 30px;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: black;
+    color: red;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 20%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+}
+
+iframe {
+    border: 3px solid black;
+}
+
+footer {
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+    background: #261515;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+table {
+    height: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    text-align: center;
+    padding: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(95, 216, 95);
+}
+
+article {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 10px;
+    scroll-margin-top: 80px;
+}
+
+.text {
+    width: 50%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+h1 {
+    text-align: center;
+    color: #444;
+    
+}
+
+form label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="phone"],
+form input[type="date"],
+form input[type="age"],
+form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 20%;
+
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-container label {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.name-container input {
+    width:50px;
+}
+
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form label[for="male"],
+form label[for="female"],
+form label[for="Vehicle1"],
+form label[for="Vehicle2"],
+form label[for="Vehicle3"] {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #ffa200;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #307fd4;
+}   

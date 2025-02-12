@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /*header css*/
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 28px;
+      background-color: bisque;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #777;
+      background-color: yellowgreen;
+      width: 50%;
+      margin: auto;
+      margin-top: 20px;
+      border: 2px double ;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: large;
+      font-style: italic;
+      text-align: center;
+      color: red;
+    }
+
+    h2:hover {
+      transform: scale(1.5);
+      transition: 0.8s;
+    }
+
+    .header p {
+      text-align: center;
+    }
+
+    #header {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      position: sticky;
+      top: 0;
+    }
+
+    img {
+      height: 60px;
+      width: 15%;
+    }
+
+    #header li {
+      float: right;
+    }
+
+    #header li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #header li a:hover {
+      background-color: #111;
+    }
+
+
+    /*DropDown css*/
+    #header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: forestgreen;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:rgb(36, 154, 140);
+      min-width: 160px;
+      box-shadow: 10px 15px 50px;
+      z-index: 1;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /*text css*/
+    .text p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border: 5px solid green;
+      border-radius: 15px;
+      text-align: justify;
+    }
+
+    #overline{
+      text-decoration: overline underline;
+    }
+
+    #line-through{
+      text-decoration: line-through;
+      text-decoration-color: blue;
+    }
+
+    #linespace{
+      line-height: 0.7;
+    }
+
+    #lineheight{
+      line-height: 1.8;
+    }
+
+    #textshadow{
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    p.one {
+      word-spacing: 10px;
+    }
+    
+    p.two {
+      word-spacing: -2px;
+    }
+
+
+
+    /*table css*/
+    table,
+    td,
+    th {
+      margin: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 99%;
+    }
+
+    th {
+      border: 1px solid grey;
+      color: blue;
+      background-color: goldenrod;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      border-bottom: 1px solid gray;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+
+    /*Image-Transparency*/
+    .image-transparency {
+      justify-content: center;
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .image1 {
+      color: white;
+      background-size: cover;
+      background-image: url('../HTML/images/mustang.jpg');
+      border: 1px solid gray;
+      height: 300px;
+      width: 100%;
+      border-radius: 20px;
+      text-align: center;
+      padding: auto;
+      margin: 10px;
+      opacity: 0.5;
+    }
+
+    .image2 {
+      color: white;
+      background-size: cover;
+      background-image: url('../HTML/images/mustang.jpg');
+      border: 1px solid gray;
+      height: 300px;
+      width: 100%;
+      border-radius: 20px;
+      text-align: center;
+      padding: auto;
+      margin: 10px;
+      opacity: 0.8;
+    }
+
+    .image3 {
+      color: white;
+      background-size: cover;
+      background-image: url('../HTML/images/mustang.jpg');
+      border: 1px solid gray;
+      height: 300px;
+      width: 100%;
+      border-radius: 20px;
+      text-align: center;
+      padding: auto;
+      margin: 10px;
+      opacity: 1;
+    }
+
+    /*gallery css*/
+    .gallery {
+      margin: 35px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      float: left;
+      width: 302px;
+    }
+
+    .gallery:hover {
+      border: 2px solid #777;
+      border-radius: 20px;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      border-radius: 20px;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+      background-color: #e78282;
+      border-radius: 20px;
+    }
+
+    /*list css*/
+    .list {
+      outline: 2px solid blue;
+      border-radius: 10px;
+      margin-top: 30px;
+      clear: both;
+    }
+
+    .list h3 {
+      text-shadow: 2px 2px 5px gray;
+    }
+
+    /*card css*/
+    .card1,
+    .card2 {
+      background-color: #777;
+      margin-top: 10px;
+      height: auto;
+      width: auto;
+      outline-offset: 10px;
+      box-shadow: 50px green;
+      text-align: justify;
+    }
+
+    .card1 img,
+    .card2 img {
+      height: 320px;
+      width: 30%;
+      float: left;
+    }
+
+    .card2 img {
+      float: right;
+    }
+
+    .card1 img:hover,
+    .card2 img:hover {
+      border: 2px solid #777;
+      border-radius: 20px;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+    /*DropDown Image css*/
+    .dropdown img{
+      margin-top: 10px;
+      height: auto;
+      width: 10%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Heading  -->
+  <div class="header" id="home">
+    <h2>Welcome to CHPL Group</h2>
+    <p>Communities Heritage Private Limited</p>
+  </div>
+
+  <ul id="header">
+    <a href="https://www.chplgroup.org/" target="_blank"><img src="../HTML/images/logo-dark.png" alt="logo"></a>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#text">Text</a></li>
+    <li><a href="#table">Table</a></li>
+    <li><a href="#opacity">Image Transparency</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Content</a>
+      <div class="dropdown-content">
+        <a href="#gallery">Image Gallery</a>
+        <a href="#list">List</a>
+        <a href="#card">Card</a>
+        <a href="#img-dropdown">Image DropDown</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- text -->
+  <div class="text" id="text">
+    <h1>text formatting</h1>
+    <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform,
+      and color properties.
+      The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from
+      this colored
+    </p>
+  </div>
+  <b>Overline:</b><p id="overline">Overline text decoration</p>
+  <b>line-through:</b><p id="line-through">Overline text decoration</p>
+  <b>line-spacing:</b><p id="linespace">
+    This is a paragraph with a standard line-height.<br>
+    The default line height in most browsers is about 110% to 120%.<br>
+   </p>
+   <b>line-height:</b><p id="lineheight">
+    This is a paragraph with a standard line-height.<br>
+    The default line height in most browsers is about 110% to 120%.<br>
+    </p>
+    <b>Text shadow:</b><p id="textshadow">
+      This is a paragraph with a standard line-height.<br>
+    </p>
+
+      <b>word-spacing:</b><p class="one">This is a paragraph with larger word spacing.</p><br>
+      <p class="two">This is a paragraph with smaller word spacing.</p>
+
+
+  <!-- Table -->
+  <h1 id="table">Table</h1>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+  <!-- Image Transparency -->
+  <h1 id="opacity">Image Transparency</h1>
+  <div class="image-transparency">
+    <div class="image1">
+      <p>Opacity:0.5</p>
+    </div>
+    <div class="image2">
+      <p>Opacity:0.8</p>
+    </div>
+    <div class="image3">
+      <p>Opacity:1</p>
+    </div>
+  </div>
+
+  <!-- Image Gallery -->
+  <div>
+    <h1 id="gallery">Image Gallery</h1>
+
+    <div class="gallery">
+      <a target="_blank" href="../HTML/images/mustang.jpg">
+        <img src="../HTML/images/mustang.jpg" alt="Mustang GT">
+      </a>
+      <div class="desc"><b>Ford Mustang GT</b> <br>Top Speed: 202 mph (325 km/h)<br>Engine: 4,951 cc (V8)<br>HP:
+        444-horsepower (331 kW)</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="../HTML/images/ford.webp">
+        <img src="../HTML/images/ford.webp" alt="Endeavour">
+      </a>
+      <div class="desc"><b>Ford Endeavour</b> <br>Top Speed: 180 mph (290 km/h)<br>Engine: 3,200 cc (V6)<br>HP:
+        197-horsepower (147 kW)</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="../HTML/images/H2R.jpeg">
+        <img src="../HTML/images/H2R.jpeg" alt="H2R">
+      </a>
+      <div class="desc"><b>Kawasaki Ninja H2R</b> <br>Top Speed: 249 mph (400 km/h)<br>Engine: 998 cc (Inline-4)<br>HP:
+        310-horsepower (231 kW)</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="../HTML/images/hayabusa.avif">
+        <img src="../HTML/images/hayabusa.avif" alt="Hayabusa">
+      </a>
+      <div class="desc"><b>Suzuki Hayabusa</b> <br>Top Speed: 186 mph (299 km/h)<br>Engine: 1,340 cc (Inline-4)<br>HP:
+        190-horsepower (142 kW)</div>
+    </div>
+  </div>
+
+  <!-- List -->
+  <div class="list" id="list">
+    <h1>List</h1>
+    <h3>Things I Like to Do:</h3>
+    <ul>
+      <li>Playing video games</li>
+      <li>Watching movies</li>
+      <li>Exploring new places</li>
+      <li>Learning web development</li>
+    </ul>
+
+    <h3>Goals for 2025:</h3>
+    <ol>
+      <li>Launch my new project</li>
+      <li>Travel to Europe</li>
+      <li>Learn advanced CSS animations</li>
+      <li>Read 20 books</li>
+    </ol>
+  </div>
+
+
+  <!-- Card -->
+  <h1 id="card">Card</h1>
+  <div class="card1">
+    <p><img src="../HTML/images/coffee.jpg" alt="Pineapple" style="margin-right:20px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+      egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+      vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+      odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+      ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+      tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+      Cras ac leo purus. Mauris quis diam velit.</p>
+  </div>
+
+  <div class="card2">
+    <p><img src="../HTML/images/coffee.jpg" alt="Pineapple" style="margin-left:20px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+      egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+      vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+      odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+      ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+      tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+      Cras ac leo purus. Mauris quis diam velit.</p>
+  </div>
+
+<!-- Image DropDown -->
+  <h1 id="img-dropdown">Image DropDown</h1>
+
+  <div class="dropdown">
+    <img src="..//HTML/images/H2R.jpeg" alt="H2R">
+    <div class="dropdown-content">
+    <img src="../HTML/images/H2R.jpeg" alt="hayabusa" style="height:auto;width: 100%;">
+    </div>
+  </div>
+
+</body>
+
+</html>
