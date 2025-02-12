@@ -1,0 +1,29 @@
+
+.nav{
+    height: 80px;
+    background-color: lightgray;
+}
+.content{
+    display: none;
+    position: absolute;
+}
+.btn{
+    cursor: pointer;
+}
+.dd{
+    position: relative;
+    display: inline-block;
+}
+.content a{
+    text-decoration: none;
+    display: block;
+}
+a:hover .content{
+    background-color: aqua;
+}
+.dd:hover .content{
+    display: block;
+}
+.dd:hover .btn{
+    background-color: blue;
+}

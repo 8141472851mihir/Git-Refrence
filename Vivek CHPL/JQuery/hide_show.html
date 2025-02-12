@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide_Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div>
+        <button class="btn btn-primary" id="toggle">Toggle</button>
+        <p class="both">Click me away!</p>
+        <p class="both">Click me too!</p>
+      </div>
+      <br /><br />
+      <div>
+        <p class="demo">Hide and Show</p>
+        <button class="btn btn-secondary" id="hide">Hide</button>
+        <button class="btn btn-success" id="show">Show</button>
+      </div>
+      <br /><br />
+      <div>
+        <p id="demo1">I am hiding</p>
+        <button class="btn btn-danger" id="hidebtn">Hide Slow</button>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+          $("#toggle").click(function () {
+            $(".both").toggle();
+          });
+
+          $("#show").on("click", function () {
+            $(".demo").show();
+          });
+
+          $("#hide").click(function () {
+            $(".demo").hide();
+          });
+
+          $("#hidebtn").click(function () {
+            $("#demo1").hide(1000);
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

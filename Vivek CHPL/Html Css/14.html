@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My web</title>
+    <link rel="icon" type="image/x-icon" href="./images/download.png" />
+    <link rel="stylesheet" href="14.css" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <img src="./images/chpl2.png" alt="chpllogo" id="clogo" />
+      <h2>CHPL Group</h2>
+  
+        <p id="forp">
+          Communities Heritage Pvt Ltd is formed <br />
+          with an idea of adding value to the lives <br />
+          of numerous types of communities <br />
+          who live, work & grow together.
+        </p>
+
+    </nav>
+    <div class="main">
+        <fieldset>
+
+            <legend>Registration</legend>
+
+            <form action="15.html" method="get">
+
+                <span style="float: left;">FIRST NAME<span style="color: red;">*</span> </span>     
+                <span style="float: right; padding-right: 40%;"> MIDDLE NAME </span> <br>
+                <input type="text" name="fname" style="padding-left: 410px;" required> 
+                <input type="text" name="mname" style="padding-left: 410px;">
+
+                <span style="float: left;">LAST NAME<span style="color: red;">*</span> </span>
+                <span style="float: right; padding-right: 41%;">MOBILE NO<span style="color: red;">*</span> </span> <br>
+                <input type="text" name="lname" style="padding-left: 410px;" required>
+                <select name="" id="" style="padding-right: 90px; border: 1px solid black;" required>
+                    <option value="">India (+91)</option>
+                    <option value="">Indonesia (+62)</option>   
+                    <option value="">Iran (+98)</option>
+                    <option value="">Italy (+39)</option>
+                </select>
+                <input type="text" name="number" style="padding-right: 200px;" required>
+
+                <span style="float: left;"> DATE OF BIRTH </span>     
+                <span style="float: right; padding-right: 43%;"> EMAIL ID </span><br><br>
+                <input type="date" name="date" style="padding-left: 465px;">
+                <input type="email" name="email" style="padding-left: 410px;">
+
+                <span style="float: left;"> DESIGNATION </span>     
+                <span style="float: right; padding-right: 45%;"> PHOTO </span>
+                <input type="text" name="designation" style="padding-left: 410px;">
+                <input type="file" name="file" style="padding: left 0px; border: 1px solid black; padding-right: 325px;">
+
+                <span style="float: left;"> COMPANY NAME<span style="color: red;">*</span> </span>     
+                <span style="float: right; padding-right: 40%;"> BUSINESS TYPE </span>
+                <input type="text" name="cname" style="padding-left: 410px;">
+                <select name="" id="" style="padding-right: 490px; border: 1px solid black;">
+                    <option value="">--Select--</option>
+                    <option value="">Private</option>   
+                    <option value="">Public</option>
+                    <option value="">Goverment</option>
+                </select>
+
+                <span style="float: left;"> Gender<span style="color: red;">*</span> </span>
+                <input type="radio" name="male"> Male <input type="radio" name="female"> Female
+                <span style="float: right; padding-right: 40%;"> BLOOD GROUP </span> <br>
+                <select name="" id="" style="float: left; padding-right: 500px;margin-left: 50%; border: 1px solid black;" >
+                    <option value="">--Select--</option>
+                    <option value="">O+</option>   
+                    <option value="">A+</option>
+                    <option value="">B+</option>
+                </select>
+
+                <span style="float: left;"> CITY<span style="color: red;">*</span> </span>
+                <span style="float: right;padding-right: 45%"> AREA<span style="color: red;">*</span> </span>
+                <select name="" id="" style="float: left; padding-right: 485px; border: 1px solid black;" >
+                    <option value="">--City--</option>
+                    <option value="">Surat</option>   
+                    <option value="">Bhavnagar</option>
+                    <option value="">Ahmedabad</option>
+                </select>
+                <select name="" id="" style="float: right; border: 1px solid black; padding-right: 455px;" >
+                    <option value="">--Area--</option>
+                    <option value="">Vesu</option>   
+                    <option value="">Madhav Complex</option>
+                    <option value="">Bapunagar</option>
+                </select>
+
+                <span style="float: left;"> MEMBERSHIP NUMBER </span>
+                <span style="float: right; padding-right: 30%;"> COMPANY CONTACT NUMBER</span>
+                <input type="text" name="memno" style="padding-left: 410px;"> 
+                <input type="text" name="cconno" style="padding-left: 410px;">
+
+                <span style="float: left;"> COMPANY EMAIL </span>     
+                <span style="float: right; padding-right: 39%;"> COMPANY LOGO </span>
+                <input type="text" name="cemail" style="padding-left: 410px;">
+                <input type="file" name="clogo" style="padding: left 0px; border: 1px solid black; padding-right: 325px;">
+
+                <span style="float: left;"> BROCHURE </span>     
+                <span style="float: right; padding-right: 44%;"> WEBSITE </span>
+                <input type="file" name="brochure" style="padding: left 0px; border: 1px solid black; padding-right: 325px;">
+                <input type="text" name="website" style="padding-left: 410px;">
+                
+                <span style="float: left;"> DESCRIBE MORE </span> 
+                <span style="float: right; padding-right: 43%;">ADDRESS<span style="color: red;">*</span> </span>     
+                <input type="text" name="desc" style="padding-left: 410px;"> 
+                <input type="text" name="add" style="padding-left: 410px;" required>
+
+                <span style="float: left;">  REFER TYPE </span> <br><br>
+                <select name="" id="" style="float: left;border: 1px solid black;padding-right: 495px;">
+                  <option value="">--Select--</option>
+                  <option value="">In-Person</option>   
+                  <option value="">Contact</option>
+                  <option value="">Whatsapp</option>
+              </select>
+              <br><br><br>
+             <center> <button style="height: 40px; width: 70px; background-color: blue;" name="submit">Submit</button> </center>
+             <video width="200px" controls>
+              <source src="./images/v.mp4" type="video/mp4">
+          </video>
+            <audio src="./images/v.mp4" type="audio/mp3" controls></audio>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/rQbmzIwQd_k?si=M7sU7CgBOfgMBh53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <br><br><br>
+              
+
+            </fieldset>
+    </div>
+  </body>
+</html>

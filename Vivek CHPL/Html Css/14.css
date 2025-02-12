@@ -1,0 +1,17 @@
+.topnav {
+  background-color: burlywood;
+  height: 110px;
+  width: auto;
+  display: flex;
+}
+#clogo {
+  height: 110px;
+  width: 100px;
+}
+#forp{
+  padding-right : 400px;
+  text-align: center;
+}
+h2{
+  padding-left: 500px;
+}
