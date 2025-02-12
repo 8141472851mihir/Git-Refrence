@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    /* position: fixed; */
+    /* top: 0; */
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    /* height: 100px; */
+    background-color: #666;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.head img {
+    margin-top: 10px;
+    height: 40px;
+    width: 80px;
+}
+
+.head h2 {
+    margin-left: 270px;
+}
+
+.ma {
+    align-items: center;
+    width: 90%;
+    background-color: #d1cdcd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    /* background-color: #666; */
+}
+
+.ma .main {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 5px 20px 5px;
+
+}
+
+.content span {
+    color: red;
+}
+
+.content,
+label,
+input {
+    margin: 5px;
+}
+
+.ma {
+    margin-left: 5%;
+}
+
+.content .tllab {
+    font-size: 20px;
+    /* width: 45%; */
+}
+
+.content .trlab {
+    font-size: 20px;
+    /* margin-left: 550px; */
+    /* width: 45%; */
+}
+
+.content .tlbox {
+    height: 30px;
+    width: 49%;
+}
+
+.content .trbox {
+    height: 30px;
+    width: 49%;
+}
+
+.content .trbox1 {
+    margin-left: 5px;
+    height: 30px;
+    width: 10%;
+}
+
+.content .trbox2 {
+    height: 30px;
+    width: 38%;
+}
+
+.content .trbox3 {
+    height: 30px;
+    width: 49%;
+    margin-left: 455px;
+}
+
+.content .tlbox4 {
+    height: 30px;
+    width: 49%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content .trbox4 {
+    height: 30px;
+    width: 49%;
+    margin-left: 5px;
+}
+
+.content .trlab1 {
+    font-size: 20px;
+    margin-left: 572px;
+}
+
+.content .trlab2 {
+    font-size: 20px;
+    margin-left: 572px;
+}
+
+.content .trlab3 {
+    font-size: 20px;
+    margin-left: 685px;
+}
+
+.content .xyz {
+    display: flex;
+    margin: 5px;
+}
+
+.content .trlab4 {
+    font-size: 20px;
+    margin-left: 565px;
+}
+
+.content .trlab5 {
+    font-size: 20px;
+    margin-left: 575px;
+}
+
+.content .trlab6 {
+    font-size: 20px;
+    margin-left: 525px;
+}
+
+.content .trlab7 {
+    font-size: 20px;
+    margin-left: 622px;
+}
+
+.content .trlab8 {
+    font-size: 20px;
+    margin-left: 496px;
+}
+
+.content .trlab9 {
+    font-size: 20px;
+    margin-left: 538px;
+}
+
+.content .trlab10 {
+    font-size: 20px;
+    margin-left: 595px;
+}
+
+.content .trlab11 {
+    font-size: 20px;
+    margin-left: 552px;
+}
+
+.content .tlbox12 {
+    height: 30px;
+    width: 49%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content .thirteenth {
+    width: 50%;
+    /* background-color: rgb(255, 255, 255); */
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content .thirteenth .submit {
+    background-color: #2782b7;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.content .thirteenth .reset {
+    background-color: rgb(255, 0, 0);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.content .align{
+    /* background-color: #2782b7; */
+    display: flex;
+    height: 70px;
+}
+.content .align .al1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* background-color: #666; */
+}
+.content .align .al1 label{
+    font-size: 20px;
+}
+.content .align .al1 .l1{
+    padding-right: 40px;
+}
+.content .align .al2{
+    width: 50%;
+    /* background-color: antiquewhite; */
+}
+.content .align .al2 label{
+    font-size: 20px;
+}
+.content .align .al2 select{
+    margin-top: 5px;
+    margin-left: 7px;
+    height: 30px;
+    width: 97%;
+}
