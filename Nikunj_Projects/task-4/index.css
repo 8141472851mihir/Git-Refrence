@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: antiquewhite;
+}
+
+ .header{ 
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.794);
+    color: red;
+    margin-top: 0%;
+} 
+.logo{
+    text-align: left;
+    height: 160px;
+    width: 200px;
+}
+.heading{
+    padding-top: -150px;
+    text-align: center;
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.794);
+    color: red;
+    top: 0;
+    left: 0;
+
+}
+
+nav{
+    background-color: rgba(7, 7, 7, 0.982);
+    margin-bottom: 20px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav ul{
+    list-style-type: none;
+    position: fixed;    
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: xx-large;
+    padding: 25px 0px 25px 25px;
+    color: rgb(245, 4, 4);
+    margin-left: 5px;
+}
+nav ul li{
+    margin: 10px 0;
+}
+li a:hover{
+    background-color: rgba(170, 166, 182, 0.308);
+}
+
+section{
+    display: none;
+    margin: 40px;
+}
+section:target{
+    display: block;
+}
+.photo{
+    height: 10%;
+    width: 25%;
+    padding-left: 30%;
+    margin-top: 0%;
+}
+
+section div .intro{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.intro{
+    text-align: center;
+    font-size: xx-large;
+}
+.contact{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.edu{
+    text-align: center;
+    font-size: xx-large;
+}
+.edu-data{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.foot{
+    background-color: rgba(0, 0, 0, 0.92);
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 2072px;
+}
+
+.sign{
+    font-size: x-large;
+    padding-top: 1%;
+    padding-left: 35%;
+    float: none;
+}
+
+.btn{
+    background-color: black;
+    color: red;
+    height: 30px;
+    width: 80px;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: rgba(170, 166, 182, 0.308);
+}

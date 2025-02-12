@@ -1,0 +1,189 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    display: flex;
+    /* position: absolute; */
+    top: 0%;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+input.search{
+    height: 30px;
+}
+.icon{
+    /* padding-left: 85%; */
+    font-size: xx-large;
+    padding-top: 50px;
+    /* margin-right: 20px; */
+    color: white;
+    padding-left: 70%;
+    display: flex;
+    
+}
+.option{
+    color: white;
+    width: 15%;
+    background-color: rgba(0, 0, 0, 0.861);
+    font-size: x-large;
+    display: flex;
+    overflow-y: auto;
+    height: 660px;
+}
+.option ul li{
+    padding: 10px;
+}
+.effect{
+    position: relative;
+}
+.color-content{
+    display: none;
+    position: absolute;
+    padding: 20px;
+}
+.color-content ul{
+    list-style-type: none;
+    display: block;
+    background-color: white;
+    color: black;
+
+}
+.effect:hover .color-content{
+    display: block;
+}
+.color-content ul li{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.background-content{
+    display: none;
+    position: absolute;
+    padding: 20px;
+}
+.background-content ul{
+    list-style-type: none;
+    display: block;
+    background-color: white;
+    color: black;
+
+}
+.effect:hover .background-content{
+    display: block;
+}
+.background-content ul li{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.border-content{
+    display: none;
+    position: absolute;
+    padding: 20px;
+}
+.border-content ul{
+    list-style-type: none;
+    display: block;
+    background-color: white;
+    color: black;
+
+}
+.effect:hover .border-content{
+    display: block;
+}
+.border-content ul li{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.main-contain{
+    display: flex;
+}
+.graph{
+    height: 660px;
+    width: 500px;
+    padding-left: 20px;
+}
+.chart{
+    padding-top: 55px;
+    height: 400px; 
+    padding-left: 20px;
+    width: 1000px;
+}
+
+/* .btn{
+    font-size: x-large;
+    height: 30px;
+    width: 160px;
+} */
+
+#bar{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #bar {
+      display: block;
+    }
+    #user{
+        display: none;
+    }
+    #messages{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+}
+
+
+#user{
+    position: relative;
+}
+.profile{
+    position: absolute; 
+}
+.profile ul{
+    list-style-type: none;
+    display: none;
+}
+
+#user:hover .profile ul{
+    color: red;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.718);
+}
+
+.datas{ 
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.656);
+    padding: 20px;
+
+    margin-top: 30px;
+    font-size: x-large;
+}
+ .data1{
+    height: 140px;
+    width: 250px;
+    background-color: rgba(255, 0, 0, 0.609);
+}
+.data2{
+    height: 140px;
+    width: 250px;
+    background-color: rgba(0, 51, 255, 0.609);
+}
+.data3{
+    height: 140px;
+    width: 250px;
+    background-color: rgba(9, 171, 96, 0.609);
+    opacity: 0.5px;
+}
+.datdas:hover{
+    opacity: 0.5;
+}

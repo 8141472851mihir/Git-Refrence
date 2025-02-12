@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="success.html"></li>
+</head>
+<body>
+
+    <header class="heading">
+        <div class="logo">
+            <img src="./image/chpl.png" class="logo">
+        </div>
+        <h1 class="title"> Communities Heritage Pvt Ltd </h1>
+        
+        <p class="detail"> A-block,5th Floor, <br> WTT World Trade Tower <br>9909948433 / 9909963904 <br>   chpl@chplgroup.org</p>
+    </header>
+
+    <div class="rform"> Registration Form</div>
+    <div>
+        <form>
+
+            <label for="fname" class="fname"> FIRST NAME</label>&nbsp;<span>*</span>
+            <label for="lname" class="mname"> MIDDLE NAME</label> <br>
+            <input type="text" id="fname" name="fname" class="tlbox" required>
+            <input type="text" id="lname" name="lname" class="trbox" >
+            <br><br>
+
+            <label for="lname" class="lname"> LAST NAME</label>&nbsp;<span>*</span>
+            <label for="mno" class="mno"> MOBILE NO. </label> &nbsp;<span>*</span> <br>
+            <input type="text" id="lname" name="lname" class="tlbox" requirSed>
+            <select id="c-code" name="c-code"  class="c-code">
+                <option value="india">India (+91)</option>
+                <option value="china">China (+86)</option>
+                <option value="uk">uk (+44)</option>
+                <option value="usa">us (+1)</option>
+            </select>
+            <input type="text" id="mno" name="mno" class="mnbox" required pattern="[0-9]{10}">
+            <br><br>
+
+            <label for="grnder" class="gender"> GENDER </label>&nbsp;<span>*</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="gender" name="gender" value="male"> MALE &nbsp;&nbsp;
+            <input type="radio" id="gender" name="gender" value="female"> FEMALE 
+            <label for="mno" class="bgroup"> BLOOD GROUP  </label>  <br>
+            <select id="bgroup" name="bgroup"  class="bdgroup">
+                <option value="a+"> A+ </option>
+                <option value="a-"> A- </option>
+                <option value="b+"> B+ </option>
+                <option value="b-"> B- </option>
+                <option value="o+"> O+ </option>
+                <option value="o-"> O- </option>
+                <option value="ab+"> AB- </option>
+                <option value="ab-"> AB- </option>
+
+            </select>
+            <br><br>
+
+            <label for="bod" class="bod"> BIRTH OF DATE </label>
+            <label for="email" class="email"> EMAIL ID </label> <br>
+            <input type="date" id="bod" name="bod" class="tlbox" >
+            <input type="email" id="email" name="email" class="trbox" >
+            <br><br>
+
+            <label for="designation" class="dnation"> DESIGNATION </label>
+            <label for="photo" class="photo"> PHOTO </label> <br>
+            <input type="text" id="designation" name="designation" class="tlbox" >
+            <input type="file" id="email" name="email" class="trbox" style="border: 1px solid black; background-color: white;">
+            <br><br>
+
+            <label for="cname" class="cname"> COMPANY NAME </label>&nbsp;<span>*</span> 
+            <label for="btype" class="btype"> BUSSINESS TYPE </label> <br>
+            <input type="text" id="cname" name="cname" class="tlbox" required>
+            <select id="btype" name="btype"  class="bussiness">
+                <option value="" disabled selected> --Select-- </option>
+                <option value="sole proprietorship"> Sole Proprietorship   </option>
+                <option value="partnership"> Partnership </option>
+                <option value="limited liability company">  Limited Liability Company </option>
+                <option value="corporation"> Corporation </option>
+            </select> 
+ 
+            <label for="city" class="city"> CITY </label>
+            <label for="area" class="area"> AREA </label>
+            <select id="city1" name="city"  class="tcity">
+                <option value="" disabled selected> --Select-- </option>
+                <option value="porbandar"> Porbandar </option>
+                <option value="rajkot"> Rajkot </option>
+                <option value="ahmedabad"> Ahmedabad  </option>
+                <option value="gandhinagar"> Gandhinagar </option>
+                <option value="surat"> Surat </option>
+            </select>
+            <select id="area1" name="area"  class="tarea">
+                <option value="" disabled selected> --Select-- </option>
+                
+                <option value="adityana"> Adityana </option>
+                <option value="adavana"> Adavana </option>
+                <option value="ratdi"> Adityana </option>
+                <option value="ranavav"> Ranavav </option>
+                <option value="kutiyana"> Kutiyana </option>
+            </select>
+            
+            <label for="memno." class="memno"> MEMBERSHIP NUMBER</label> <br>
+            <label for="comno." class="comno"> COMPANY CONTACT NUMBER</label><br>
+            <input type="text" id="memno" name="memno" class="tlbox">
+            <input type="text" id="comno" name="comno" class="trbox">
+
+            <label for="c-email." class="cemail"> COMPANY EMAIL</label> <br>
+            <label for="clogo" class="clogo"> COMPANY LOGO </label> <br>
+            <input type="text" id="c-email" name="c-email" class="tlbox" >
+            <input type="file" id="clogo" name="clogo" class="trbox" style="border: 1px solid black; background-color: white;">
+
+            <label for="brouch" class="brouch"> BROUCH </label> <br>
+            <label for="website" class="web"> WEBSITE </label> <br>
+            <input type="file" id="c-email" name="c-email" class="tlbox" style="border: 1px solid black; background-color: white;"  required>
+            <input type="text" id="clogo" name="clogo" class="trbox" required>
+            <br><br>
+
+            <label for="describe" class="demore"> DESCRIBE MORE </label>
+            <label for="address" class="add"> ADDRESS </label> &nbsp;<span>*</span> <br>
+            <input type="text" id="describe" name="fname" class="tlbox" required>
+            <input type="text" id="lname" name="lname" class="trbox" required>
+            <br><br>
+
+            <label for="refer" class="refer"> REFER TYPE </label>&nbsp;<span>*</span><br>
+            <select id="refer" class="trefer">
+                <option value="" disabled selected > --Select-- </option>
+                <option value="he"> HR </option>
+                <option value="senior"> Senior </option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit" class="btn">
+
+            <iframe src="index.css" frameborder="0" height="315" width="560"></iframe>
+            
+            <video width="320" height="240" controls>
+                <source src="image/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              
+              <audio controls>
+                <source src="./image/audio.opus" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
