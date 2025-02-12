@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+   
+  }
+
+  .image{
+    background-image: url(images/chpl2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+  span{
+    color: red;
+  }
+  
+  form fieldset {
+    border: 1px dotted black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+.wedt input{
+  width: 400px;
+}
