@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #box {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            background-color: lightblue;
+            color: black;
+        }
+
+        .blue {
+            background-color: blue !important;
+            color: white;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $("#square").animate({ left: '500px' }, 5000);
+            });
+            $("#stop").click(function () {
+                $("#square").stop();
+            });
+
+
+            $("#text").click(function () {
+                $("#box , #p").toggleClass("blue");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <p id="p">Click The Button To Toggle Color</p>
+    </div>
+    <br>
+
+    <button id="text">Toggle Color</button><br><br>
+
+    <button id="start">Start Animation</button>
+    <button id="stop">Stop Animation</button>
+    <br><br>
+    <div id="square" style="background:#db620b;height:150px;width:150px;position:absolute;"></div>
+
+</body>
+
+</html>

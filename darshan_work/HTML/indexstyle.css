@@ -1,0 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+ul{
+    justify-content: center;
+    gap:40px;
+    display: flex;
+    list-style-type:none;
+}
+
+nav ul li a{
+    text-decoration-line:none;
+}
+
+h1,h2{
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+.ifream-container{
+    display: flex;   
+}
+
+iframe{
+    border: 5px solid blanchedalmond;
+    border-radius: 50px;
+}
+
+.nav-container{
+    background-color: aqua;
+}
+
+img{
+    border: 5px solid red;
+    border-radius: 10px;   
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Index</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Header css */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-left: 10px;
+    }
+
+    .dropdown-content{
+      display: none;
+      position: absolute;
+      width: 150px;
+      padding: 10px;
+      z-index: 1;
+      background-color: aqua;
+    }
+
+    .dropdown-content a{
+      text-decoration: none;
+    }
+
+    .profile:hover .dropdown-content{
+      margin-top: 10%;
+      display: block;
+      border: 1px;
+
+    }
+
+    button{
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      color: wheat;
+      background-color: #333;
+    }
+    
+  
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-box button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 4px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    /* Main Layout */
+    .main {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: white;
+      padding-top: 20px;
+    }
+
+    .sidebar .menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar .menu li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sidebar .menu li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .sidebar .menu li a:hover {
+      background-color: #575757;
+    }
+
+    
+    /* Iframe Section */
+    .iframe-container {
+      flex: 1;
+      overflow: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="header">
+    <div class="profile">
+      <img src="../html/images/profile.png" alt="Profile Picture">
+      <div class="dropdown-content">
+      <a href="">My Profile</a><br>
+      <a href="">My Reminder</a><br>
+      <button>logout <i class="fa-solid fa-right-from-bracket"></i></button><br>
+    </div>
+      <span>Darshan Vasoya</span>
+      &nbsp;&nbsp;
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button type="button">Search</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li><li>
+          <a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="iframe-container">
+      <iframe src="../HTML/index_2.html"></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+Complete the friday task 
+then after attend the lecture 
+after the lacture complete the lecture task.
