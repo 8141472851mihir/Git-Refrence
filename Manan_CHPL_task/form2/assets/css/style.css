@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+
+label {
+    display: inline-block;
+    margin-right: 10px;  /* Adds some space between the checkboxes */
+    white-space: nowrap; /* Prevents wrapping of checkbox text */
+}
+/* Enhanced Graphical CSS for Student Enrollment Form */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                url('assets/images/study_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 650px;
+    margin: 50px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #007BFF;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-control, .form-select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+}
+
+.form-control:focus, .form-select:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
+    background-color: #fff;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#courses-container label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #e9f5ff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#courses-container input[type="checkbox"]:checked + label {
+    background-color: #007BFF;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#photo-preview {
+    display: block;
+    margin-top: 10px;
+    border: 3px solid #007BFF;
+    padding: 5px;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+#photo-preview:hover {
+    transform: scale(1.1);
+}
+
+.form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    #photo-preview {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Decorative Book Animation */
+.container::before {
+    content: "📚";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 80px;
+    opacity: 0.1;
+    transform: rotate(15deg);
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(15deg); }
+    50% { transform: translateY(-10px) rotate(15deg); }
+}
+
+
