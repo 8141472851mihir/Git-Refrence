@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Portfolio</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../Images/co-logo-removebg-preview.png" alt="Logo"
+                    width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="carousel slide" id="mycaro" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mycaro" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mycaro" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mycaro" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../Images/chair-1840011.jpg" alt="img1" style="width: 100%;" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>Red Chair</h3>
+                        <p>This is a famous red chair</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../Images/city-690158.jpg" alt="img1" style="width: 100%;" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>The City</h3>
+                        <p>This is a very famous city</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../Images/laptop-593673_1280.jpg" alt="img1" style="width: 100%;" class="d-block">
+                    <div class="carousel-caption">
+                        <h3>My Laptop</h3>
+                        <p>This is my work space</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#mycaro" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mycaro" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <div id="about" class="container mt-5 pt-5 pb-5 bg-secondary">
+        <button type="button" class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">Shortcut</button>
+        <h2 class="text-center mb-3 ">About Me</h2>
+        <div class="row justify-content-between">
+            <div class="col-sm-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hello, Guys</h5>
+                        <p class="card-text">I am Sohel khan and i'm a web developer. </p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >
+                            See Profile
+                         </button>
+                    </div>
+                    <img class="card-img-bottom"
+                        src="https://www.profilebakery.com/wp-content/uploads/2024/05/Profile-picture-created-with-ai.jpeg"
+                        alt="Profile Picture" >
+                </div>
+            </div>
+
+            <div class="col-sm-6 align-content-center text-center">
+                <h2>What i do,</h2>
+                <p class="mt-5">As a Web Developer, you will manage the exchange of data between the server and the users, translate
+                    the UI/UX design wireframes to actual code that will produce the visual elements of the application.
+                    Also, you will design the overall architecture of the web application and ensure performance and
+                    stability.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Click to show more about me!">See More</button>
+
+
+                    <div class="toast show mt-4 justify-content-center">
+                        <div class="toast-header">
+                            <strong class="me-auto">Wanna see more ?</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body">
+                            <p>Click the above button to see more</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="gallery" class="container mt-5 pt-5">
+        <button type="button" class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">Shortcut</button>
+        <h2 class="text-center mb-3 ">See our gallery</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./images/g1.png" alt="Image 1" class="w-100 border border-danger border-top-0 border-5 shadow-1-strong rounded mb-4">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="./images/g7.png" alt="Image 2" class="w-100 border-top border-success border-5  shadow-1-strong rounded mb-4">
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/g3.png" alt="Image 3" class="w-100 border-warning border-5 border-bottom shadow-1-strong rounded mb-4">
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/g4.png" alt="Image 4" class="w-100 shadow-1-strong rounded-5 mb-4">
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/g5.png" alt="Image 5" class="w-100 rounded-end border-end border-5 border-dark shadow-1-strong rounded-5 mb-4">
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <img src="./images/g8.png" alt="Image 6" class="w-100 border border-5 border-info shadow-1-strong rounded-circle mb-4">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-secondary mt-5 pb-5 pt-5">
+        <h2 class="text-center mb-3">Footer</h2>
+        <div class="d-flex justify-content-around pt-3 pb-3">
+            <div class=""><h4>Our Products</h4></div>
+            <div class=""><h4>Our Services</h4></div>
+            <div class=""><h4>Quick Links</h4></div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="">
+                <h6>MyCo</h6>
+                <h6>My Association</h6>
+                <h6>Smart Society</h6>
+                <h6>CRM</h6>
+                <h6>Land MIS</h6>
+            </div>
+            <div class="">
+                <h6>Web Development</h6>
+                <h6>Web Design</h6>
+                <h6>Mobile Apps</h6>
+                <h6>Open Source Development</h6>
+                <h6>Digital Marketing</h6>
+                <h6>Cloud Services</h6>
+            </div>
+            <div class="">
+                <h6>Gallery</h6>
+                <h6>Contact Us</h6>
+                <h6>Client Testimonial</h6>
+                <h6>Our Gallery</h6>
+                <h6>FAQ's</h6>
+                <h6>Career</h6>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome to my profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <iframe src="https://www.chplgroup.org" frameborder="0" height="300" width="470"></iframe>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-start" id="myCanvas">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">Jump to the contents</h2>
+            <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h4><a class="text-decoration-none" href="#">Home</a></h4>
+            <h4><a class="text-decoration-none" href="#about">About</a></h4>
+            <h4><a class="text-decoration-none" href="#gallery">Gallery</a></h4>
+            <button type="button" class="btn btn-secondary mt-3">Main Site</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var triggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = triggerList.map(function (element) {
+            return new bootstrap.Tooltip(element)
+            })
+    </script>
+
+
+</body>
+
+</html>

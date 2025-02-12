@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 50px;
+    background-color: rgb(12, 22, 65);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+    justify-content:center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 5px 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.home{
+    height: 500px;
+    width: 100%;
+    background-image: url(../../Images/light-5083606_1920.jpg);
+}

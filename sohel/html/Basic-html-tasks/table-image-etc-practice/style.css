@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d2d1d1;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 35px;
+}
+
+header h2 span {
+    color: #a27e30;
+}
+
+header p {
+    padding: 30px 50px;
+    color: rgb(67, 197, 41);
+}
+
+.nav nav {
+    align-items: center;
+    text-align: center;
+    background-color: lightpink;
+    padding: 10px 30px;
+}
+
+.nav nav ul li {
+    display: inline;
+    padding: 0px 50px;
+    font-size: 20px;
+}
+
+.sec {
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sec section h2 {
+    font-size: 30px;
+}
+
+.sec section p {
+    color: lightcoral;
+    padding: 30px 50px;
+}
+
+.sec section img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+
+.map #maps {
+    width: 100%;
+    justify-content: center;
+}
+
+footer {
+    background-color: #7ca1b3;
+    margin: auto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .legal {
+    padding: 5px;
+}
+
+footer .anchor {
+    text-decoration: none;
+}
+
+footer .legal h5 {
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(208, 76, 76);
+}

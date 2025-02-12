@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="head">
+        <img src="../../Images/co-logo-removebg-preview.png" alt="">
+        <h2>Communities Heritage Pvt Ltd</h2>
+    </div>
+
+    <section>
+        <nav>
+            <h3>Welcome, user!</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#form">Registration</a></li>
+                <!-- <li><a href="#thanks">Thank you</a></li> -->
+            </ul>
+        </nav>
+
+        <article>
+            <div id="home">
+                <h1>Home</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequuntur ullam debitis quis
+                    deleniti
+                    hic vitae labore reprehenderit ex, eligendi in rem porro dolore molestiae ipsum odio id eaque nulla!
+                </p>
+                <div class="h1">
+                    <div class="d1">
+                        <h3>Sample</h3>
+                        <p>This is a sample description. This is a sample description. This is a sample description.
+                            This is
+                            a sample description. This is a sample description. This is a sample description. </p>
+                    </div>
+                    <div class="d2">
+                        <img src="../../Images/light-5083606_1920.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequuntur ullam debitis quis deleniti
+                hic vitae labore reprehenderit ex, eligendi in rem porro dolore molestiae ipsum odio id eaque nulla!</p>
+            <h2>
+                Contact info :-
+            </h2>
+            <ul>
+                <li><a href="tel:+919106645776">Phone :- +91 99987 65433</a></li>
+                <li><a href="mailto:example@gmail.com">Email :- exapmle@gmail.com</a></li>
+                <li><a href="https://www.Linkedin.com">Linkedin :- User123</a></li>
+                <li><a
+                        href="https://www.google.com/maps/@22.9970682,72.5090304,15z?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D">Address
+                        :- WTT, Sanand, Ahmedabad</a></li>
+            </ul>
+        </article>
+
+        <article id="education">
+            <h1>Education</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequuntur ullam debitis quis deleniti
+                hic vitae labore reprehenderit ex, eligendi in rem porro dolore molestiae ipsum odio id eaque nulla!</p>
+            <table id="tab">
+                <tr>
+                    <th>Sr.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>School</th>
+                    <th>Collage</th>
+                    <th>University</th>
+                    <th>Result</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>20</td>
+                    <td>St. Xaviar</td>
+                    <td>S V Collage</td>
+                    <td>Nirma University</td>
+                    <td>First</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anil</td>
+                    <td>21</td>
+                    <td>St. Xaviar</td>
+                    <td>B K Collage</td>
+                    <td>Nirma University</td>
+                    <td>First</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bipin</td>
+                    <td>19</td>
+                    <td>F D School</td>
+                    <td>P P Patel Collage</td>
+                    <td>Gujarat University</td>
+                    <td>Second</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sam</td>
+                    <td>22</td>
+                    <td>St. Kabir</td>
+                    <td>Nirma collage</td>
+                    <td>GLS University</td>
+                    <td>First</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </article>
+
+        <article id="contact">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam consequuntur ullam debitis quis deleniti
+                hic vitae labore reprehenderit ex, eligendi in rem porro dolore molestiae ipsum odio id eaque nulla!</p>
+            <iframe src="https://www.chplgroup.org" height="500px" width="700px" frameborder="0"></iframe>
+        </article>
+
+        <article id="form">
+            <h1>Registration Form</h1>
+
+            <!-- <div class="a1" id="thanks">
+                    <h1>Thank you for submitting the form.</h1>
+                </div> -->
+
+            <form action="#thanks" target="_parent">
+                <label for="fname">Fisrt Name:</label>
+                <input type="text" id="fname" placeholder="Sunil" name="fname" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Kumar" required>
+                <br>
+                <label for="Phone">Phone No:</label>
+                <input type="tel" id="Phone" name="Phone" placeholder="99887-66554" pattern="[0-9]{5}-[0-9]{5}"
+                    required>
+                <br>
+                <label for="cities">City:</label>
+                <select name="cities" id="cities">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="surat">Surat</option>
+                    <option value="baroda">Baroda</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Ajmer">Ajmer</option>
+                    <option value="Andheri">Andheri</option>
+                    <option value="Bhiwandi">Bhiwandi</option>
+                </select>
+                <br>
+                <label for="states">State:</label>
+                <select name="states" id="states">
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+                <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" value="male" name="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" value="felame" name="female" id="female">
+                <label for="female">Female</label>
+                <br>
+                <label for="dob">Date of birth:</label>
+                <input type="date" value="dob" id="dob" name="dob">
+                <br>
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" placeholder="20" name="Age">
+                <br>
+                <label for="languages">Languages:</label>
+                <input type="checkbox" id="english" name="english" value="english">
+                <label for="english">English</label>
+                <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" name="gujarati" id="gujarati" value="gujarati">
+                <label for="gujarati">Gujarati</label>
+                <br>
+                <input class="submit" type="submit" value="submit">
+                <input class="reset" type="reset" value="Reset">
+            </form>
+        </article>
+
+        <article id="thanks">
+            <h1>Thanks for submitting.</h1>
+        </article>
+        <!-- <h1 id="thanks">Thank you</h1> -->
+
+
+
+    </section>
+
+    <div class="foot">
+        <h4><a href="https://www.chplgroup.org">CHPL&reg;</a></h4>
+        <p><a href="https://www.chplgroup.org">All right reserved&copy;</a></p>
+    </div>
+
+
+</body>
+
+</html>

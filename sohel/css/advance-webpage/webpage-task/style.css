@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.jer {
+    font-family: "Jersey 15", serif;
+    font-weight: 800;
+    font-style:italic;
+    font-size: 25px;
+  }
+  .sof {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.navbar{
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar li{
+    float: left;
+    /* border-right: 1px solid #bbb; */
+}
+
+ul.topnav li.right {
+    float: right;
+}
+.navbar li:first-child, li:last-child{
+    border-right: none;
+}
+.navbar li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size:22px;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.mobnav{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {
+        display: none;
+    }
+    .mobnav{
+        display: block;
+    }
+}
+
+.mobnav .drop-content {
+    display: none; 
+    position: absolute;
+    right: 0; 
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+    width: 100%; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mobnav .drop-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block; 
+    font-size: 16px;
+}
+
+.mobnav .drop-content a:hover {
+    background-color: #f1f1f1; 
+}
+
+
+.mobnav .dropdown:hover .drop-content {
+    display: block; 
+}
+
+
+
+.main{
+    /* margin-top: 100px; */
+    margin-top: 60px;
+}
+.main .nav{
+    list-style-type: none;
+    width: 20%;
+    background-color: #898989;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 5;
+}
+.main .nav ul li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    display: block;
+    color: #000;
+    margin: 20px 50px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.main .nav li .das{
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.main .cont{
+    margin-left: 20%;
+    padding: 1px 10px;
+    height: 1000px;
+}
+.main .cont h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+.main .cont p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+.main .cont img{
+    width: 100%;
+}
+
+
+.welcome{
+    background-color: #333;
+    border-radius:20px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Sofia", serif;
+}
+
+
+.cards{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.c1{
+    width: 20%;
+    background-color: rgb(135, 135, 135);
+    box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.7);
+}
+.c1 div{
+    display: flex;
+}
+.c1 div h2{
+    /* font-size: 20px; */
+    color: darkmagenta;
+}
+.c1 div img{
+    margin-top: 20px;
+}
+
+.sales{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.sales .sale{
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.7);
+}
+.sales .over{
+    width: 35%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.7);
+}
+.sales .over h2{
+    color: red;
+    padding: 20px 10px 10px 10px;
+    font-size: 45px;
+}
+.sales .over .m1{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+}
+.sales .over h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #4f4f4f;
+}
+.sales .over h4 .m2{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+.sales .over h4{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.sales .over img{
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 300px;
+    height: 200px;
+}
+
+
+.sale h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(82, 14, 14);
+}
+.sale table{
+    width: 100%;
+    padding: 10px;
+}
+.sale table tr{
+    font-size: 25px;
+}
+.sale table th{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sale table th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.first{
+    margin-top: 50px;
+}
+

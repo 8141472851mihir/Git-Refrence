@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec{
+    background-image: url(../../Images/laptop-593673_1280.jpg);
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+.thi h2{
+    display: inline;
+    padding: 10px;
+    /* font-size: 40px; */
+}

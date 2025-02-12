@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.man{
+    margin: auto;
+}
+.man .text{
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+    color: brown;
+}
+.man .media{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.man .audio{
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    
+}
